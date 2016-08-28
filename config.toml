@@ -1,0 +1,5 @@
+baseurl = "http://dinwy.github.io/"
+languageCode = "en-us"
+title = "Dinwy's blog"
+theme = "simpleD"
+builddrafts = true
