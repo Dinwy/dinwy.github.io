@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dinwy&#39;s blog</title>
-    <link>http://dinwy.github.io/posts/</link>
+    <link>https://dinwy.github.io/posts/</link>
     <description>Recent content in Posts on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Aug 2016 23:19:59 +0900</lastBuildDate>
-    <atom:link href="http://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2nd</title>
-      <link>http://dinwy.github.io/posts/2nd/</link>
+      <link>https://dinwy.github.io/posts/2nd/</link>
       <pubDate>Sun, 28 Aug 2016 23:19:59 +0900</pubDate>
       
-      <guid>http://dinwy.github.io/posts/2nd/</guid>
+      <guid>https://dinwy.github.io/posts/2nd/</guid>
       <description>&lt;p&gt;second file.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>lorem</title>
-      <link>http://dinwy.github.io/posts/lorem/</link>
+      <link>https://dinwy.github.io/posts/lorem/</link>
       <pubDate>Sun, 28 Aug 2016 23:19:14 +0900</pubDate>
       
-      <guid>http://dinwy.github.io/posts/lorem/</guid>
+      <guid>https://dinwy.github.io/posts/lorem/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed varius sapien, id tempor urna. Nunc eu efficitur ex, et tempus orci. Phasellus augue velit, sagittis sed dapibus non, ornare eget ex. In suscipit tempus dapibus. Praesent lacinia egestas libero et commodo. Sed in libero nec metus rhoncus efficitur. Suspendisse dictum imperdiet eros, nec dictum neque aliquam imperdiet. Nam ac egestas tellus. Sed eu molestie tellus. Etiam vehicula odio id pretium aliquam. Phasellus cursus elit eget aliquam molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque in efficitur nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget nisi a neque pharetra malesuada aliquam vitae nisi.&lt;/p&gt;
 
 &lt;p&gt;Quisque rhoncus placerat odio, ac malesuada ante ornare vel. Mauris fermentum sit amet metus pharetra tincidunt. Pellentesque sit amet sem nec ante vestibulum lacinia eget id eros. In tempor mi sodales, porttitor odio at, sagittis elit. Nam et elit pretium, hendrerit nulla nec, facilisis nunc. Vestibulum ultricies vehicula ligula, ac bibendum nulla tristique a. In hac habitasse platea dictumst. Sed hendrerit nulla erat, sed iaculis justo posuere bibendum. Morbi eu eros eu tortor hendrerit dignissim. Maecenas ut lorem nisi. Ut vitae pretium nibh. Curabitur semper nulla vel urna ultrices vestibulum. Morbi aliquet metus eget ipsum volutpat, nec pellentesque diam posuere. Mauris eget massa magna. Praesent a vehicula nisl. Curabitur id imperdiet ante.&lt;/p&gt;
