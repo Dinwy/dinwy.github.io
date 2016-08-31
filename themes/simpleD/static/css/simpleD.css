@@ -1,12 +1,26 @@
 body {
-	background-color: #D44557;
+	background-color: #fffaf0;
+	margin:0;
+	font-size: 20px;
 }
 a {
 	text-decoration: none;
 }
 
+.header {
+	padding: 5px;
+	text-align: center;
+	background-color: #7b1fa2;
+	color: white;
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
 .post-wrapper {
 	background-color: white;
+	max-width: 40em;
+	margin: auto;
 }
 
 .post-inner {
