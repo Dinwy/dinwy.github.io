@@ -6,4 +6,7 @@ builddrafts = true
 
 [params]
 author = "Dinwy"
+twitter = "https://twitter.com/Dinwy2016"
+github = "https://github.com/Dinwy"
+stackoverflow = "http://stackoverflow.com/users/5545216/dinwy"
 summaryLength = 200

@@ -11,8 +11,8 @@ features = ["", ""]
 min_version = 0.15
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Dinwy"
+  homepage = "https://dinwy.github.io/"
 
 # If porting an existing theme
 [original]
