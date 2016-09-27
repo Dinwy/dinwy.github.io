@@ -1,45 +1,85 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-	/*background-color: #fffaf0;*/
-	background: url("http://i.imgur.com/Qndmh7X.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	margin:0;
+	background: url('/imgs/backgroundImg.png');
 	font-size: 20px;
 	min-width: 320px;
-	max-width: 768px;
-	margin: auto;
+  min-height: 100%;
+  max-width: 768px;
+  height: 100%;
+  padding-bottom: 3.2em;
+  box-sizing: border-box;
+  margin: auto;
 }
+
 a {
 	text-decoration: none;
 }
-a:link, a:visited {
-    color: inherit;
-}
-.header {
+
+header {
+  margin-top: 1em;
 	padding: 5px;
-	text-align: center;
-	/*background-color: #7b1fa2;*/
+	text-align: right;
 	color: white;
-	/*opacity: 0.5;*/
-    /*filter: alpha(opacity=50);  For IE8 and earlier */
+}
+header span {
+  text-align: center;
+}
+
+header a:link, header a:visited {
+  color: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+.logo {
+  height: 10em;
+  width: 10em;
+  float: left;
+}
+
+nav {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+nav span {
+  display: block;
+}
+
+nav a {
+  padding: 0.3em;
+  display: block;
+}
+
+.nav {
+  list-style: none;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin: 0;
 }
 
 .post-wrapper {
+  display: block;
 	background-color: white;
-	max-width: 40em;
-	margin: auto;
-}
-
-.post-inner {
-  border-top-color: rgba(0, 0, 0, 0.1);
 }
 
 .post-wrapper .post-inner {
-  background-color: white;
-  display: block;
-  cursor: pointer;
   overflow: hidden;
   text-decoration: none;
   color: #666666;
@@ -47,8 +87,8 @@ a:link, a:visited {
           transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1em;
 }
 
 .post-wrapper .post {
@@ -67,7 +107,7 @@ a:link, a:visited {
 .post-inner h1 {
   font-size: 2em;
   font-weight: 900;
-  color: black;
+  color: #1258ed;
   margin: 0 auto;
 }
 
@@ -76,4 +116,28 @@ a:link, a:visited {
   font-weight: 900;
   color: black;
   margin: 0 auto;
+}
+
+footer {
+  font-size: 1em;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  border-top: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+foooter a {
+  color: yellowgreen;
+  font-weight: 800;
+}
+
+footer a:visited {
+  color: yellowgreen;
+  font-weight: 800;  
 }
