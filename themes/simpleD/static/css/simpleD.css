@@ -43,30 +43,29 @@ figure {
   float: left;
 }
 
-nav {
-  display: inline-block;
+.nav {
   box-sizing: border-box;
-  width: 50%;
 }
 
-nav li {
+.nav a {
+  padding: 0.3em;
+  display: inline-block;
+}
+
+.nav-home {
+  text-align: center;
+}
+
+.nav li {
   display: inline-block;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-nav span {
+.nav span {
   display: block;
 }
 
-nav a {
-  padding: 0.3em;
-  display: block;
-}
-
-.nav {
-  list-style: none;
-}
 
 .navbar {
   position: relative;
@@ -98,6 +97,7 @@ nav a {
   color: #666666;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
+  padding-top: 5em;
 }
 
 .post-wrapper .post-inner:hover {
@@ -106,16 +106,19 @@ nav a {
 
 .post-inner h1 {
   font-size: 2em;
-  font-weight: 900;
   color: #1258ed;
   margin: 0 auto;
 }
 
 .post h1 {
-  font-size: 2em;
-  font-weight: 900;
-  color: black;
+  font-size: 4em;
+  color: #1258ed;
   margin: 0 auto;
+  text-align: center;
+}
+
+.date {
+  text-align: right;
 }
 
 footer {
