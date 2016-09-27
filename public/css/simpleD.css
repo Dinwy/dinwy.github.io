@@ -6,6 +6,7 @@ html {
 body {
 	background: url('/imgs/backgroundImg.png');
 	font-size: 20px;
+  line-height: 1.45;
 	min-width: 320px;
   min-height: 100%;
   max-width: 768px;
@@ -66,7 +67,6 @@ figure {
   display: block;
 }
 
-
 .navbar {
   position: relative;
   min-height: 50px;
@@ -122,8 +122,6 @@ figure {
 }
 
 footer {
-  font-size: 1em;
-  bottom: 0px;
   position: absolute;
   left: 0;
   bottom: 0;
