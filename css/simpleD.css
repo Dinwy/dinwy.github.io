@@ -1,6 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
+  overflow-y: scroll;
 }
 
 body {
@@ -11,7 +12,9 @@ body {
   min-height: 100%;
   max-width: 768px;
   height: 100%;
-  padding-bottom: 3.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 3.5em;
   box-sizing: border-box;
   margin: auto;
 }
@@ -42,6 +45,8 @@ figure {
   height: 10em;
   width: 10em;
   float: left;
+  position: relative;
+  z-index: 10;
 }
 
 .nav {
@@ -55,6 +60,10 @@ figure {
 
 .nav-home {
   text-align: center;
+}
+
+.nav-home a {
+  color: white;
 }
 
 .nav li {
@@ -110,10 +119,13 @@ figure {
   margin: 0 auto;
 }
 
-.post h1 {
+.title {
   font-size: 4em;
   color: #1258ed;
   margin: 0 auto;
+}
+
+.title-center {
   text-align: center;
 }
 
@@ -141,4 +153,25 @@ foooter a {
 footer a:visited {
   color: yellowgreen;
   font-weight: 800;  
+}
+
+.list-inner ul {
+  padding: 1em;
+}
+
+.list-inner li{
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.list-inner li > a {
+  display: table-cell;
+  text-align: left;
+}
+
+.list-inner li > .date {
+  display: table-cell;
+  text-align: right;
 }
