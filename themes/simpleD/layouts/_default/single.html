@@ -1,7 +1,11 @@
 {{ partial "header.html" . }}
-
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <p><a href="{{ .Site.BaseURL }}">Home</a></p>
-
+<section>
+<article>
+<div class="post-wrapper">
+<h1 class="title">{{ .Title }}</h1>
+{{ .Content }}
+<p><a href="{{ .Site.BaseURL }}">Home</a></p>
+  </div>
+</article>
+</section>
 {{ partial "footer.html" . }}
