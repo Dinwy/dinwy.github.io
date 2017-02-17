@@ -6,8 +6,18 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Feb 2017 22:21:51 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Feb 2017 02:39:42 +0900</lastBuildDate>
     <atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>meow</title>
+      <link>https://dinwy.github.io/posts/meow/</link>
+      <pubDate>Sat, 18 Feb 2017 02:39:42 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/meow/</guid>
+      <description>&lt;p&gt;Meow??&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>WIP</title>
