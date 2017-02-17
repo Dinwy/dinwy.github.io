@@ -2,6 +2,9 @@
 
 echo "Generating site"
 hugo
+git add content/
+git commit -m "Publishing to hugo content"
+git push upstream hugo
 
 echo "Updating gh-pages branch"
 cd public
