@@ -16,5 +16,5 @@ if [ $# -eq 1 ]
   git commit -m "$msg"
 
   # Push source and build repos.
-  git push hugo hugo
+  git push origin hugo
   git subtree push --prefix=public git@github.com:Dinwy/dinwy.github.io.git master
