@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/</link>
+    <description>Recent content on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Feb 2017 02:43:31 +0900</lastBuildDate>
+    <atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>testing</title>
+      <link>https://dinwy.github.io/posts/testing/</link>
+      <pubDate>Sat, 18 Feb 2017 02:43:31 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/testing/</guid>
+      <description>&lt;p&gt;Testing..&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>meow</title>
+      <link>https://dinwy.github.io/posts/meow/</link>
+      <pubDate>Sat, 18 Feb 2017 02:39:42 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/meow/</guid>
+      <description>&lt;p&gt;Meow??&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WIP</title>
+      <link>https://dinwy.github.io/posts/WIP/</link>
+      <pubDate>Wed, 15 Feb 2017 22:21:51 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/WIP/</guid>
+      <description>&lt;p&gt;Working In Process&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to position the title</title>
+      <link>https://dinwy.github.io/posts/reminder/</link>
+      <pubDate>Thu, 22 Sep 2016 17:52:19 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/reminder/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m back&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2nd</title>
+      <link>https://dinwy.github.io/posts/2nd/</link>
+      <pubDate>Sun, 28 Aug 2016 23:19:59 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/2nd/</guid>
+      <description>&lt;p&gt;second file.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>lorem</title>
+      <link>https://dinwy.github.io/posts/lorem/</link>
+      <pubDate>Sun, 28 Aug 2016 23:19:14 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/lorem/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed varius sapien, id tempor urna. Nunc eu efficitur ex, et tempus orci. Phasellus augue velit, sagittis sed dapibus non, ornare eget ex. In suscipit tempus dapibus. Praesent lacinia egestas libero et commodo. Sed in libero nec metus rhoncus efficitur. Suspendisse dictum imperdiet eros, nec dictum neque aliquam imperdiet. Nam ac egestas tellus. Sed eu molestie tellus. Etiam vehicula odio id pretium aliquam. Phasellus cursus elit eget aliquam molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque in efficitur nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget nisi a neque pharetra malesuada aliquam vitae nisi.&lt;/p&gt;
+
+&lt;p&gt;Quisque rhoncus placerat odio, ac malesuada ante ornare vel. Mauris fermentum sit amet metus pharetra tincidunt. Pellentesque sit amet sem nec ante vestibulum lacinia eget id eros. In tempor mi sodales, porttitor odio at, sagittis elit. Nam et elit pretium, hendrerit nulla nec, facilisis nunc. Vestibulum ultricies vehicula ligula, ac bibendum nulla tristique a. In hac habitasse platea dictumst. Sed hendrerit nulla erat, sed iaculis justo posuere bibendum. Morbi eu eros eu tortor hendrerit dignissim. Maecenas ut lorem nisi. Ut vitae pretium nibh. Curabitur semper nulla vel urna ultrices vestibulum. Morbi aliquet metus eget ipsum volutpat, nec pellentesque diam posuere. Mauris eget massa magna. Praesent a vehicula nisl. Curabitur id imperdiet ante.&lt;/p&gt;
+
+&lt;p&gt;Integer ut volutpat mi, non egestas quam. Curabitur pellentesque libero a magna ultrices, at tincidunt urna fermentum. Vivamus nec nulla pulvinar, facilisis felis viverra, dictum augue. Proin blandit, elit laoreet tincidunt mattis, tellus eros convallis dui, sed auctor nunc neque in tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus porta egestas ipsum, quis placerat ligula blandit eget. Mauris eu mauris tellus. Proin quis est turpis.&lt;/p&gt;
+
+&lt;p&gt;Fusce placerat tellus ut justo mattis, dapibus imperdiet mi placerat. Ut dapibus sem ornare, convallis turpis sed, cursus massa. Praesent accumsan vestibulum feugiat. Morbi massa massa, gravida sed sodales eu, molestie sit amet lacus. Donec ut aliquam lacus, sed sagittis quam. Cras et cursus est. Ut quis lectus vulputate, finibus est vel, cursus tellus. In blandit, mauris rhoncus vestibulum tincidunt, turpis tellus vehicula quam, at consectetur massa augue eget sapien. Mauris et odio neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Duis eget neque quis ipsum congue efficitur.&lt;/p&gt;
+
+&lt;p&gt;Vivamus metus diam, vestibulum vitae pellentesque eu, gravida ut odio. In venenatis eu diam in pulvinar. Morbi suscipit erat et metus blandit, vitae sollicitudin ex sollicitudin. Donec sit amet purus id sem lobortis imperdiet. Nulla vitae erat at sem venenatis blandit. In sed maximus mi, in elementum risus. Nam faucibus, libero vel pulvinar finibus, purus eros accumsan augue, vitae tincidunt est leo et ex. Etiam consectetur orci eu elit finibus, et blandit justo euismod. Donec nec magna scelerisque, tempus velit eget, aliquet orci. Etiam ac tortor fermentum, maximus magna tincidunt, aliquet metus. Etiam tincidunt sagittis nunc, eget porttitor felis vulputate sed. Fusce vel tellus est. Praesent pellentesque tempor augue, eu gravida purus blandit vitae. Ut condimentum, elit vel laoreet luctus, mi orci volutpat ipsum, sed mattis lorem nisl nec sem. Quisque imperdiet vitae turpis eu interdum. Fusce a pharetra dui.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://dinwy.github.io/about/</link>
+      <pubDate>Fri, 27 Nov 2015 22:01:00 -0600</pubDate>
+      
+      <guid>https://dinwy.github.io/about/</guid>
+      <description>&lt;p&gt;Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
