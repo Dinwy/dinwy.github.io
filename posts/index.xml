@@ -2,12 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dinwy&#39;s blog</title>
-    <link>https://dinwy.github.io/posts/index.xml</link>
+    <link>https://dinwy.github.io/posts/</link>
     <description>Recent content in Posts on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Feb 2017 02:43:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 May 2017 14:56:23 +0900</lastBuildDate>
     <atom:link href="https://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>testBeforeDeploy</title>
+      <link>https://dinwy.github.io/posts/testBeforeDeploy/</link>
+      <pubDate>Mon, 15 May 2017 14:56:23 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/testBeforeDeploy/</guid>
+      <description>&lt;p&gt;Test before Deploy&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>testing</title>
