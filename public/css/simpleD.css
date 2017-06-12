@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	background: url('/imgs/backgroundImg.png');
+	background: url('/img/backgroundImg.png');
 	font-size: 20px;
   line-height: 1.45;
 	min-width: 320px;
