@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section>
+<article>
+<div class="post-wrapper">
+<h1 class="title">{{ .Title }}</h1>
+<div class="content">
+{{ .Content }}
+</div>
+<p><a href="{{ .Site.BaseURL }}">Home</a></p>
+</div>
+</article>
+</section>
+{{ partial "footer.html" . }}
