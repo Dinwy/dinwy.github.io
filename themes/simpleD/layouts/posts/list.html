@@ -1,6 +1,10 @@
-{{ partial "header.html" . }}
-{{ range first 10 .Data.Pages }}
-<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-{{ end }}
-<p><a href="{{ .Site.BaseURL }}">Home</a></p>
-{{ partial "footer.html" . }}
+{{ partial "header.html" . }} {{ range first 10 .Data.Pages }}
+<h1><a href="{{ .Permalink }}">
+{{ .Title }}</a></h1>
+{{ end }} Here is title hehel
+<div class="nav nav-home">
+    <a href="{{ .Site.BaseURL }}">
+  <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+  <span>Home</span>
+  </a>
+</div>{{ partial "footer.html" . }}

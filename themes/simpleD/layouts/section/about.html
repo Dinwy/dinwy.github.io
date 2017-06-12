@@ -1,17 +1,14 @@
 {{ partial "header.html" . }}
 <section>
     <article>
-        <div class="post-wrapper">
-            <div class="post-inner">
-                <h1 class="title">{{ .Title }}</h1>
-                <div class="content">
-                    {{ .Content }}
-                </div>
+        <div class="post-wrapper padder-1em">
+            <h1 class="title">{{ .Title }}</h1>
+            <div class="content">
+                {{ .Content }}
             </div>
         </div>
     </article>
 </section>
-Here is single
 <div class="nav nav-home">
     <a href="{{ .Site.BaseURL }}">
   <i class="fa fa-home fa-2x" aria-hidden="true"></i>

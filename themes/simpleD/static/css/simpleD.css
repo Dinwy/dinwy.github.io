@@ -175,3 +175,7 @@ footer a:visited {
 .pull-left {
 	float: left;
 }
+
+.padder-1em {
+  padding: 1em;
+}

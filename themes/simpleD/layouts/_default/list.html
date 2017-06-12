@@ -1,30 +1,29 @@
 {{ partial "header.html" . }}
 
 <section>
-<article>
-<div class="post-wrapper">
-<div class="list-inner">
-<h1 class="title">{{ .Title }}</h1>
-<ul>
-{{- range .Data.Pages }}
-<li>
-<a href="{{ .Permalink }}">
-{{ .Title }}
-</a>
-<div class="date">
-{{ .Date.Format "02 Jan 2006" }}
-</div>
-</li>
-{{- end }}
-</ul>
+	<article>
+		<div class="post-wrapper padder-1em">
+			<div class="list-inner">
+				<h1 class="title">{{ .Title }}</h1>
+				<ul>
+					{{- range .Data.Pages }}
+					<li>
+						<a href="{{ .Permalink }}">
+						{{ .Title }}
+						</a>
+						<div class="date">
+							{{ .Date.Format "02 Jan 2006" }}
+						</div>
+					</li>
+					{{- end }}
+				</ul>
 
-</div>
-</div>
-</article>
+			</div>
+		</div>
+	</article>
 </section>
-
 <div class="nav nav-home">
-<a href="{{ .Site.BaseURL }}">
+	<a href="{{ .Site.BaseURL }}">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
