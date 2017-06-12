@@ -42,11 +42,8 @@ figure {
 }
 
 .logo {
-  height: 10em;
-  width: 10em;
-  float: left;
-  position: relative;
-  z-index: 10;
+  height: 5em;
+  width: 5em;
 }
 
 .nav {
@@ -77,9 +74,8 @@ figure {
 }
 
 .navbar {
-  position: relative;
-  min-height: 50px;
-  margin: 0;
+  display: block;
+  min-height: 40px;
 }
 
 .post-wrapper {
@@ -174,4 +170,8 @@ footer a:visited {
 .list-inner li > .date {
   display: table-cell;
   text-align: right;
+}
+
+.pull-left {
+	float: left;
 }
