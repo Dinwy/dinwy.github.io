@@ -10,6 +10,6 @@ The main purpose of this blog is to help people just get started programming in 
 
 I hope you could get some knowledge from here. One thing I'm worring about is my english writing skill. I'm not a native english user so that make hard to understand the context. But I'll try my best.
 
-FYI, you can get more information about me in the About page.
+FYI, you can get more information about me in the ME page.
 
 Have fun!
