@@ -6,6 +6,7 @@ html {
 
 body {
 	background: url('/img/backgroundImg.png');
+  font-family: FontAwesome;
 	font-size: 18px;
   line-height: 1.45;
 	min-width: 320px;
