@@ -179,3 +179,10 @@ footer a:visited {
 .padder-1em {
   padding: 1em;
 }
+
+.twitter {
+color:  #00aced;
+content: "\f00c";
+font-family: FontAwesome;
+text-decoration: none;
+}
