@@ -15,7 +15,7 @@ title = "Event in JS"
 ### Source code
 * https://github.com/Dinwy/BlogCode
 
-When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I'm sending the event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don't have to read this post.
+When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I'm sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don't have to read this post.
 
 To understand the event you need to understand what is function and how it works.
 
