@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/</link>
+    <description>Recent content on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jun 2017 11:00:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Event in JS</title>
+      <link>https://dinwy.github.io/posts/EventInJS/</link>
+      <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/EventInJS/</guid>
+      <description>Preparations  You have to know very basic things in JS  Targets  Beginner  Time to read  10 - 15 mins  Source code  https://github.com/Dinwy/BlogCode  When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&amp;rsquo;m sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question.</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://dinwy.github.io/posts/Hello/</link>
+      <pubDate>Tue, 27 Jun 2017 10:48:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/Hello/</guid>
+      <description>Hello, I&amp;rsquo;m really glad to open my new blog!
+The main purpose of this blog is to help people just get started programming in JS or C#. I&amp;rsquo;ll write down very easy things in coding. What beginners need to know but usually not explained well or being skipped because which are regarded as basic. Also I&amp;rsquo;ll save some rough ideas somehow related with coding.
+I hope you could get some knowledge from here.</description>
+    </item>
+    
+  </channel>
+</rss>
