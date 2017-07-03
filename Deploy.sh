@@ -14,8 +14,7 @@ rm -rf public/*
 
 echo "Generating site"
 hugo
-git add content/
-git add themes/
+git add .
 git commit -m "Publishing to hugo content"
 git push upstream hugo
 
