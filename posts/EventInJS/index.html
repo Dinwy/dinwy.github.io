@@ -68,14 +68,14 @@
 <li><a href="https://github.com/Dinwy/BlogCode">https://github.com/Dinwy/BlogCode</a></li>
 </ul>
 
-<p>When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&rsquo;m sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don&rsquo;t have to read this post.</p>
+<p>When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&rsquo;m sending the event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don&rsquo;t have to read this post.</p>
 
 <p>To understand the event you need to understand what is function and how it works.</p>
 
 <pre><code class="language-js">// hello function
 function hello() {
-	// Print Hello
-	console.log('Hello');
+    // Print Hello
+    console.log('Hello');
 }
 
 // Execute the function
@@ -87,8 +87,8 @@ I guess you already know this or by reading this you understand how this operate
 
 <pre><code class="language-js">// hello function
 function hello() {
-	// Print Hello
-	console.log('Hello');
+    // Print Hello
+    console.log('Hello');
 }
 
 // Function without round brackets
@@ -102,46 +102,46 @@ hello;
 <pre><code class="language-js">'use strict';
 
 class EE {
-	constructor() {
-		this.handlers = {};
-	}
+    constructor() {
+        this.handlers = {};
+    }
 
-	subscribe(name, fn) {
-		if (this.handlers[name]) {
-			this.handlers[name].push(fn);
-		} else {
-			this.handlers[name] = [fn];
-		}
-	}
+    subscribe(name, fn) {
+        if (this.handlers[name]) {
+            this.handlers[name].push(fn);
+        } else {
+            this.handlers[name] = [fn];
+        }
+    }
 
-	emit(name, data) {
-		let targetHandler = this.handlers[name];
-		if (!this.handlers[name]) { return; }
+    emit(name, data) {
+        let targetHandler = this.handlers[name];
+        if (!this.handlers[name]) { return; }
 
-		for (let i = 0; i &lt; targetHandler.length; i++) {
-			let fn = targetHandler[i];
+        for (let i = 0; i &lt; targetHandler.length; i++) {
+            let fn = targetHandler[i];
 
-			fn(data);
-		}
-	};
+            fn(data);
+        }
+    };
 
-	removeListener(name, fn) {
-		let targetHandler = this.handlers[name];
-		if (!targetHandler) { return; }
+    removeListener(name, fn) {
+        let targetHandler = this.handlers[name];
+        if (!targetHandler) { return; }
 
-		let index = targetHandler.indexOf(fn);
-		if (index !== -1) {
-			targetHandler.splice(index, 1);
-		}
-	};
+        let index = targetHandler.indexOf(fn);
+        if (index !== -1) {
+            targetHandler.splice(index, 1);
+        }
+    };
 
-	once(name, fn) {
-		let that = this;
-		this.subscribe(name, function handler(data) {
-			that.removeListener(name, handler);
-			fn(data);
-		});
-	};
+    once(name, fn) {
+        let that = this;
+        this.subscribe(name, function handler(data) {
+            that.removeListener(name, handler);
+            fn(data);
+        });
+    };
 }
 
 module.exports = new EE();
@@ -154,11 +154,11 @@ module.exports = new EE();
 const Event = require('./events.js');
 
 function eventA (msg) {
-	console.log(`eventA: Got a message, ${msg}`);
+    console.log(`eventA: Got a message, ${msg}`);
 }
 
 function eventB (msg) {
-	console.log(`eventB: Got a message, ${msg}`);
+    console.log(`eventB: Got a message, ${msg}`);
 }
 
 // Add two listener which listening to the event name 'message'
@@ -209,28 +209,28 @@ Got a alert, Warning!
 <pre><code class="language-js">'use strict';
 
 class EE {
-	constructor() {
-		this.handlers = {};
-	}
+    constructor() {
+        this.handlers = {};
+    }
 
-	subscribe(name, fn) {
-		if (this.handlers[name]) {
-			this.handlers[name].push(fn);
-		} else {
-			this.handlers[name] = [fn];
-		}
-	}
+    subscribe(name, fn) {
+        if (this.handlers[name]) {
+            this.handlers[name].push(fn);
+        } else {
+            this.handlers[name] = [fn];
+        }
+    }
 
-	emit(name, data) {
-		let targetHandler = this.handlers[name];
-		if (!this.handlers[name]) { return; }
+    emit(name, data) {
+        let targetHandler = this.handlers[name];
+        if (!this.handlers[name]) { return; }
 
-		for (let i = 0; i &lt; targetHandler.length; i++) {
-			let fn = targetHandler[i];
+        for (let i = 0; i &lt; targetHandler.length; i++) {
+            let fn = targetHandler[i];
 
-			fn(data);
-		}
-	};
+            fn(data);
+        }
+    };
 ...
 }
 </code></pre>
@@ -244,11 +244,11 @@ class EE {
 const Event = require('./events.js');
 
 function eventA (msg) {
-	console.log(`eventA: Got a message, ${msg}`);
+    console.log(`eventA: Got a message, ${msg}`);
 }
 
 function eventB (msg) {
-	console.log(`eventB: Got a message, ${msg}`);
+    console.log(`eventB: Got a message, ${msg}`);
 }
 
 // Listening to event name 'message' with two functions respectively
@@ -265,7 +265,7 @@ Event.emit('message', 'Hello there');
 <p>Main.js is using event.js what we&rsquo;ve defined. And <strong>Event</strong> is listening to two event <em>message</em> and <em>alert</em> respectively. eventA &amp; eventB is listening to the event <strong>message</strong>. Which means that whenever <strong>message</strong> event has been invoked then these two functions will be called and executed. Additionally, anonymous function is listening to the event name <strong>alert</strong>. At the end of the code above <strong>Event.emit</strong> is invoking <strong>message</strong> event with a message <em>&lsquo;Hello there&rsquo;</em>. This is functionally equal to the function below.</p>
 
 <pre><code class="language-js">function anonymousFunction(msg) {
-	console.log(`eventName: Got a message, ${msg}`);
+    console.log(`eventName: Got a message, ${msg}`);
 }
 
 anonymousFunction('Hello there');
@@ -276,7 +276,7 @@ anonymousFunction('Hello there');
 <p><strong>What EE.handler contains</strong></p>
 
 <pre><code class="language-js">{
-	'message': [eventA, eventB]
+    'message': [eventA, eventB]
 }
 </code></pre>
 
@@ -286,23 +286,23 @@ anonymousFunction('Hello there');
 
 <pre><code class="language-js">class EE {
 ...
-	removeListener(name, fn) {
-		let targetHandler = this.handlers[name];
-		if (!targetHandler) { return; }
+    removeListener(name, fn) {
+        let targetHandler = this.handlers[name];
+        if (!targetHandler) { return; }
 
-		let index = targetHandler.indexOf(fn);
-		if (index !== -1) {
-			targetHandler.splice(index, 1);
-		}
-	};
+        let index = targetHandler.indexOf(fn);
+        if (index !== -1) {
+            targetHandler.splice(index, 1);
+        }
+    };
 
-	once(name, fn) {
-		let that = this;
-		this.subscribe(name, function handler(data) {
-			that.removeListener(name, handler);
-			fn(data);
-		});
-	};
+    once(name, fn) {
+        let that = this;
+        this.subscribe(name, function handler(data) {
+            that.removeListener(name, handler);
+            fn(data);
+        });
+    };
 }
 </code></pre>
 
