@@ -5,7 +5,10 @@
             <div class="post-inner">
                 <h1 class="title">{{ .Title }}</h1>
                 <div class="content">
-                    {{ .Content }}
+                    {{ if eq .Title "SummonTheBox" }}
+                    <div class="game" style="max-width:1300px !important">
+                        {{ partial "page__unity.html" . }}
+                    </div> {{end}} {{ .Content }}
                 </div>
             </div>
         </div>
@@ -13,8 +16,8 @@
 </section>
 <div class="nav nav-home">
     <a href="{{ .Site.BaseURL }}">
-  <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-  <span>Home</span>
-  </a>
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+        <span>Home</span>
+    </a>
 </div>
 {{ partial "footer.html" . }}

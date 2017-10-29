@@ -1,0 +1,10 @@
+<script src="  {{ .Site.BaseURL }}/assets/unity/SummonTheBox/TemplateData/UnityProgress.js"></script>
+<script src="  {{ .Site.BaseURL }}/assets/unity/SummonTheBox/Build/UnityLoader.js"></script>
+<script>
+	var gameInstance = UnityLoader.instantiate("gameContainer", "  {{ .Site.BaseURL }}/assets/unity/SummonTheBox/Build/SummonTheBox.json", { onProgress: UnityProgress });
+</script>
+</head>
+
+<body>
+	<div class="webgl-content">
+		<div id="gameContainer" style="width: 1280px; height: 720px"></div>
