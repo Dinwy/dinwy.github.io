@@ -6,8 +6,17 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2017 11:00:10 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Oct 2017 05:25:18 +0900</lastBuildDate>
     <atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SummonTheBox</title>
+      <link>https://dinwy.github.io/posts/SummonTheBox/</link>
+      <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/SummonTheBox/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Event in JS</title>
@@ -41,7 +50,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/Dinwy/BlogCode&#34;&gt;https://github.com/Dinwy/BlogCode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&amp;rsquo;m sending the event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don&amp;rsquo;t have to read this post.&lt;/p&gt;
+&lt;p&gt;When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&amp;rsquo;m sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don&amp;rsquo;t have to read this post.&lt;/p&gt;
 
 &lt;p&gt;To understand the event you need to understand what is function and how it works.&lt;/p&gt;
 
