@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Oct 2017 05:25:18 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 02:30:35 +0900</lastBuildDate>
     <atom:link href="https://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BattleAndCard</title>
+      <link>https://dinwy.github.io/posts/BattleAndCard/</link>
+      <pubDate>Tue, 24 Apr 2018 02:30:35 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/BattleAndCard/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SummonTheBox</title>
