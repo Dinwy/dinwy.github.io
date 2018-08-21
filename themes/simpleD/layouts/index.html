@@ -7,7 +7,6 @@
 	<a href="{{ .Permalink }}">
 		<div class="post-inner">
 			<h1>{{ .Title }}</h1>
-		{{div (sub .Now.Unix .Date.Unix) 86400 }} {{ "Days ago |"}}
 		{{ .Date.Format "02 Jan 2006" }}
 		{{ if ge (.Content | countrunes) .Site.Params.summaryLength }}
 			{{(substr .Content 0 .Site.Params.summaryLength)| safeHTML }} {{"..."}}

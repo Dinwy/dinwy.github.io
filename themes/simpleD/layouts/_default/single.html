@@ -4,9 +4,9 @@
         <div class="post-wrapper">
             <div class="post-inner">
                 <h1 class="title">{{ .Title }}</h1>
-                <div class="content">
-                    {{ if eq .Title "SummonTheBox" }}
-                    <div class="game" style="max-width:1300px !important">
+                <div class="content" id="content">
+                    {{ if eq .Type "webgl" }}
+                    <div class="game">
                         {{ partial "page__unity.html" . }}
                     </div> {{end}} {{ .Content }}
                 </div>

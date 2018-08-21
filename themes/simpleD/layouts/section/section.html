@@ -3,7 +3,7 @@
 <div class="post-wrapper">
 <div class="post">
 <h1 class="title title-center">{{ .Title }}</h1>
-<h5 class="date">{{div (sub .Now.Unix .Date.Unix) 86400 }} {{ "Days ago |"}}
+<h5 class="date">
 		{{ .Date.Format "02 Jan 2006" }}</h5>
 <p>{{ .Content }}</p>
 </div>
