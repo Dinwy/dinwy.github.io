@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gamejam on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/gamejam/</link>
+    <description>Recent content in Gamejam on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/tags/gamejam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BattleAndCard</title>
+      <link>https://dinwy.github.io/posts/BattleAndCard/</link>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/BattleAndCard/</guid>
+      <description>Description Fighting + TCG Game. This is my second time in Ludum Dare! Well, I joined last winter ludumdare 40 but I failed :). Thefore now is the first time I’m actually publishing it! My goal was real fighting like as tekken + TCG. So both user concurrently execute the action and show the result. How to play
+TL; DR: Click the card when you are ready to play!</description>
+    </item>
+    
+    <item>
+      <title>SummonTheBox</title>
+      <link>https://dinwy.github.io/posts/SummonTheBox/</link>
+      <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/SummonTheBox/</guid>
+      <description>How to Play By clicking the left mouse button, you will summon the box at the mouse position.
+Use the box and try to go further!
+You will die easily.
+When you summon the box you need to wait for the box is fully summoned.
+Or you will crash to box and die.
+I think I made this game too difficult to play. Maybe fix this later.
+ETC This game was for https://itch.</description>
+    </item>
+    
+  </channel>
+</rss>

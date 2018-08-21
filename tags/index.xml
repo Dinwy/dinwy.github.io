@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jun 2017 10:48:54 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chat</title>
+      <link>https://dinwy.github.io/tags/chat/</link>
+      <pubDate>Tue, 27 Jun 2017 10:48:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/tags/chat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gamejam</title>
+      <link>https://dinwy.github.io/tags/gamejam/</link>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/tags/gamejam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://dinwy.github.io/tags/javascript/</link>
+      <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity3d</title>
+      <link>https://dinwy.github.io/tags/unity3d/</link>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/tags/unity3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webgl</title>
+      <link>https://dinwy.github.io/tags/webgl/</link>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/tags/webgl/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

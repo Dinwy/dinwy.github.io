@@ -10,5 +10,23 @@
 	<atom:link href="https://dinwy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Lecture</title>
+      <link>https://dinwy.github.io/categories/lecture/</link>
+      <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/categories/lecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://dinwy.github.io/categories/project/</link>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/categories/project/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
