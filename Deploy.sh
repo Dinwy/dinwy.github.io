@@ -19,6 +19,7 @@ git commit -m "Publishing to hugo content"
 git push upstream hugo
 
 echo "Updating gh-pages branch"
+cp assets ./public/assets
 cd public
 git add .
 git commit -m "Publishing to gh-pages (publish.sh)"
