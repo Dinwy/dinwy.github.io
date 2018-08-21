@@ -181,8 +181,8 @@ footer a:visited {
   padding: 1em;
 }
 
-.twitter {
-color:  #00aced;
+.icon {
+color:  #111e6c;
 content: "\f00c";
 font-family: FontAwesome;
 text-decoration: none;

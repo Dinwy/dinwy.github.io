@@ -2,17 +2,26 @@
 <section>
 <article>
 <div class="post-wrapper">
-{{- range first 10 .Data.Pages }}
-	<a href="{{ .Permalink }}">
-		<div class="post-inner">
-			<h1>{{ .Title }}</h1>
-		{{ .Date.Format "02 Jan 2006" }}
-		{{ if ge (.Content | countrunes) .Site.Params.summaryLength }}
-			{{(substr .Content 0 .Site.Params.summaryLength)| safeHTML }} {{"..."}}
-		{{else}}
-			{{(substr .Content 0 .Site.Params.summaryLength)| safeHTML }}
-		{{end}}
-	</div>
+{{ range first 10 .Data.Pages }}
+<a href="{{ .Permalink }}">
+<div class="post-inner">
+<h1>{{ .Title }}</h1>
+{{ $image := .Resources.ByType "image" }}
+{{ with $image }}
+<div class="Image">
+{{ range . }}
+<img src="{{ .RelPermalink }}">
+{{ end }}
+</div>
+{{ end }}
+
+{{ .Date.Format "02 Jan 2006" }}
+{{ if ge (.Content | countrunes) .Site.Params.summaryLength }}
+{{substr .Content 0 .Site.Params.summaryLength | safeHTML }} ...(more)
+{{else}}
+{{substr .Content 0 .Site.Params.summaryLength| safeHTML }}
+{{end}}
+</div>
 </a>
 {{- end }}
 </div>

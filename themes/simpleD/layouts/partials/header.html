@@ -20,20 +20,32 @@
 </a>
 </figure>
 </li>
-<li>
 <div>
-<a href="/posts/">
-<span><i class="fa fa-list fa-3x"></i></span>
-<span>Posts</span>
-</a>
-</div>
+<ul>
+{{ range $key, $value := .Site.Taxonomies.categories }}
+<li>
+<a href="/categories/{{ $key | urlize }}">
+{{ if eq $key "gamejam" }}
+<i class="fa fa-gamepad fa-3x"></i>
+{{end}}
+{{ if eq $key "legacy" }}
+<i class="fa fa-archive fa-3x"></i>
+{{end}}
+{{ if eq $key "everydays" }}
+<i class="fa fa-tasks fa-3x"></i>
+{{end}}
+<span>{{ $key | title }}</span>
 </li>
+</a>
+{{ end }}
 <li>
 <a href="/about/">
-<i class="fa  fa-question-circle-o fa-3x"></i>
+<i class="fa fa-question-circle-o fa-3x"></i>
 <span>Me</span>
 </a>
 </li>
+</ul>
+</div>
 </ul>
 </nav>
 

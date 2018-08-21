@@ -2,7 +2,7 @@
 date = "2017-06-27T11:00:10+09:00"
 title = "Event in JS"
 tags = ["javascript"]
-categories = "lecture"
+categories = "legacy"
 +++
 
 ### Preparations

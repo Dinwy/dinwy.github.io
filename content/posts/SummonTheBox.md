@@ -4,7 +4,7 @@ title = "SummonTheBox"
 type = "webgl"
 unityJSON = "SummonTheBox"
 tags = ["gamejam", "unity3d", "webgl"]
-categories = "project"
+categories = "gamejam"
 +++
 
 ## How to Play

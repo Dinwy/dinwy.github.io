@@ -4,7 +4,7 @@ title = "BattleAndCard"
 type = "webgl"
 unityJSON = "LD41"
 tags = ["gamejam", "unity3d", "webgl"]
-categories = "project"
+categories = "gamejam"
 +++
 
 # Description
