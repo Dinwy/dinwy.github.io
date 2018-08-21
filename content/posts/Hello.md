@@ -1,7 +1,7 @@
 +++
 date = "2017-06-27T10:48:54+09:00"
 title = "Hello"
-
+tags = ["chat"]
 +++
 
 Hello, I'm really glad to open my new blog!

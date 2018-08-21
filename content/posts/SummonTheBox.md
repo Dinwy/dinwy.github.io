@@ -3,6 +3,8 @@ date = "2017-10-30T05:25:18+09:00"
 title = "SummonTheBox"
 type = "webgl"
 unityJSON = "SummonTheBox"
+tags = ["gamejam", "unity3d", "webgl"]
+categories = "project"
 +++
 
 ## How to Play
