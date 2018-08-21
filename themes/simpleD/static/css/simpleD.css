@@ -81,7 +81,8 @@ figure {
 
 .post-wrapper {
   display: block;
-	background-color: white;
+  background-color: white;
+  border-radius: 1em;
 }
 
 .post-wrapper .post-inner {
@@ -92,8 +93,9 @@ figure {
           transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
   padding: 1em;
+  border-radius: 1em;
 }
 
 .post-wrapper .post {
@@ -142,7 +144,7 @@ footer {
   text-align: center;
 }
 
-foooter a {
+footer a {
   color: yellowgreen;
   font-weight: 800;
 }
@@ -186,4 +188,22 @@ color:  #111e6c;
 content: "\f00c";
 font-family: FontAwesome;
 text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  flex: 1 0 32%;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+img {
+  border-radius: 1em;
 }

@@ -1,9 +1,10 @@
 {{ partial "header.html" . }}
 <section>
 <article>
-<div class="post-wrapper">
+<div class="card-container">
 {{ range first 10 .Data.Pages }}
-<a href="{{ .Permalink }}">
+<div class="card">
+<a href="{{ .RelPermalink }}">
 <div class="post-inner">
 <h1>{{ .Title }}</h1>
 {{ $image := .Resources.ByType "image" }}
@@ -16,13 +17,14 @@
 {{ end }}
 
 {{ .Date.Format "02 Jan 2006" }}
-{{ if ge (.Content | countrunes) .Site.Params.summaryLength }}
-{{substr .Content 0 .Site.Params.summaryLength | safeHTML }} ...(more)
-{{else}}
-{{substr .Content 0 .Site.Params.summaryLength| safeHTML }}
-{{end}}
+{{ .Summary }}
+{{ if .Truncated }}
+<hr>
+<b>Read More…</b>
+{{ end }}
 </div>
 </a>
+</div>
 {{- end }}
 </div>
 </article>
