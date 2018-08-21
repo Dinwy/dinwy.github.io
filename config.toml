@@ -1,4 +1,4 @@
-baseurl = "https://dinwy.github.io/"
+baseURL = "https://dinwy.github.io"
 languageCode = "en-us"
 title = "Dinwy's blog"
 theme = "simpleD"
