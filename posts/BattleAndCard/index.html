@@ -7,9 +7,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
 </head>
-
 <body>
-
 
 <header>
 
@@ -44,20 +42,53 @@
         <div class="post-wrapper">
             <div class="post-inner">
                 <h1 class="title">BattleAndCard</h1>
-                <div class="content">
+                <div class="content" id="content">
                     
-                        <div class="game">
-                            <script src="  https://dinwy.github.io//assets/unity/BattleAndCard/TemplateData/UnityProgress.js"></script>
-<script src="  https://dinwy.github.io//assets/unity/BattleAndCard/Build/UnityLoader.js"></script>
+                    <div class="game">
+                        <script src="https://dinwy.github.io//assets/unity/BattleAndCard/TemplateData/UnityProgress.js"></script>
+<script src="https://dinwy.github.io//assets/unity/BattleAndCard/Build/UnityLoader.js"></script>
 <script>
-	var gameInstance = UnityLoader.instantiate("gameContainer", "  https:\/\/dinwy.github.io\//assets/unity/BattleAndCard/Build/LD41.json", { onProgress: UnityProgress });
+	var gameInstance = UnityLoader.instantiate("gameContainer", "https:\/\/dinwy.github.io\//assets/unity/BattleAndCard/Build/LD41.json", { onProgress: UnityProgress });
+</script>
+<script>
+	window.onresize = function (event) {
+		var canvas = document.getElementById('#canvas');
+		var content = document.getElementById('content');
+
+		canvas.width = content.offsetWidth;
+		canvas.height = content.offsetWidth * 0.625;
+	}
 </script>
 </head>
 
 <body>
 	<div class="webgl-content">
-		<div id="gameContainer" style="width: 1280px; height: 720px"></div>
+		<div id="gameContainer" style="width: 100%"></div>
                     </div>  
+
+<h1 id="description">Description</h1>
+
+<p>Fighting + TCG Game. This is my second time in Ludum Dare! Well, I joined last winter ludumdare 40 but I failed :). Thefore now is the first time I’m actually publishing it! My goal was real fighting like as tekken + TCG. So both user concurrently execute the action and show the result.
+How to play</p>
+
+<p>TL; DR: Click the card when you are ready to play!</p>
+
+<pre><code>Player &amp; Computer both has 50 HP
+Damage of Punch is 10
+Damage of Low kick is 15
+When counter attack success, attacker will get doubled damage of their attack. For example, if Player attacked Enemy by punch and get counter attacked, player will get 20 damage.
+</code></pre>
+
+<h2 id="source">Source</h2>
+
+<p>Animations: <a href="https://www.mixamo.com/">https://www.mixamo.com/</a></p>
+
+<p>The site I linked above is really good for prototyping.</p>
+
+<h2 id="how-i-feel">How I feel</h2>
+
+<p>I wish that I could spent more time on this game. Was too busy. Ah… I’m dying now. Haha. I spend too much time for nothing. I should’ve learn about how to prototype faster.</p>
+
                 </div>
             </div>
         </div>

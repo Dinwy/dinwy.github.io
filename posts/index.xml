@@ -2,20 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dinwy&#39;s blog</title>
-    <link>https://dinwy.github.io/posts/index.xml</link>
+    <link>https://dinwy.github.io/posts/</link>
     <description>Recent content in Posts on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 02:30:35 +0900</lastBuildDate>
-    <atom:link href="https://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>BattleAndCard</title>
       <link>https://dinwy.github.io/posts/BattleAndCard/</link>
-      <pubDate>Tue, 24 Apr 2018 02:30:35 +0900</pubDate>
+      <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
       <guid>https://dinwy.github.io/posts/BattleAndCard/</guid>
-      <description></description>
+      <description>Description Fighting + TCG Game. This is my second time in Ludum Dare! Well, I joined last winter ludumdare 40 but I failed :). Thefore now is the first time I’m actually publishing it! My goal was real fighting like as tekken + TCG. So both user concurrently execute the action and show the result. How to play
+TL; DR: Click the card when you are ready to play!</description>
     </item>
     
     <item>
@@ -24,7 +27,13 @@
       <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
       
       <guid>https://dinwy.github.io/posts/SummonTheBox/</guid>
-      <description></description>
+      <description>How to Play By clicking the left mouse button, you will summon the box at the mouse position.
+Use the box and try to go further!
+You will die easily.
+When you summon the box you need to wait for the box is fully summoned.
+Or you will crash to box and die.
+I think I made this game too difficult to play. Maybe fix this later.
+ETC This game was for https://itch.</description>
     </item>
     
     <item>
@@ -33,291 +42,7 @@
       <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
       
       <guid>https://dinwy.github.io/posts/EventInJS/</guid>
-      <description>
-
-&lt;h3 id=&#34;preparations&#34;&gt;Preparations&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You have to know very basic things in JS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;targets&#34;&gt;Targets&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Beginner&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;time-to-read&#34;&gt;Time to read&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;10 - 15 mins&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;source-code&#34;&gt;Source code&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Dinwy/BlogCode&#34;&gt;https://github.com/Dinwy/BlogCode&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&amp;rsquo;m sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question. It surprised me a lot when I found how computer handles it. Thanks to Ron korving who taught to me this. If you already know about event in C# you don&amp;rsquo;t have to read this post.&lt;/p&gt;
-
-&lt;p&gt;To understand the event you need to understand what is function and how it works.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// hello function
-function hello() {
-    // Print Hello
-    console.log(&#39;Hello&#39;);
-}
-
-// Execute the function
-hello();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Look at the code above. We have a function name &lt;strong&gt;hello&lt;/strong&gt;. If you execute the &lt;strong&gt;hello&lt;/strong&gt; function then it will print &lt;strong&gt;Hello&lt;/strong&gt;. How to execute this? Put round brackets next to your function hello.
-I guess you already know this or by reading this you understand how this operate. Now, think about what if we have a function without round brackets.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// hello function
-function hello() {
-    // Print Hello
-    console.log(&#39;Hello&#39;);
-}
-
-// Function without round brackets
-hello;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Surprisingly this will not throw any errors. Because it&amp;rsquo;s equal to you have a function name hello. Why talking about this obvious thing so verbosely? Behold. You&amp;rsquo;ve already seen the core parts of the event. You may ask when, but think deeply. Whenever you put round brackets next to function name then you execute the code and vice versa. It is the concept of the event! Now we are ready to go further. From here we will take a look through the small model. I&amp;rsquo;ll show all the code first(You can download the code via url). You don&amp;rsquo;t need to read all the code at once. Just give a glance and jump to the next. I&amp;rsquo;ll explain these step by step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;event.js&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&#39;use strict&#39;;
-
-class EE {
-    constructor() {
-        this.handlers = {};
-    }
-
-    subscribe(name, fn) {
-        if (this.handlers[name]) {
-            this.handlers[name].push(fn);
-        } else {
-            this.handlers[name] = [fn];
-        }
-    }
-
-    emit(name, data) {
-        let targetHandler = this.handlers[name];
-        if (!this.handlers[name]) { return; }
-
-        for (let i = 0; i &amp;lt; targetHandler.length; i++) {
-            let fn = targetHandler[i];
-
-            fn(data);
-        }
-    };
-
-    removeListener(name, fn) {
-        let targetHandler = this.handlers[name];
-        if (!targetHandler) { return; }
-
-        let index = targetHandler.indexOf(fn);
-        if (index !== -1) {
-            targetHandler.splice(index, 1);
-        }
-    };
-
-    once(name, fn) {
-        let that = this;
-        this.subscribe(name, function handler(data) {
-            that.removeListener(name, handler);
-            fn(data);
-        });
-    };
-}
-
-module.exports = new EE();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;main.js&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&#39;use strict&#39;;
-
-const Event = require(&#39;./events.js&#39;);
-
-function eventA (msg) {
-    console.log(`eventA: Got a message, ${msg}`);
-}
-
-function eventB (msg) {
-    console.log(`eventB: Got a message, ${msg}`);
-}
-
-// Add two listener which listening to the event name &#39;message&#39;
-Event.subscribe(&#39;message&#39;, eventA);
-Event.subscribe(&#39;message&#39;, eventB);
-// Listening event name &#39;alert&#39;
-Event.subscribe(&#39;alert&#39;, (msg) =&amp;gt; console.log(`Got a alert, ${msg}`));
-
-// Emit the &#39;message&#39; event
-Event.emit(&#39;message&#39;, &#39;Hello there&#39;);
-console.log(&#39;------------&#39;);
-
-// Add a listener which only listen once
-Event.once(&#39;message&#39;, (msg) =&amp;gt; console.log(`eventC: Got a message, ${msg}`));
-
-// Emit the &#39;message&#39; event
-Event.emit(&#39;message&#39;, &#39;Are you listening?&#39;);
-console.log(&#39;------------&#39;);
-
-// Remove Event A
-Event.removeListener(&#39;message&#39;, eventA);
-// Emit the &#39;message&#39; event again
-Event.emit(&#39;message&#39;, &#39;Hello?&#39;);
-console.log(&#39;------------&#39;);
-
-// Emit the event
-Event.emit(&#39;alert&#39;, &#39;Warning!&#39;);
-
-// Results
-/*
-eventA: Got a message, Hello there
-eventB: Got a message, Hello there
-------------
-eventA: Got a message, Are you listening?
-eventB: Got a message, Are you listening?
-eventC: Got a message, Are you listening?
-------------
-eventB: Got a message, Hello?
-------------
-Got a alert, Warning!
-*/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start to explain this step-by-step. We have two files &lt;strong&gt;event.js&lt;/strong&gt; and &lt;strong&gt;main.js&lt;/strong&gt;. File &lt;strong&gt;event.js&lt;/strong&gt; is containing EE class which defines the event. And file &lt;strong&gt;main.js&lt;/strong&gt; is where you use the event class. To make a long story short, we will store functions in a variable and call it whenever we want. Let&amp;rsquo;s check out the first three parts of &lt;strong&gt;event.js&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;First three parts of event.js&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&#39;use strict&#39;;
-
-class EE {
-    constructor() {
-        this.handlers = {};
-    }
-
-    subscribe(name, fn) {
-        if (this.handlers[name]) {
-            this.handlers[name].push(fn);
-        } else {
-            this.handlers[name] = [fn];
-        }
-    }
-
-    emit(name, data) {
-        let targetHandler = this.handlers[name];
-        if (!this.handlers[name]) { return; }
-
-        for (let i = 0; i &amp;lt; targetHandler.length; i++) {
-            let fn = targetHandler[i];
-
-            fn(data);
-        }
-    };
-...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We have a class which name is EE. This EE class will be instantiated constructor which will make a with empty object named &lt;strong&gt;handlers&lt;/strong&gt;. Clearly, &lt;strong&gt;handlers&lt;/strong&gt; will store keys and values. Each keys will have a array value to store functions. Next, EE has &lt;strong&gt;subscribe&lt;/strong&gt; function. Which will actually push the functions into &lt;strong&gt;handlers&lt;/strong&gt; with a key. It will takes two parameters name and function. Name is key inside of handlers and be used as identifier. That decides which event will be stored and called. And fn parameter represents function which you want to store and call. Last, EE has &lt;strong&gt;emit&lt;/strong&gt; function. &lt;strong&gt;emit&lt;/strong&gt; have two parameters. Name will be used to invoke the event which you&amp;rsquo;ve defined before in the  &lt;strong&gt;subscribe&lt;/strong&gt;. Data is the thing what you want to hand over to the function you&amp;rsquo;ve defined in &lt;strong&gt;subscribe&lt;/strong&gt;. If you don&amp;rsquo;t understand this part clearly yet then it&amp;rsquo;s time to go to the main.js and have to read the first part.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;First parts of the main.js&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&#39;use strict&#39;;
-
-const Event = require(&#39;./events.js&#39;);
-
-function eventA (msg) {
-    console.log(`eventA: Got a message, ${msg}`);
-}
-
-function eventB (msg) {
-    console.log(`eventB: Got a message, ${msg}`);
-}
-
-// Listening to event name &#39;message&#39; with two functions respectively
-Event.subscribe(&#39;message&#39;, eventA);
-Event.subscribe(&#39;message&#39;, eventB);
-// Listening to event name &#39;alert&#39;
-Event.subscribe(&#39;alert&#39;, (msg) =&amp;gt; console.log(`Got a alert, ${msg}`));
-
-// Emit the &#39;message&#39; event
-Event.emit(&#39;message&#39;, &#39;Hello there&#39;);
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Main.js is using event.js what we&amp;rsquo;ve defined. And &lt;strong&gt;Event&lt;/strong&gt; is listening to two event &lt;em&gt;message&lt;/em&gt; and &lt;em&gt;alert&lt;/em&gt; respectively. eventA &amp;amp; eventB is listening to the event &lt;strong&gt;message&lt;/strong&gt;. Which means that whenever &lt;strong&gt;message&lt;/strong&gt; event has been invoked then these two functions will be called and executed. Additionally, anonymous function is listening to the event name &lt;strong&gt;alert&lt;/strong&gt;. At the end of the code above &lt;strong&gt;Event.emit&lt;/strong&gt; is invoking &lt;strong&gt;message&lt;/strong&gt; event with a message &lt;em&gt;&amp;lsquo;Hello there&amp;rsquo;&lt;/em&gt;. This is functionally equal to the function below.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function anonymousFunction(msg) {
-    console.log(`eventName: Got a message, ${msg}`);
-}
-
-anonymousFunction(&#39;Hello there&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is everything about how event works. If you&amp;rsquo;re still confused then think about what handler variable contains. Currently, it will have key value data like as below.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What EE.handler contains&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;{
-    &#39;message&#39;: [eventA, eventB]
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;See how simple it is! Handler object has key &lt;strong&gt;message&lt;/strong&gt;. Also &amp;lsquo;message&amp;rsquo; have two functions eventA and eventB. Therefore, If you invoke event &amp;lsquo;message&amp;rsquo; by writing &lt;code&gt;Event.Emit(&#39;message&#39;, &#39;Hello there&#39;)&lt;/code&gt; then it will execute eventA and eventB. Doesn&amp;rsquo;t seems like I need explain about this more hence I want to explain about the rest parts of EE class. Let&amp;rsquo;s take a look.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The rest parts of EE class&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;class EE {
-...
-    removeListener(name, fn) {
-        let targetHandler = this.handlers[name];
-        if (!targetHandler) { return; }
-
-        let index = targetHandler.indexOf(fn);
-        if (index !== -1) {
-            targetHandler.splice(index, 1);
-        }
-    };
-
-    once(name, fn) {
-        let that = this;
-        this.subscribe(name, function handler(data) {
-            that.removeListener(name, handler);
-            fn(data);
-        });
-    };
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There are two functions left to be explained. EE class have Function &lt;strong&gt;removeListener&lt;/strong&gt; and &lt;strong&gt;once&lt;/strong&gt;. Just like as its name represents, removeListener will remove listener in &lt;strong&gt;handlers&lt;/strong&gt;. It will check &lt;strong&gt;handlers&lt;/strong&gt; object with two parameters. Name and function. So if it is able to find data with given parameters then this method will remove that. And &lt;strong&gt;once&lt;/strong&gt; function will be called only once. After being called then it will remove itself on the list of &lt;strong&gt;handlers&lt;/strong&gt;. Thus the result of running this code will be the same as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Results
-/*
-eventA: Got a message, Hello there
-eventB: Got a message, Hello there
-------------
-eventA: Got a message, Are you listening?
-eventB: Got a message, Are you listening?
-eventC: Got a message, Are you listening?
-------------
-eventB: Got a message, Hello?
-------------
-Got a alert, Warning!
-*/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally this is done! Now you know how event works. You could understand why people don&amp;rsquo;t explain about the event. The reason why I think is it&amp;rsquo;s too easy so this is regarded as don&amp;rsquo;t need to be explained. Though this is really important in programming. I&amp;rsquo;m sorry that the explanations were way too verbose. I want to make a lame excuse that this was the first I&amp;rsquo;ve written. I hope that you&amp;rsquo;ve understood this well enough and also this was helpful too. Bye.&lt;/p&gt;
-</description>
+      <description>Preparations  You have to know very basic things in JS  Targets  Beginner  Time to read  10 - 15 mins  Source code  https://github.com/Dinwy/BlogCode  When I just get started to learn about JS, one of the biggest question was what is the event. How computer knows that I&amp;rsquo;m sending a event? Does computer checking for updates every single time? It was a stupid question but I think other people may ask the some question.</description>
     </item>
     
     <item>
@@ -326,16 +51,9 @@ Got a alert, Warning!
       <pubDate>Tue, 27 Jun 2017 10:48:54 +0900</pubDate>
       
       <guid>https://dinwy.github.io/posts/Hello/</guid>
-      <description>&lt;p&gt;Hello, I&amp;rsquo;m really glad to open my new blog!&lt;/p&gt;
-
-&lt;p&gt;The main purpose of this blog is to help people just get started programming in JS or C#. I&amp;rsquo;ll write down very easy things in coding. What beginners need to know but usually not explained well or being skipped because which are regarded as basic. Also I&amp;rsquo;ll save some rough ideas somehow related with coding.&lt;/p&gt;
-
-&lt;p&gt;I hope you could get some knowledge from here. One thing I&amp;rsquo;m worring about is my english writing skill. I&amp;rsquo;m not a native english user so that might makes readers hard to understand the context. However I&amp;rsquo;ll try my best.&lt;/p&gt;
-
-&lt;p&gt;FYI, you can try to know more about me in the ME page.&lt;/p&gt;
-
-&lt;p&gt;Have fun!&lt;/p&gt;
-</description>
+      <description>Hello, I&amp;rsquo;m really glad to open my new blog!
+The main purpose of this blog is to help people just get started programming in JS or C#. I&amp;rsquo;ll write down very easy things in coding. What beginners need to know but usually not explained well or being skipped because which are regarded as basic. Also I&amp;rsquo;ll save some rough ideas somehow related with coding.
+I hope you could get some knowledge from here.</description>
     </item>
     
   </channel>

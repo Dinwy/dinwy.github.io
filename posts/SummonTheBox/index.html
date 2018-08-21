@@ -7,9 +7,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
 </head>
-
-<body style="max-width:1350px !important">
-
+<body>
 
 <header>
 
@@ -44,20 +42,48 @@
         <div class="post-wrapper">
             <div class="post-inner">
                 <h1 class="title">SummonTheBox</h1>
-                <div class="content">
+                <div class="content" id="content">
                     
-                        <div class="game">
-                        <script src="  https://dinwy.github.io//assets/unity/SummonTheBox/TemplateData/UnityProgress.js"></script>
-<script src="  https://dinwy.github.io//assets/unity/SummonTheBox/Build/UnityLoader.js"></script>
+                    <div class="game">
+                        <script src="https://dinwy.github.io//assets/unity/SummonTheBox/TemplateData/UnityProgress.js"></script>
+<script src="https://dinwy.github.io//assets/unity/SummonTheBox/Build/UnityLoader.js"></script>
 <script>
-	var gameInstance = UnityLoader.instantiate("gameContainer", "  https:\/\/dinwy.github.io\//assets/unity/SummonTheBox/Build/SummonTheBox.json", { onProgress: UnityProgress });
+	var gameInstance = UnityLoader.instantiate("gameContainer", "https:\/\/dinwy.github.io\//assets/unity/SummonTheBox/Build/SummonTheBox.json", { onProgress: UnityProgress });
+</script>
+<script>
+	window.onresize = function (event) {
+		var canvas = document.getElementById('#canvas');
+		var content = document.getElementById('content');
+
+		canvas.width = content.offsetWidth;
+		canvas.height = content.offsetWidth * 0.625;
+	}
 </script>
 </head>
 
 <body>
 	<div class="webgl-content">
-		<div id="gameContainer" style="width: 1280px; height: 720px"></div>
-                     
+		<div id="gameContainer" style="width: 100%"></div>
+                    </div>  
+
+<h2 id="how-to-play">How to Play</h2>
+
+<p>By clicking the left mouse button, you will summon the box at the mouse position.</p>
+
+<p>Use the box and try to go further!</p>
+
+<p>You will die easily.</p>
+
+<p>When you summon the box you need to wait for the box is fully summoned.</p>
+
+<p>Or you will crash to box and die.</p>
+
+<p>I think I made this game too difficult to play. Maybe fix this later.</p>
+
+<h2 id="etc">ETC</h2>
+
+<p>This game was for <a href="https://itch.io/jam/game-dev-network-elderberry-jam">https://itch.io/jam/game-dev-network-elderberry-jam</a></p>
+
                 </div>
             </div>
         </div>
