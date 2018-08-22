@@ -6,15 +6,15 @@
 <div class="card">
 <a href="{{ .RelPermalink }}">
 <div class="post-inner">
-<h1>{{ .Title }}</h1>
 {{ $image := .Resources.ByType "image" }}
 {{ with $image }}
-<div class="Image">
+<div class="image">
 {{ range . }}
 <img src="{{ .RelPermalink }}">
 {{ end }}
 </div>
 {{ end }}
+<h1>{{ .Title }}</h1>
 
 {{ .Date.Format "02 Jan 2006" }}
 {{ .Summary }}

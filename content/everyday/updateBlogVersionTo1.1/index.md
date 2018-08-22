@@ -5,6 +5,8 @@ tags = ["coding", "hugo", "javascript"]
 categories = "everyday"
 +++
 
+![NewBlog](/everyday/updateBlogVersionTo1.1/images/updateBlogVersionTo1.1.JPG)
+
 Blog has been updated to record my practical & creative life.
 
 - Fix flexible problem in WebGL

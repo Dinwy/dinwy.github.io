@@ -204,6 +204,12 @@ text-decoration: none;
   padding: 1em;
 }
 
+.image {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
 img {
   border-radius: 1em;
 }

@@ -1,7 +1,7 @@
-<script src="{{ .Site.BaseURL }}/assets/unity/{{ .Title }}/TemplateData/UnityProgress.js"></script>
-<script src="{{ .Site.BaseURL }}/assets/unity/{{ .Title }}/Build/UnityLoader.js"></script>
+<script src="{{ .Site.BaseURL }}assets/unity/{{ .File.BaseFileName }}/TemplateData/UnityProgress.js"></script>
+<script src="{{ .Site.BaseURL }}assets/unity/{{ .File.BaseFileName }}/Build/UnityLoader.js"></script>
 <script>
-	var gameInstance = UnityLoader.instantiate("gameContainer", "{{ .Site.BaseURL }}/assets/unity/{{ .Title }}/Build/{{ .Params.unityJSON }}.json", { onProgress: UnityProgress });
+	var gameInstance = UnityLoader.instantiate("gameContainer", "{{ .Site.BaseURL }}assets/unity/{{ .File.BaseFileName }}/Build/{{ .Params.unityJSON }}.json", { onProgress: UnityProgress });
 </script>
 <script>
 	window.onresize = function (event) {
