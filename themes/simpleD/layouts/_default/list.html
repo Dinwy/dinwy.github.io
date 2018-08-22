@@ -3,30 +3,42 @@
 <section>
 <article>
 <div class="post-wrapper padder-1em">
-<div class="list-inner">
 <h1 class="title">{{ .Title }}</h1>
-<ul>
+</div>
+<div class="card-container">
 {{ range .Data.Pages }}
-<li>
-<a href="{{ .Permalink }}">
-{{ .Title }}
-</a>
-<div class="date">
+<div class="card">
+<a href="{{ .RelPermalink }}">
+<div class="post-inner">
+<h1>{{ .Title }}</h1>
+{{ $image := .Resources.ByType "image" }}
+{{ with $image }}
+<div class="Image">
+{{ range . }}
+<img src="{{ .RelPermalink }}">
+{{ end }}
+</div>
+{{ end }}
+
 {{ .Date.Format "02 Jan 2006" }}
-</div>
-</li>
+{{ .Summary }}
+{{ if .Truncated }}
+<hr>
+<b>Read More…</b>
 {{ end }}
-</ul>
-{{ with .Resources.ByType "image" }}
-{{ end }}
 </div>
+</a>
+</div>
+{{- end }}
 </div>
 </article>
 </section>
+
 <div class="nav nav-home">
 <a href="{{ .Site.BaseURL }}">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
+
 {{ partial "footer.html" . }}
