@@ -2,6 +2,7 @@
 date = "2018-04-24T04:23:22+09:00"
 title = "Battle and card"
 type = "webgl"
+unityFolder = "BattleAndCard"
 unityJSON = "LD41"
 tags = ["gamejam", "unity3d", "webgl"]
 categories = "gamejam"
