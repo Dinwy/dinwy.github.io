@@ -10,9 +10,11 @@
 <div class="card">
 <a href="{{ .RelPermalink }}">
 <div class="post-inner">
+<div class="image-wrapper">
+
 {{ if .Params.thumbnail }}
 <div class="image">
-<img src="{{ .Params.thumbnail }}" width="100%" height="40%">
+<img class="constraint-image-size" src="{{ .Params.thumbnail }}" width="100%">
 </div>    
 {{ end }}
 
@@ -20,10 +22,12 @@
 {{ with $image }}
 <div class="image">
 {{ range . }}
-<img src="{{ .RelPermalink }}">
+<img class="constraint-image-size" src="{{ .RelPermalink }}" width="100%">
 {{ end }}
 </div>
 {{ end }}
+</div>
+
 <h1>{{ .Title }}</h1>
 {{ .Date.Format "02 Jan 2006" }}
 {{ .Summary }}

@@ -197,7 +197,7 @@ text-decoration: none;
 
 .card {
   background-color: white;
-  flex: 1 0 32%;
+  flex: 1 0 19%;
   box-sizing: border-box;
   margin: 1rem .25em;
   border-radius: 1em;
@@ -210,7 +210,14 @@ text-decoration: none;
   justify-content: center;
 }
 
+.image-wrapper {
+}
+
+.constraint-image-size {
+  max-width: 100%;
+  max-height: 300px;
+}
+
 img {
   border-radius: 1em;
-  max-width: 100%
 }
