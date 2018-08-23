@@ -7,7 +7,7 @@ thumbnail = "/img/"
 +++
 
 <div class="image">
-<img src="{{ Params.thumbnail }}">
+<img src="/img/">
 </div>
 
-**Insert Lead paragraph here.**
+# Description
