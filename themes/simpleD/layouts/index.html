@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+
 <section>
 <article>
 <div class="card-container">
@@ -7,10 +8,11 @@
 <a href="{{ .RelPermalink }}">
 <div class="post-inner">
 <div class="image-wrapper">
+
 {{ if .Params.thumbnail }}
 <div class="image">
 <img class="constraint-image-size" src="{{ .Params.thumbnail }}" width="100%">
-</div>    
+</div>
 {{ end }}
 
 {{ $image := .Resources.ByType "image" }}
