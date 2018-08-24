@@ -204,9 +204,6 @@ text-decoration: none;
 }
 
 .image {
-  margin: 1em;
-  display: flex;
-  justify-content: center;
 }
 
 .image-wrapper {
@@ -219,4 +216,5 @@ text-decoration: none;
 
 img {
   border-radius: 1em;
+  width: 100%
 }
