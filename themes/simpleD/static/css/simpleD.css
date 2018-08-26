@@ -31,14 +31,13 @@ a {
 }
 
 a:link, a:visited {
-  color: black;
+  color: #666666;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
-a:hover, a:active {
-}
+a:hover, a:active { }
 
 header {
   margin-top: 1em;
@@ -114,9 +113,6 @@ figure {
   border-radius: 1em;
 }
 
-.post-inner {
-}
-
 .post-wrapper .post {
   background-color: white;
   display: block;
@@ -133,7 +129,7 @@ figure {
 
 .post-inner h1 {
   font-size: 2em;
-  color: #1258ed;
+  color: #0e6ffe;
   margin: 0 auto;
 }
 
