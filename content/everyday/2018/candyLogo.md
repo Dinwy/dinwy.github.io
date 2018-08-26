@@ -10,6 +10,8 @@ thumbnail = "/img/candyLogo.jpg"
 <img src="/img/candyLogo.jpg">
 </div>
 
+<div class="description">
+
 # Description
 
 Nothing much. Wanted to create something. So I decide to create my logo.

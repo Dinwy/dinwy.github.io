@@ -4,6 +4,7 @@ title = "Hello"
 tags = ["chat"]
 +++
 
+<div>
 Hello, I'm really glad to open my new blog!
 
 The main purpose of this blog is record my process and share my knowledge to people.

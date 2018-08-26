@@ -5,8 +5,11 @@ tags = ["coding", "hugo", "javascript"]
 categories = "everyday"
 +++
 
-![NewBlog](/everyday/updateBlogVersionTo1.1/images/updateBlogVersionTo1.1.JPG)
+<div class="image" style="max-width: 600px;">
+<img src="/everyday/updateBlogVersionTo1.1/images/updateBlogVersionTo1.1.JPG">
+</div>
 
+<div class="description">
 Blog has been updated to record my practical & creative life.
 
 - Fix flexible problem in WebGL

@@ -6,10 +6,11 @@ categories = "everyday"
 thumbnail = "/img/lowpolyHuman.jpg"
 +++
 
-<div class="image">
+<div class="image" style="max-width: 400px;">
 <img src="/img/lowpolyHuman.jpg">
 </div>
 
-# Description
+<div class="description">
+<h1 style="width=100%">Description</h1>
 
 First time I made a model by myself.

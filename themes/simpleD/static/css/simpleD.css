@@ -203,7 +203,24 @@ text-decoration: none;
   padding: 1em;
 }
 
+.game {
+  width: 1080px;
+}
+
+.content {
+  display: flex;
+  padding: 1em;
+}
+
+.description {
+  padding: 0em 0em 0em 1rem;
+  max-width: 100%;
+}
+
 .image {
+  padding: 1rem;
+  min-width: 400px;
+  max-width: 1080px;
 }
 
 .image-wrapper {

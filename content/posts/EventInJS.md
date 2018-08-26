@@ -5,6 +5,8 @@ tags = ["javascript"]
 categories = "legacy"
 +++
 
+<div>
+
 ### Preparations
 * You have to know very basic things in JS
 
