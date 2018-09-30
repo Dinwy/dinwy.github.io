@@ -233,10 +233,7 @@ text-decoration: none;
 .image {
   padding: 1rem;
   min-width: 300px;
-  max-width: 1080px;
-}
-
-.image-wrapper {
+  max-width: 100%;
 }
 
 .constraint-image-size {
