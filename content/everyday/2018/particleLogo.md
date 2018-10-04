@@ -1,7 +1,7 @@
 +++
-title = "ParticleLogo"
+title = "Particle Logo"
 date = 2018-10-04T01:25:48+09:00
-tags = []
+tags = ["unity3d", "particle", "vfx"]
 categories = "everyday"
 thumbnail = "/img/particleLogo_min.gif"
 +++
