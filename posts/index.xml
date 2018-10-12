@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>BattleAndCard</title>
+      <title>Battle and card</title>
       <link>https://dinwy.github.io/posts/BattleAndCard/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
@@ -22,7 +22,7 @@ TL; DR: Click the card when you are ready to play!</description>
     </item>
     
     <item>
-      <title>SummonTheBox</title>
+      <title>Summon The Box</title>
       <link>https://dinwy.github.io/posts/SummonTheBox/</link>
       <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
       
@@ -52,8 +52,9 @@ ETC This game was for https://itch.</description>
       
       <guid>https://dinwy.github.io/posts/Hello/</guid>
       <description>Hello, I&amp;rsquo;m really glad to open my new blog!
-The main purpose of this blog is to help people just get started programming in JS or C#. I&amp;rsquo;ll write down very easy things in coding. What beginners need to know but usually not explained well or being skipped because which are regarded as basic. Also I&amp;rsquo;ll save some rough ideas somehow related with coding.
-I hope you could get some knowledge from here.</description>
+The main purpose of this blog is record my process and share my knowledge to people.
+I hope you could get some fun from here. I&amp;rsquo;m worrying about one thing that my english writing skill. I&amp;rsquo;m not a native english speaker so I&amp;rsquo;m sure that I&amp;rsquo;ll make many silly mistakes. However I&amp;rsquo;ll try my best to write it correctly.
+Have fun!</description>
     </item>
     
   </channel>

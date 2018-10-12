@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project on Dinwy&#39;s blog</title>
-    <link>https://dinwy.github.io/categories/project/</link>
-    <description>Recent content in Project on Dinwy&#39;s blog</description>
+    <title>Gamejam on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/categories/gamejam/</link>
+    <description>Recent content in Gamejam on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
     
-	<atom:link href="https://dinwy.github.io/categories/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dinwy.github.io/categories/gamejam/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BattleAndCard</title>
+      <title>Battle and card</title>
       <link>https://dinwy.github.io/posts/BattleAndCard/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
@@ -22,7 +22,7 @@ TL; DR: Click the card when you are ready to play!</description>
     </item>
     
     <item>
-      <title>SummonTheBox</title>
+      <title>Summon The Box</title>
       <link>https://dinwy.github.io/posts/SummonTheBox/</link>
       <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
       

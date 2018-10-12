@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rigging on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/rigging/</link>
+    <description>Recent content in Rigging on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Sep 2018 01:03:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/tags/rigging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BoxRigging</title>
+      <link>https://dinwy.github.io/everyday/2018/boxRigging/</link>
+      <pubDate>Fri, 07 Sep 2018 01:03:09 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/boxRigging/</guid>
+      <description>Description Today I&amp;rsquo;ve practice box rigging.
+Thanks to https://youtu.be/qx5L8K99j10 https://youtu.be/yZhM7CR91so</description>
+    </item>
+    
+  </channel>
+</rss>

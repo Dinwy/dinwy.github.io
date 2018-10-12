@@ -6,13 +6,52 @@
     <description>Recent content in Unity3d on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Oct 2018 18:38:17 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BattleAndCard</title>
+      <title>Particle Logo#2</title>
+      <link>https://dinwy.github.io/everyday/2018/particleLogo#2/</link>
+      <pubDate>Thu, 04 Oct 2018 18:38:17 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/particleLogo#2/</guid>
+      <description>Description Improve particle logo https://twitter.com/Dinwy2016/status/1047729403063500800
+Thanks to https://twitter.com/TheMirzaBeig/status/1047517320174682113</description>
+    </item>
+    
+    <item>
+      <title>Particle Logo</title>
+      <link>https://dinwy.github.io/everyday/2018/particleLogo/</link>
+      <pubDate>Thu, 04 Oct 2018 01:25:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/particleLogo/</guid>
+      <description>Description Practicing particle system.
+Thanks to https://twitter.com/TheMirzaBeig/status/1045237229470339073</description>
+    </item>
+    
+    <item>
+      <title>BCD #2</title>
+      <link>https://dinwy.github.io/everyday/2018/BCD2/</link>
+      <pubDate>Wed, 05 Sep 2018 00:27:50 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/BCD2/</guid>
+      <description>Description Performance improvements and bug fixes.  Since game graphic has not been changed much it looks same as before. But game changed a bit more than what it looks like.
+Changes  Split logic and UI properly (WIP) Putting tie logic (WIP) Enable GPU instancing Fix Render setting Camera adjustment and resize character  Small-Talk I&amp;rsquo;ve decided to do programming everyday but I was too lazy. However I&amp;rsquo;m glad I&amp;rsquo;m still working on it and it seems fine so far.</description>
+    </item>
+    
+    <item>
+      <title>BCD -temp title- Game Prototype</title>
+      <link>https://dinwy.github.io/everyday/2018/BCD1/</link>
+      <pubDate>Sun, 26 Aug 2018 23:21:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/BCD1/</guid>
+      <description>Description This weekend, I made a small game prototype for the future.  I always wanted to make a hexagon based board game. I&amp;rsquo;d have this idea since 2014 but lack of knowledge of programming I couldn&amp;rsquo;t able to make it. However now I can do it without big problems. There are some problems which I need to solve but generally it is okay. Current state of this game is more likely a architectural setup before building a real game.</description>
+    </item>
+    
+    <item>
+      <title>Battle and card</title>
       <link>https://dinwy.github.io/posts/BattleAndCard/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
@@ -22,7 +61,7 @@ TL; DR: Click the card when you are ready to play!</description>
     </item>
     
     <item>
-      <title>SummonTheBox</title>
+      <title>Summon The Box</title>
       <link>https://dinwy.github.io/posts/SummonTheBox/</link>
       <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
       

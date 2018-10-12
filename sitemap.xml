@@ -3,6 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/everyday/2018/lowpolyForest/</loc>
+    <lastmod>2018-10-12T18:46:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/particleLogo#2/</loc>
+    <lastmod>2018-10-04T18:38:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/particleLogo/</loc>
+    <lastmod>2018-10-04T01:25:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/bcdWithUnity/</loc>
+    <lastmod>2018-10-01T05:16:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/hexTile/</loc>
+    <lastmod>2018-09-27T02:19:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/robotRigging/</loc>
+    <lastmod>2018-09-22T21:32:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/boxRigging/</loc>
+    <lastmod>2018-09-07T01:03:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/BCD2/</loc>
+    <lastmod>2018-09-05T00:27:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/BCD1/</loc>
+    <lastmod>2018-08-26T23:21:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/pbrMarble/</loc>
+    <lastmod>2018-08-25T21:55:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/lowpolyHuman/</loc>
+    <lastmod>2018-08-24T01:36:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2018/candyLogo/</loc>
+    <lastmod>2018-08-22T22:41:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/updateBlogVersionTo1.1/</loc>
+    <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/posts/BattleAndCard/</loc>
     <lastmod>2018-04-24T04:23:22+09:00</lastmod>
   </url>
@@ -28,6 +93,18 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/3d/</loc>
+    <lastmod>2018-08-25T21:55:02+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/blender/</loc>
+    <lastmod>2018-09-07T01:03:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -39,8 +116,32 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/coding/</loc>
+    <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2018-10-12T18:46:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/categories/everyday/</loc>
+    <lastmod>2018-10-12T18:46:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/</loc>
+    <lastmod>2018-10-12T18:46:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/game/</loc>
+    <lastmod>2018-09-05T00:27:50+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,14 +152,38 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/categories/gamejam/</loc>
+    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/hugo/</loc>
+    <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/javascript/</loc>
+    <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/categories/legacy/</loc>
     <lastmod>2017-06-27T11:00:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/lecture/</loc>
-    <lastmod>2017-06-27T11:00:10+09:00</lastmod>
+    <loc>https://dinwy.github.io/tags/particle/</loc>
+    <lastmod>2018-10-04T18:38:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/pbr/</loc>
+    <lastmod>2018-08-25T21:55:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,20 +194,32 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/project/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <loc>https://dinwy.github.io/tags/rendering/</loc>
+    <lastmod>2018-08-22T22:41:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/rigging/</loc>
+    <lastmod>2018-09-07T01:03:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/tags/</loc>
-    <lastmod>2017-06-27T10:48:54+09:00</lastmod>
+    <lastmod>2018-08-25T21:55:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/tags/unity3d/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2018-10-04T18:38:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/vfx/</loc>
+    <lastmod>2018-10-04T18:38:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   

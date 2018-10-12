@@ -6,10 +6,20 @@
     <description>Recent content in Javascript on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2017 11:00:10 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 19:57:57 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Update blog version to 1.1</title>
+      <link>https://dinwy.github.io/everyday/updateBlogVersionTo1.1/</link>
+      <pubDate>Tue, 21 Aug 2018 19:57:57 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/updateBlogVersionTo1.1/</guid>
+      <description> Blog has been updated to record my practical &amp;amp; creative life.
+ Fix flexible problem in WebGL Use taxonomy Add new FontAwesome icons on the menus Fix minor bugs Truncate properly Show thumbnail Cleanup CSS  </description>
+    </item>
     
     <item>
       <title>Event in JS</title>

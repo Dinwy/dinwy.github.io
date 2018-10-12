@@ -11,20 +11,29 @@
     
     
     <item>
-      <title>Lecture</title>
-      <link>https://dinwy.github.io/categories/lecture/</link>
-      <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
+      <title>Everyday</title>
+      <link>https://dinwy.github.io/categories/everyday/</link>
+      <pubDate>Fri, 12 Oct 2018 18:46:47 +0900</pubDate>
       
-      <guid>https://dinwy.github.io/categories/lecture/</guid>
+      <guid>https://dinwy.github.io/categories/everyday/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Project</title>
-      <link>https://dinwy.github.io/categories/project/</link>
+      <title>Gamejam</title>
+      <link>https://dinwy.github.io/categories/gamejam/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
-      <guid>https://dinwy.github.io/categories/project/</guid>
+      <guid>https://dinwy.github.io/categories/gamejam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Legacy</title>
+      <link>https://dinwy.github.io/categories/legacy/</link>
+      <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/categories/legacy/</guid>
       <description></description>
     </item>
     

@@ -6,13 +6,140 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 18:46:47 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BattleAndCard</title>
+      <title>LowpolyForest</title>
+      <link>https://dinwy.github.io/everyday/2018/lowpolyForest/</link>
+      <pubDate>Fri, 12 Oct 2018 18:46:47 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/lowpolyForest/</guid>
+      <description>Description Low poly forest. https://twitter.com/Dinwy2016/status/1048064177909071873</description>
+    </item>
+    
+    <item>
+      <title>Particle Logo#2</title>
+      <link>https://dinwy.github.io/everyday/2018/particleLogo#2/</link>
+      <pubDate>Thu, 04 Oct 2018 18:38:17 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/particleLogo#2/</guid>
+      <description>Description Improve particle logo https://twitter.com/Dinwy2016/status/1047729403063500800
+Thanks to https://twitter.com/TheMirzaBeig/status/1047517320174682113</description>
+    </item>
+    
+    <item>
+      <title>Particle Logo</title>
+      <link>https://dinwy.github.io/everyday/2018/particleLogo/</link>
+      <pubDate>Thu, 04 Oct 2018 01:25:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/particleLogo/</guid>
+      <description>Description Practicing particle system.
+Thanks to https://twitter.com/TheMirzaBeig/status/1045237229470339073</description>
+    </item>
+    
+    <item>
+      <title>BCD graphic update</title>
+      <link>https://dinwy.github.io/everyday/2018/bcdWithUnity/</link>
+      <pubDate>Mon, 01 Oct 2018 05:16:38 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/bcdWithUnity/</guid>
+      <description>Description Trying to understand graphical side and rigging.</description>
+    </item>
+    
+    <item>
+      <title>HexTile</title>
+      <link>https://dinwy.github.io/everyday/2018/hexTile/</link>
+      <pubDate>Thu, 27 Sep 2018 02:19:20 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/hexTile/</guid>
+      <description>Description I&amp;rsquo;ve been investigating about using UV map and material properly.
+Thanks to https://youtu.be/DD84GSJiTVc</description>
+    </item>
+    
+    <item>
+      <title>RobotRigging</title>
+      <link>https://dinwy.github.io/everyday/2018/robotRigging/</link>
+      <pubDate>Sat, 22 Sep 2018 21:32:56 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/robotRigging/</guid>
+      <description>Description I&amp;rsquo;ve been trying to understand rigging. So I&amp;rsquo;ve made robot rigging.
+Source from Robot model https://poly.google.com/view/1kbGZOnhOwf</description>
+    </item>
+    
+    <item>
+      <title>BoxRigging</title>
+      <link>https://dinwy.github.io/everyday/2018/boxRigging/</link>
+      <pubDate>Fri, 07 Sep 2018 01:03:09 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/boxRigging/</guid>
+      <description>Description Today I&amp;rsquo;ve practice box rigging.
+Thanks to https://youtu.be/qx5L8K99j10 https://youtu.be/yZhM7CR91so</description>
+    </item>
+    
+    <item>
+      <title>BCD #2</title>
+      <link>https://dinwy.github.io/everyday/2018/BCD2/</link>
+      <pubDate>Wed, 05 Sep 2018 00:27:50 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/BCD2/</guid>
+      <description>Description Performance improvements and bug fixes.  Since game graphic has not been changed much it looks same as before. But game changed a bit more than what it looks like.
+Changes  Split logic and UI properly (WIP) Putting tie logic (WIP) Enable GPU instancing Fix Render setting Camera adjustment and resize character  Small-Talk I&amp;rsquo;ve decided to do programming everyday but I was too lazy. However I&amp;rsquo;m glad I&amp;rsquo;m still working on it and it seems fine so far.</description>
+    </item>
+    
+    <item>
+      <title>BCD -temp title- Game Prototype</title>
+      <link>https://dinwy.github.io/everyday/2018/BCD1/</link>
+      <pubDate>Sun, 26 Aug 2018 23:21:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/BCD1/</guid>
+      <description>Description This weekend, I made a small game prototype for the future.  I always wanted to make a hexagon based board game. I&amp;rsquo;d have this idea since 2014 but lack of knowledge of programming I couldn&amp;rsquo;t able to make it. However now I can do it without big problems. There are some problems which I need to solve but generally it is okay. Current state of this game is more likely a architectural setup before building a real game.</description>
+    </item>
+    
+    <item>
+      <title>PBR Marble</title>
+      <link>https://dinwy.github.io/everyday/2018/pbrMarble/</link>
+      <pubDate>Sat, 25 Aug 2018 21:55:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/pbrMarble/</guid>
+      <description>Description Trying to understand PBR Texture
+Source https://freepbr.com/</description>
+    </item>
+    
+    <item>
+      <title>LowpolyHuman</title>
+      <link>https://dinwy.github.io/everyday/2018/lowpolyHuman/</link>
+      <pubDate>Fri, 24 Aug 2018 01:36:33 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/lowpolyHuman/</guid>
+      <description>Description
+First time I made a model by myself.</description>
+    </item>
+    
+    <item>
+      <title>CandyLogo</title>
+      <link>https://dinwy.github.io/everyday/2018/candyLogo/</link>
+      <pubDate>Wed, 22 Aug 2018 22:41:20 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/candyLogo/</guid>
+      <description>  Description Nothing much. Wanted to create something. So I decide to create my logo. I have spent more time in fixing the website. :(
+Tool  Blender  </description>
+    </item>
+    
+    <item>
+      <title>Update blog version to 1.1</title>
+      <link>https://dinwy.github.io/everyday/updateBlogVersionTo1.1/</link>
+      <pubDate>Tue, 21 Aug 2018 19:57:57 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/updateBlogVersionTo1.1/</guid>
+      <description> Blog has been updated to record my practical &amp;amp; creative life.
+ Fix flexible problem in WebGL Use taxonomy Add new FontAwesome icons on the menus Fix minor bugs Truncate properly Show thumbnail Cleanup CSS  </description>
+    </item>
+    
+    <item>
+      <title>Battle and card</title>
       <link>https://dinwy.github.io/posts/BattleAndCard/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
@@ -22,7 +149,7 @@ TL; DR: Click the card when you are ready to play!</description>
     </item>
     
     <item>
-      <title>SummonTheBox</title>
+      <title>Summon The Box</title>
       <link>https://dinwy.github.io/posts/SummonTheBox/</link>
       <pubDate>Mon, 30 Oct 2017 05:25:18 +0900</pubDate>
       
@@ -52,8 +179,9 @@ ETC This game was for https://itch.</description>
       
       <guid>https://dinwy.github.io/posts/Hello/</guid>
       <description>Hello, I&amp;rsquo;m really glad to open my new blog!
-The main purpose of this blog is to help people just get started programming in JS or C#. I&amp;rsquo;ll write down very easy things in coding. What beginners need to know but usually not explained well or being skipped because which are regarded as basic. Also I&amp;rsquo;ll save some rough ideas somehow related with coding.
-I hope you could get some knowledge from here.</description>
+The main purpose of this blog is record my process and share my knowledge to people.
+I hope you could get some fun from here. I&amp;rsquo;m worrying about one thing that my english writing skill. I&amp;rsquo;m not a native english speaker so I&amp;rsquo;m sure that I&amp;rsquo;ll make many silly mistakes. However I&amp;rsquo;ll try my best to write it correctly.
+Have fun!</description>
     </item>
     
   </channel>
