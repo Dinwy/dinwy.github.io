@@ -108,8 +108,8 @@
 
 <pre><code class="language-js">// hello function
 function hello() {
-	// Print Hello
-	console.log('Hello');
+    // Print Hello
+    console.log('Hello');
 }
 
 // Execute the function
@@ -121,8 +121,8 @@ I guess you already know this or by reading this you understand how this operate
 
 <pre><code class="language-js">// hello function
 function hello() {
-	// Print Hello
-	console.log('Hello');
+    // Print Hello
+    console.log('Hello');
 }
 
 // Function without round brackets
@@ -136,46 +136,46 @@ hello;
 <pre><code class="language-js">'use strict';
 
 class EE {
-	constructor() {
-		this.handlers = {};
-	}
+    constructor() {
+        this.handlers = {};
+    }
 
-	subscribe(name, fn) {
-		if (this.handlers[name]) {
-			this.handlers[name].push(fn);
-		} else {
-			this.handlers[name] = [fn];
-		}
-	}
+    subscribe(name, fn) {
+        if (this.handlers[name]) {
+            this.handlers[name].push(fn);
+        } else {
+            this.handlers[name] = [fn];
+        }
+    }
 
-	emit(name, data) {
-		let targetHandler = this.handlers[name];
-		if (!this.handlers[name]) { return; }
+    emit(name, data) {
+        let targetHandler = this.handlers[name];
+        if (!this.handlers[name]) { return; }
 
-		for (let i = 0; i &lt; targetHandler.length; i++) {
-			let fn = targetHandler[i];
+        for (let i = 0; i &lt; targetHandler.length; i++) {
+            let fn = targetHandler[i];
 
-			fn(data);
-		}
-	};
+            fn(data);
+        }
+    };
 
-	removeListener(name, fn) {
-		let targetHandler = this.handlers[name];
-		if (!targetHandler) { return; }
+    removeListener(name, fn) {
+        let targetHandler = this.handlers[name];
+        if (!targetHandler) { return; }
 
-		let index = targetHandler.indexOf(fn);
-		if (index !== -1) {
-			targetHandler.splice(index, 1);
-		}
-	};
+        let index = targetHandler.indexOf(fn);
+        if (index !== -1) {
+            targetHandler.splice(index, 1);
+        }
+    };
 
-	once(name, fn) {
-		let that = this;
-		this.subscribe(name, function handler(data) {
-			that.removeListener(name, handler);
-			fn(data);
-		});
-	};
+    once(name, fn) {
+        let that = this;
+        this.subscribe(name, function handler(data) {
+            that.removeListener(name, handler);
+            fn(data);
+        });
+    };
 }
 
 module.exports = new EE();
@@ -188,11 +188,11 @@ module.exports = new EE();
 const Event = require('./events.js');
 
 function eventA (msg) {
-	console.log(`eventA: Got a message, ${msg}`);
+    console.log(`eventA: Got a message, ${msg}`);
 }
 
 function eventB (msg) {
-	console.log(`eventB: Got a message, ${msg}`);
+    console.log(`eventB: Got a message, ${msg}`);
 }
 
 // Add two listener which listening to the event name 'message'
@@ -243,28 +243,28 @@ Got a alert, Warning!
 <pre><code class="language-js">'use strict';
 
 class EE {
-	constructor() {
-		this.handlers = {};
-	}
+    constructor() {
+        this.handlers = {};
+    }
 
-	subscribe(name, fn) {
-		if (this.handlers[name]) {
-			this.handlers[name].push(fn);
-		} else {
-			this.handlers[name] = [fn];
-		}
-	}
+    subscribe(name, fn) {
+        if (this.handlers[name]) {
+            this.handlers[name].push(fn);
+        } else {
+            this.handlers[name] = [fn];
+        }
+    }
 
-	emit(name, data) {
-		let targetHandler = this.handlers[name];
-		if (!this.handlers[name]) { return; }
+    emit(name, data) {
+        let targetHandler = this.handlers[name];
+        if (!this.handlers[name]) { return; }
 
-		for (let i = 0; i &lt; targetHandler.length; i++) {
-			let fn = targetHandler[i];
+        for (let i = 0; i &lt; targetHandler.length; i++) {
+            let fn = targetHandler[i];
 
-			fn(data);
-		}
-	};
+            fn(data);
+        }
+    };
 ...
 }
 </code></pre>
@@ -278,11 +278,11 @@ class EE {
 const Event = require('./events.js');
 
 function eventA (msg) {
-	console.log(`eventA: Got a message, ${msg}`);
+    console.log(`eventA: Got a message, ${msg}`);
 }
 
 function eventB (msg) {
-	console.log(`eventB: Got a message, ${msg}`);
+    console.log(`eventB: Got a message, ${msg}`);
 }
 
 // Listening to event name 'message' with two functions respectively
@@ -299,7 +299,7 @@ Event.emit('message', 'Hello there');
 <p>Main.js is using event.js what we&rsquo;ve defined. And <strong>Event</strong> is listening to two event <em>message</em> and <em>alert</em> respectively. eventA &amp; eventB is listening to the event <strong>message</strong>. Which means that whenever <strong>message</strong> event has been invoked then these two functions will be called and executed. Additionally, anonymous function is listening to the event name <strong>alert</strong>. At the end of the code above <strong>Event.emit</strong> is invoking <strong>message</strong> event with a message <em>&lsquo;Hello there&rsquo;</em>. This is functionally equal to the function below.</p>
 
 <pre><code class="language-js">function anonymousFunction(msg) {
-	console.log(`eventName: Got a message, ${msg}`);
+    console.log(`eventName: Got a message, ${msg}`);
 }
 
 anonymousFunction('Hello there');
@@ -310,7 +310,7 @@ anonymousFunction('Hello there');
 <p><strong>What EE.handler contains</strong></p>
 
 <pre><code class="language-js">{
-	'message': [eventA, eventB]
+    'message': [eventA, eventB]
 }
 </code></pre>
 
@@ -320,23 +320,23 @@ anonymousFunction('Hello there');
 
 <pre><code class="language-js">class EE {
 ...
-	removeListener(name, fn) {
-		let targetHandler = this.handlers[name];
-		if (!targetHandler) { return; }
+    removeListener(name, fn) {
+        let targetHandler = this.handlers[name];
+        if (!targetHandler) { return; }
 
-		let index = targetHandler.indexOf(fn);
-		if (index !== -1) {
-			targetHandler.splice(index, 1);
-		}
-	};
+        let index = targetHandler.indexOf(fn);
+        if (index !== -1) {
+            targetHandler.splice(index, 1);
+        }
+    };
 
-	once(name, fn) {
-		let that = this;
-		this.subscribe(name, function handler(data) {
-			that.removeListener(name, handler);
-			fn(data);
-		});
-	};
+    once(name, fn) {
+        let that = this;
+        this.subscribe(name, function handler(data) {
+            that.removeListener(name, handler);
+            fn(data);
+        });
+    };
 }
 </code></pre>
 
