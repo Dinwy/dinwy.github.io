@@ -6,10 +6,19 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Oct 2018 03:08:39 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 25 Oct 2018 02:09:15 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Animated pencils</title>
+      <link>https://dinwy.github.io/everyday/2018/animatedPencils/</link>
+      <pubDate>Thu, 25 Oct 2018 02:09:15 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/animatedPencils/</guid>
+      <description>Description Animated pencils.</description>
+    </item>
     
     <item>
       <title>Pencils</title>
