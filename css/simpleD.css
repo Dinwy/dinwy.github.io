@@ -212,7 +212,7 @@ text-decoration: none;
 
 .card {
   background-color: white;
-  flex: 1 0 300px;
+  flex: 0 0 22%;
   margin: 1rem .25em;
   border-radius: 1em;
   padding: 1em;
@@ -244,4 +244,40 @@ text-decoration: none;
 img {
   border-radius: 1em;
   width: 100%
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 0;
+    border-radius: .25rem
+}
+
+.pagination ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li a {
+  position: relative;
+display: block;
+padding: .5rem .75rem;
+margin-left: -1px;
+line-height: 1.25;
+color: #007bff;
+  color: white;
+  border: 1px solid #dee2e6;
+}
+
+.pagination li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.pagination__item--current a {
+  color: black !important;
+  text-decoration: underline;
 }
