@@ -6,10 +6,19 @@
     <description>Recent content in Everyday on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Nov 2018 03:57:27 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Nov 2018 02:16:14 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wine</title>
+      <link>https://dinwy.github.io/everyday/2018/wine/</link>
+      <pubDate>Fri, 16 Nov 2018 02:16:14 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/wine/</guid>
+      <description>Description Wine glasses and a wine bottle.</description>
+    </item>
     
     <item>
       <title>SimpleTable</title>
