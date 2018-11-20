@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/everyday/2018/fence/</loc>
+    <lastmod>2018-11-20T18:39:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2018/wine/</loc>
     <lastmod>2018-11-16T02:16:14+09:00</lastmod>
   </url>
@@ -148,19 +153,19 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2018-11-16T02:16:14+09:00</lastmod>
+    <lastmod>2018-11-20T18:39:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/everyday/</loc>
-    <lastmod>2018-11-16T02:16:14+09:00</lastmod>
+    <lastmod>2018-11-20T18:39:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/everyday/</loc>
-    <lastmod>2018-11-16T02:16:14+09:00</lastmod>
+    <lastmod>2018-11-20T18:39:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   
