@@ -6,10 +6,19 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Nov 2018 18:39:06 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Nov 2018 22:38:24 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MossyFence</title>
+      <link>https://dinwy.github.io/everyday/2018/mossyFence/</link>
+      <pubDate>Sun, 25 Nov 2018 22:38:24 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/mossyFence/</guid>
+      <description>Description Mossy fence from Udemy tutorial.</description>
+    </item>
     
     <item>
       <title>Fence</title>
