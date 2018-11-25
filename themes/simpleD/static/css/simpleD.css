@@ -34,7 +34,7 @@ a:link, a:visited {
   color: #666666;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
 a:hover, a:active { }

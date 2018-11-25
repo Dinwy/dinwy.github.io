@@ -7,7 +7,7 @@ thumbnail = "/img/fence.jpg"
 +++
 
 <div class="image">
-<img src="/img/fence.jpg">
+<img src="/img/fence.jpg" style="max-width: 600px;">
 </div>
 
 <div class="description">
