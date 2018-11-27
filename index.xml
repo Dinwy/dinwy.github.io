@@ -6,10 +6,19 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Nov 2018 22:38:24 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 28 Nov 2018 03:16:54 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>StoneWall</title>
+      <link>https://dinwy.github.io/everyday/2018/stoneWall/</link>
+      <pubDate>Wed, 28 Nov 2018 03:16:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2018/stoneWall/</guid>
+      <description>Description Stone wall. Tutorial from https://evermotion.org/tutorials/show/9267/create-stone-wall-in-blender-tip-of-the-week</description>
+    </item>
     
     <item>
       <title>MossyFence</title>
