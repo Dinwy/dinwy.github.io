@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/everyday/2019/sodaCan/</loc>
+    <lastmod>2019-01-04T17:39:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2018/tep/</loc>
     <lastmod>2018-12-28T12:42:46+09:00</lastmod>
   </url>
@@ -173,19 +178,19 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2018-12-28T12:42:46+09:00</lastmod>
+    <lastmod>2019-01-04T17:39:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/everyday/</loc>
-    <lastmod>2018-12-28T12:42:46+09:00</lastmod>
+    <lastmod>2019-01-04T17:39:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/everyday/</loc>
-    <lastmod>2018-12-28T12:42:46+09:00</lastmod>
+    <lastmod>2019-01-04T17:39:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
