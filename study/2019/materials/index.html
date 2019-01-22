@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RobotRigging</title>
+<title>What is Materials</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,25 +87,49 @@
 <article>
 <div class="post-wrapper">
 <div class="post-inner">
-<h1 class="title">RobotRigging</h1>
+<h1 class="title">What is Materials</h1>
 <div class="content" id="content">
  
 
-<div class="image">
-<img src="/img/robotRigging.gif" style="max-width: 480px;">
-</div>
-
 <p><div class="description"></p>
 
-<h1 id="description">Description</h1>
+<h1 id="preface">Preface</h1>
 
-<p>I&rsquo;ve been trying to understand rigging. So I&rsquo;ve made robot rigging.</p>
+<p>I have found good articles about explaining about materials. Therefore it is a good time to clean that up.</p>
 
-<h2 id="source-from">Source from</h2>
+<h2 id="source-from">Source From</h2>
 
-<h3 id="robot-model">Robot model</h3>
+<p><a href="http://www.manufato.com/?p=902">http://www.manufato.com/?p=902</a>
+<a href="https://m.blog.naver.com/cccani/221233015525">https://m.blog.naver.com/cccani/221233015525</a></p>
 
-<p><a href="https://poly.google.com/view/1kbGZOnhOwf">https://poly.google.com/view/1kbGZOnhOwf</a></p>
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>World is only visible because they are reflecting light.</li>
+<li>Diffuse Reflection
+
+<ul>
+<li>The light is reflected from the surface at multiple different angles.</li>
+</ul></li>
+<li>Specular Reflection
+
+<ul>
+<li>The light that comes in and reflects out from the surface make the same angle.</li>
+</ul></li>
+<li>Conductors alter the color of the specular reflection, tinting them. While the Dielectrics materials will be neutral to the light and not affect the color of the specular reflection.</li>
+<li>In order to get a good non-metallic result (neutral specular color), we need to neutralize the specular reflection using the inverse color of the diffuse.</li>
+</ul>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<p>3D model: Geometric data for 3d computer graphics
+Material: Enhancement of texture mapping. Result of combination of shaders and textures.
+Shaders: Tell the renderer how an object should be displayed.
+Textures: Provide visual information to the shader.
+Normal Maps: Information contains the light bounce of the surface.
+Alpha Maps: Define transparency.
+Dielectrics: Do not conduct electricity.
+Conductor: Conduct electricity.</p>
 
 </div>
 </div>
