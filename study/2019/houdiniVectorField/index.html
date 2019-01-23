@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Studies</title>
+<title>Houdini Vector Field</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -84,14 +84,59 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Studies</h1>
-<h5 class="date">
-23 Jan 2019</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">Houdini Vector Field</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h1 id="preface">Preface</h1>
+
+<p>What I&rsquo;ve learned while making vector field on Houdini. Which will be used in UE4.</p>
+
+<h2 id="source-from">Source From</h2>
+
+<p><a href="http://www.tokeru.com/cgwiki/index.php?title=HoudiniVolumes">http://www.tokeru.com/cgwiki/index.php?title=HoudiniVolumes</a></p>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>SideFX provide &ldquo;Game Development Toolset&rdquo;: <a href="https://www.sidefx.com/tutorials/game-development-toolset-overview/">https://www.sidefx.com/tutorials/game-development-toolset-overview/</a></li>
+<li>VolumeTrail node needs 2 things
+
+<ul>
+<li>Points to trail</li>
+<li>Velocity Volumes</li>
+</ul></li>
+<li>Bounds and Scatter node will make scatter dots</li>
+<li>VDBFromPolygons node is useful.</li>
+</ul>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<ul>
+<li>Houdini: VFX and 3D modeling software</li>
+<li>VDB: Volumetric Data Blocks (Not really. It is just a name)</li>
+<li>SDF: Signed Distance Field</li>
+<li>VOPs: Vector OPerators</li>
+</ul>
+
+<h2 id="common-attributes">Common Attributes</h2>
+
+<ul>
+<li>P | vector | Point position.</li>
+<li>N | vector | Normal direction.</li>
+<li>V | vector | velocity.</li>
+<li>force | vector | The force attribute on the current point.</li>
+</ul>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a href="https://dinwy.github.io/">

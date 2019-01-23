@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Houdini on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/houdini/</link>
+    <description>Recent content in Houdini on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jan 2019 16:48:43 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/tags/houdini/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Houdini Vector Field</title>
+      <link>https://dinwy.github.io/study/2019/houdiniVectorField/</link>
+      <pubDate>Wed, 23 Jan 2019 16:48:43 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/houdiniVectorField/</guid>
+      <description>Preface What I&amp;rsquo;ve learned while making vector field on Houdini. Which will be used in UE4.
+Source From http://www.tokeru.com/cgwiki/index.php?title=HoudiniVolumes
+Summary  SideFX provide &amp;ldquo;Game Development Toolset&amp;rdquo;: https://www.sidefx.com/tutorials/game-development-toolset-overview/ VolumeTrail node needs 2 things  Points to trail Velocity Volumes  Bounds and Scatter node will make scatter dots VDBFromPolygons node is useful.  Nomenclature  Houdini: VFX and 3D modeling software VDB: Volumetric Data Blocks (Not really. It is just a name) SDF: Signed Distance Field VOPs: Vector OPerators  Common Attributes  P | vector | Point position.</description>
+    </item>
+    
+  </channel>
+</rss>
