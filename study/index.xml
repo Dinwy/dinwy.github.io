@@ -6,10 +6,21 @@
     <description>Recent content in Studies on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jan 2019 16:48:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jan 2019 15:30:24 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forward Rendering VS Deferred Rendering</title>
+      <link>https://dinwy.github.io/study/2019/forwardRenderingVSDeferredRendering/</link>
+      <pubDate>Fri, 25 Jan 2019 15:30:24 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/forwardRenderingVSDeferredRendering/</guid>
+      <description>Preface Understanding difference between forward rendering and deferred rendering.
+Source From https://gamedevelopment.tutsplus.com/articles/forward-rendering-vs-deferred-rendering--gamedev-12342 https://www.youtube.com/watch?v=C8FK9Xn1gUM
+Summary  Modern graphics pipe line  Vertex Shader: +position +normal +texCoord Geometry Shader: Executes once for each primitive Fragment Shader: pixel color  Deferred lighting is a modification of deferred rendering that reduces the size of the G-buffer by using more passes on the scene. Lighting is the main reason for going one route versus the other.</description>
+    </item>
     
     <item>
       <title>Houdini Vector Field</title>

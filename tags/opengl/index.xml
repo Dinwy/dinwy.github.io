@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cg on Dinwy&#39;s blog</title>
-    <link>https://dinwy.github.io/tags/cg/</link>
-    <description>Recent content in Cg on Dinwy&#39;s blog</description>
+    <title>Opengl on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/opengl/</link>
+    <description>Recent content in Opengl on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jan 2019 15:30:24 +0900</lastBuildDate>
     
-	<atom:link href="https://dinwy.github.io/tags/cg/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dinwy.github.io/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>Preface Understanding difference between forward rendering and deferred rendering.
 Source From https://gamedevelopment.tutsplus.com/articles/forward-rendering-vs-deferred-rendering--gamedev-12342 https://www.youtube.com/watch?v=C8FK9Xn1gUM
 Summary  Modern graphics pipe line  Vertex Shader: +position +normal +texCoord Geometry Shader: Executes once for each primitive Fragment Shader: pixel color  Deferred lighting is a modification of deferred rendering that reduces the size of the G-buffer by using more passes on the scene. Lighting is the main reason for going one route versus the other.</description>
-    </item>
-    
-    <item>
-      <title>Houdini Vector Field</title>
-      <link>https://dinwy.github.io/study/2019/houdiniVectorField/</link>
-      <pubDate>Wed, 23 Jan 2019 16:48:43 +0900</pubDate>
-      
-      <guid>https://dinwy.github.io/study/2019/houdiniVectorField/</guid>
-      <description>Preface What I&amp;rsquo;ve learned while making vector field on Houdini. Which will be used in UE4.
-Source From http://www.tokeru.com/cgwiki/index.php?title=HoudiniVolumes
-Summary  SideFX provide &amp;ldquo;Game Development Toolset&amp;rdquo;: https://www.sidefx.com/tutorials/game-development-toolset-overview/ VolumeTrail node needs 2 things  Points to trail Velocity Volumes  Bounds and Scatter node will make scatter dots VDBFromPolygons node is useful.  Nomenclature  Houdini: VFX and 3D modeling software VDB: Volumetric Data Blocks (Not really. It is just a name) SDF: Signed Distance Field VOPs: Vector OPerators  Common Attributes  P | vector | Point position.</description>
     </item>
     
   </channel>

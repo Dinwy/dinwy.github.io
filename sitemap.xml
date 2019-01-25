@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/study/2019/forwardRenderingVSDeferredRendering/</loc>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2019/vectorFieldVFX/</loc>
     <lastmod>2019-01-23T18:47:07+09:00</lastmod>
   </url>
@@ -201,7 +206,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/cg/</loc>
-    <lastmod>2019-01-23T16:48:43+09:00</lastmod>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,7 +224,7 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-01-23T18:47:07+09:00</lastmod>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -278,6 +283,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/opengl/</loc>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/particle/</loc>
     <lastmod>2018-10-04T18:38:17+09:00</lastmod>
     <priority>0</priority>
@@ -309,13 +320,13 @@
   
   <url>
     <loc>https://dinwy.github.io/study/</loc>
-    <lastmod>2019-01-23T16:48:43+09:00</lastmod>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/study/</loc>
-    <lastmod>2019-01-23T16:48:43+09:00</lastmod>
+    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   

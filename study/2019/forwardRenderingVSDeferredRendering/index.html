@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Studies</title>
+<title>Forward Rendering VS Deferred Rendering</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -84,14 +84,59 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Studies</h1>
-<h5 class="date">
-25 Jan 2019</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">Forward Rendering VS Deferred Rendering</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h1 id="preface">Preface</h1>
+
+<p>Understanding difference between forward rendering and deferred rendering.</p>
+
+<h2 id="source-from">Source From</h2>
+
+<p><a href="https://gamedevelopment.tutsplus.com/articles/forward-rendering-vs-deferred-rendering--gamedev-12342">https://gamedevelopment.tutsplus.com/articles/forward-rendering-vs-deferred-rendering--gamedev-12342</a>
+<a href="https://www.youtube.com/watch?v=C8FK9Xn1gUM">https://www.youtube.com/watch?v=C8FK9Xn1gUM</a></p>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>Modern graphics pipe line
+
+<ul>
+<li>Vertex Shader: +position +normal +texCoord</li>
+<li>Geometry Shader: Executes once for each <strong>primitive</strong></li>
+<li>Fragment Shader: pixel color</li>
+</ul></li>
+<li>Deferred lighting is a modification of deferred rendering that reduces the size of the G-buffer by using more passes on the scene.</li>
+<li>Lighting is the main reason for going one route versus the other.</li>
+<li>Deferred Rendering
+
+<ul>
+<li>Doesn&rsquo;t support alpha blending.</li>
+<li>Require high bandwidth.</li>
+<li>No anti-aliasing.</li>
+</ul></li>
+<li>In case using many dynamic light, deferred rending will be a better choice.</li>
+</ul>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<ul>
+<li>G-buffer: The combination of 2D image buffers. Diffuse Specular, Normals, Depth.</li>
+<li>Vertex shader: A single vertex point</li>
+<li>Geometry shader: Takes each transformed primitive. Create mathematical meshes based on a point.</li>
+<li>Pixel shader(= Fragment Shader): Calculate the color of a pixel on the screen.</li>
+</ul>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a href="https://dinwy.github.io/">
