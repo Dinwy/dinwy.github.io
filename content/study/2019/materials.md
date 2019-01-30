@@ -27,12 +27,12 @@ https://m.blog.naver.com/cccani/221233015525
 
 ## Nomenclature
 
-3D model: Geometric data for 3d computer graphics
-Material: Enhancement of texture mapping. Result of combination of shaders and textures. 
-Shaders: Tell the renderer how an object should be displayed.
-Textures: Provide visual information to the shader.
-Normal Maps: Information contains the light bounce of the surface.
-Alpha Maps: Define transparency.
-Dielectrics: Do not conduct electricity.
-Conductor: Conduct electricity.
+- 3D model: Geometric data for 3d computer graphics
+- Material: Enhancement of texture mapping. Result of combination of shaders and textures. 
+- Shaders: Tell the renderer how an object should be displayed.
+- Textures: Provide visual information to the shader.
+- Normal Maps: Information contains the light bounce of the surface.
+- Alpha Maps: Define transparency.
+- Dielectrics: Do not conduct electricity.
+- Conductor: Conduct electricity.
 
