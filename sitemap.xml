@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/everyday/2019/stylizedTile/</loc>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/study/2019/forwardRenderingVSDeferredRendering/</loc>
     <lastmod>2019-01-25T15:30:24+09:00</lastmod>
   </url>
@@ -194,6 +199,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/b3d/</loc>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/blender/</loc>
     <lastmod>2018-09-07T01:03:09+09:00</lastmod>
     <priority>0</priority>
@@ -224,19 +235,19 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-01-25T15:30:24+09:00</lastmod>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/everyday/</loc>
-    <lastmod>2019-01-23T18:47:07+09:00</lastmod>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/everyday/</loc>
-    <lastmod>2019-01-23T18:47:07+09:00</lastmod>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -296,13 +307,19 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/pbr/</loc>
-    <lastmod>2018-08-25T21:55:02+09:00</lastmod>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/posts/</loc>
     <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/render/</loc>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,6 +332,12 @@
   <url>
     <loc>https://dinwy.github.io/tags/rigging/</loc>
     <lastmod>2018-09-07T01:03:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/sd/</loc>
+    <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
   </url>
   
