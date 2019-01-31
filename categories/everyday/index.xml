@@ -6,10 +6,20 @@
     <description>Recent content in Everyday on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jan 2019 12:51:51 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 19:50:34 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shotgun</title>
+      <link>https://dinwy.github.io/everyday/2019/shotgun/</link>
+      <pubDate>Thu, 31 Jan 2019 19:50:34 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/shotgun/</guid>
+      <description>  Description Finished Udemy tutorial.
+ https://www.udemy.com/blender-and-substance-painter-model-fortnites-pump-shotgun/learn/v4/overview  </description>
+    </item>
     
     <item>
       <title>StylizedTile</title>
