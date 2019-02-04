@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Talk</title>
+<title>Singleton</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -83,42 +83,71 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Talk</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a href="/study/2019/intro/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">Singleton</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h1 id="preface">Preface</h1>
 
+<p>I think it is a good time to review and cleanup my C# knowledge.</p>
 
+<h2 id="source-from">Source From</h2>
+
+<ul>
+<li><a href="http://csharpindepth.com/Articles/General/Singleton.aspx">http://csharpindepth.com/Articles/General/Singleton.aspx</a></li>
+<li><a href="https://stackoverflow.com/questions/614818/in-c-what-is-the-difference-between-public-private-protected-and-having-no">https://stackoverflow.com/questions/614818/in-c-what-is-the-difference-between-public-private-protected-and-having-no</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>Private constructor</li>
+<li>Static instance to achieve singleton class</li>
+<li>Nested class to initialized singleton class</li>
+<li>Using System.Lazy<T> is also possible way to create singleton class</li>
+</ul>
+
+<pre><code class="language-cs">public sealed class SingletonNested
+{
+    private SingletonNested() { }
+
+    class SingletonCreator
+    {
+        static SingletonCreator() { }
+
+        internal static readonly SingletonNested Instance = new SingletonNested();
+    }
+
+    public static SingletonNested Instance { get { return SingletonCreator.Instance; } }
+}
+</code></pre>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<ul>
+<li>Assembly: An assembly is a &ldquo;unit of deployment&rdquo; for .NET, almost always a .exe or .dll.</li>
+<li>Access modifiers:</li>
+</ul>
+
+<p><img src="/img/accessModifiers.png" style="max-width: 480px;"></p>
 
 </div>
-
-<h1>Intro</h1>
-22 Jan 2019
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

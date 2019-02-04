@@ -6,10 +6,20 @@
     <description>Recent content in Studies on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2019 15:30:24 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 15:15:22 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Singleton</title>
+      <link>https://dinwy.github.io/study/2019/singleton/</link>
+      <pubDate>Mon, 04 Feb 2019 15:15:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/singleton/</guid>
+      <description>Preface I think it is a good time to review and cleanup my C# knowledge.
+Source From  http://csharpindepth.com/Articles/General/Singleton.aspx https://stackoverflow.com/questions/614818/in-c-what-is-the-difference-between-public-private-protected-and-having-no  Summary  Private constructor Static instance to achieve singleton class Nested class to initialized singleton class Using System.Lazy is also possible way to create singleton class  public sealed class SingletonNested { private SingletonNested() { } class SingletonCreator { static SingletonCreator() { } internal static readonly SingletonNested Instance = new SingletonNested(); } public static SingletonNested Instance { get { return SingletonCreator.</description>
+    </item>
     
     <item>
       <title>Forward Rendering VS Deferred Rendering</title>
