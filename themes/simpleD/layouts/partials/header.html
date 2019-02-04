@@ -15,7 +15,7 @@
 <ul class="nav navbar">
 <li class="pull-left">
 <figure>
-<a href="{{ .Site.BaseURL }}">
+<a class="text-center" href="{{ .Site.BaseURL }}">
 <img class="logo" src="{{ .Site.Params.logoPath }}" alt="logo">
 </a>
 </figure>
@@ -24,7 +24,7 @@
 <ul>
 {{ range $key, $value := .Site.Taxonomies.categories }}
 <li>
-<a href="/categories/{{ $key | urlize }}">
+<a class="text-center" href="/categories/{{ $key | urlize }}">
 {{ if eq $key "gamejam" }}
 <i class="fa fa-gamepad fa-3x"></i>
 {{end}}
