@@ -32,7 +32,6 @@ a {
 
 a:link, a:visited {
   color: #666666;
-  text-align: center;
   text-decoration: none;
   display: block;
 }
@@ -222,9 +221,6 @@ text-decoration: none;
   max-width: 1080px;
 }
 
-.content {
-}
-
 .description {
   padding: 0em 0em 0em 1rem;
   max-width: 100%;
@@ -280,4 +276,8 @@ color: #007bff;
 .pagination__item--current a {
   color: black !important;
   text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
 }
