@@ -6,10 +6,20 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 15:15:22 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Feb 2019 14:40:34 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NodesInUE4</title>
+      <link>https://dinwy.github.io/study/2019/nodesUE4/</link>
+      <pubDate>Tue, 05 Feb 2019 14:40:34 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/nodesUE4/</guid>
+      <description>Preface It is a good time to learn about shader nodes.
+Source From  http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Panner https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/ExpressionReference/Math https://www.youtube.com/watch?v=_thf1Z3j73s  Summary Nomenclature Nodes  Panner: The Panner node moves a UV coordinate or other Vector 2 position by speed according to a Time value. OneMinus: The OneMinus expression takes an input value &amp;ldquo;X&amp;rdquo; and outputs &amp;ldquo;One Minus X&amp;rdquo;. This operation is performed per channel.  Examples: OneMinus of 0.4 is 0.6; OneMinus of (0.</description>
+    </item>
     
     <item>
       <title>Singleton</title>
