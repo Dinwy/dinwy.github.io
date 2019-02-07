@@ -6,10 +6,20 @@
     <description>Recent content in Everyday on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jan 2019 19:50:34 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Feb 2019 17:52:43 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>StylizedExplosion</title>
+      <link>https://dinwy.github.io/everyday/2019/stylizedExplosion/</link>
+      <pubDate>Thu, 07 Feb 2019 17:52:43 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/stylizedExplosion/</guid>
+      <description>  Description Stylized explosion made in UE4.
+References  Blender Tutorial - Anime Style FX Workflow: https://www.youtube.com/watch?v=fE-uDqBpXxI Huge Building Explosion at 2500fps - The Slow Mo Guys: https://www.youtube.com/watch?v=bTUu4ZLtDSs  </description>
+    </item>
     
     <item>
       <title>Shotgun</title>
