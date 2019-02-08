@@ -1,7 +1,7 @@
 +++
 title = "What is Materials"
 date = 2019-01-22T10:33:36+09:00
-tags = []
+tags = ["graphic"]
 categories = "study"
 +++
 

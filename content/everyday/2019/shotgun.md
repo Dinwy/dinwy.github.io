@@ -1,7 +1,7 @@
 +++
 title = "Shotgun"
 date = 2019-01-31T19:50:34+09:00
-tags = []
+tags = ["blender","substance painter"]
 categories = "everyday"
 thumbnail = "/img/shotgun.jpg"
 +++
