@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphic on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/graphic/</link>
+    <description>Recent content in Graphic on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jan 2019 10:33:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/tags/graphic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is Materials</title>
+      <link>https://dinwy.github.io/study/2019/materials/</link>
+      <pubDate>Tue, 22 Jan 2019 10:33:36 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/materials/</guid>
+      <description>Preface I have found good articles about explaining about materials. Therefore it is a good time to clean that up.
+Source From http://www.manufato.com/?p=902 https://m.blog.naver.com/cccani/221233015525
+Summary  World is only visible because they are reflecting light. Diffuse Reflection  The light is reflected from the surface at multiple different angles.  Specular Reflection  The light that comes in and reflects out from the surface make the same angle.  Conductors alter the color of the specular reflection, tinting them.</description>
+    </item>
+    
+  </channel>
+</rss>
