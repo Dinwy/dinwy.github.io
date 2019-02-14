@@ -6,10 +6,20 @@
     <description>Recent content in Vfx on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Oct 2018 18:38:17 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 16:23:02 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/vfx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DissolvingOutline</title>
+      <link>https://dinwy.github.io/everyday/2019/dissolvingOutline/</link>
+      <pubDate>Thu, 14 Feb 2019 16:23:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/dissolvingOutline/</guid>
+      <description>  Description Outline effect with post processing
+Reference  Creating an Outline with Post Process: https://youtu.be/IEHxjw6VEMQ Material for Orange Outlines on Selected Actor: https://forums.unrealengine.com/development-discussion/rendering/11146-material-for-orange-outlines-on-selected-actor  </description>
+    </item>
     
     <item>
       <title>Particle Logo#2</title>
