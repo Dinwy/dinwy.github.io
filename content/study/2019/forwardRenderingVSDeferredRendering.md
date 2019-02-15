@@ -6,7 +6,7 @@ categories = "study"
 +++
 
 <div class="description">
-# Preface
+## Preface
 Understanding difference between forward rendering and deferred rendering.
 
 ## Source From

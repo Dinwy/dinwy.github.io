@@ -6,7 +6,7 @@ categories = "study"
 +++
 
 <div class="description">
-# Preface
+## Preface
 
 I think it is a good time to review and cleanup my C# knowledge.
 

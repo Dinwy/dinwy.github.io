@@ -6,7 +6,7 @@ categories = "study"
 +++
 
 <div class="description">
-# Preface
+## Preface
 
 I have found good articles about explaining about materials. Therefore it is a good time to clean that up.
 
