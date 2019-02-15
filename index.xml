@@ -6,10 +6,20 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Feb 2019 16:23:02 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 15 Feb 2019 19:42:18 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenGL Functions</title>
+      <link>https://dinwy.github.io/study/2019/openGLFunctions/</link>
+      <pubDate>Fri, 15 Feb 2019 19:42:18 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/openGLFunctions/</guid>
+      <description>Preface Learning about OpenGL shaders.
+Source From  Shadertoy for absolute beginners: https://youtu.be/u5HAYVHsasc  Summary vec3 invert(vec3 inp) { return vec3(inp.x * -1., inp.y * -1., inp.z * -1.); } float oneMinus(float inpt) { return 1. - inpt; } float circle(vec2 uv, vec2 p, float r, float blur) { float d = length(uv - p); float c = smoothstep(r, r-blur, d); return c; } void mainImage( out vec4 fragColor, in vec2 fragCoord ) { // Normalized pixel coordinates (from 0 to 1) vec2 uv = fragCoord.</description>
+    </item>
     
     <item>
       <title>DissolvingOutline</title>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>NodesInUE4</title>
+<title>OpenGL Functions</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,7 +87,7 @@
 <article>
 <div class="post-wrapper">
 <div class="post-inner">
-<h1 class="title">NodesInUE4</h1>
+<h1 class="title">OpenGL Functions</h1>
 <div class="content" id="content">
  
 
@@ -95,30 +95,69 @@
 
 <h2 id="preface">Preface</h2>
 
-<p>It is a good time to learn about shader nodes.</p>
+<p>Learning about OpenGL shaders.</p>
 
 <h2 id="source-from">Source From</h2>
 
 <ul>
-<li><a href="http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Panner">http://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Panner</a></li>
-<li><a href="https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/ExpressionReference/Math">https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/ExpressionReference/Math</a></li>
-<li><a href="https://www.youtube.com/watch?v=_thf1Z3j73s">https://www.youtube.com/watch?v=_thf1Z3j73s</a></li>
+<li>Shadertoy for absolute beginners: <a href="https://youtu.be/u5HAYVHsasc">https://youtu.be/u5HAYVHsasc</a></li>
 </ul>
 
 <h2 id="summary">Summary</h2>
 
+<pre><code class="language-opengl">
+vec3 invert(vec3 inp)
+{
+    return vec3(inp.x * -1., inp.y * -1., inp.z * -1.);
+}
+
+
+float oneMinus(float inpt)
+{
+    return 1. - inpt;
+}
+
+float circle(vec2 uv, vec2 p, float r, float blur) {
+    float d = length(uv - p);
+    float c = smoothstep(r, r-blur, d);
+    
+    return c;
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord.xy / iResolution.xy;
+	uv -= .5;
+    uv.x *= iResolution.x / iResolution.y;
+
+    vec3 col = vec3(0, 1, 0);
+    float mask = circle(uv, vec2(0.), .4, .05);
+    
+    mask -= circle(uv, vec2(-0.13, 0.2), .07, .01);
+    mask -= circle(uv, vec2(0.13, 0.2), .07, .01);
+    
+    float mouth = circle(uv, vec2(0. ), .3, 0.02);
+    mouth -= circle(uv, vec2(0., 0.1), .3, .02);
+    
+    mask -= mouth;
+    col = vec3(1., 1., 0.) * mask;
+    
+    fragColor = vec4(col, 1);
+}
+</code></pre>
+
 <h2 id="nomenclature">Nomenclature</h2>
 
-<h3 id="nodes">Nodes</h3>
+<h3 id="opengl-functions">OpenGL functions</h3>
 
 <ul>
-<li>Panner: The Panner node moves a UV coordinate or other Vector 2 position by speed according to a Time value.</li>
-<li>OneMinus: The OneMinus expression takes an input value &ldquo;X&rdquo; and outputs &ldquo;One Minus X&rdquo;. This operation is performed per channel.
+<li>length: Calculate length of a vector
 
 <ul>
-<li>Examples: OneMinus of 0.4 is 0.6; OneMinus of (0.2,0.5,1.0) is (0.8,0.5,0.0); OneMinus of (0.0,-0.4,1.6) is (1.0,1.4,-0.6).</li>
+<li>√x[0]2+x[1]2+…</li>
 </ul></li>
-<li>TextCoord: Base UV texture coordinates. R color represent X axis, G color represent Y axis.</li>
+<li>smoothstep: perform Hermite interpolation between two values</li>
 </ul>
 
 </div>
