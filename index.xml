@@ -6,10 +6,20 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Feb 2019 19:42:18 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 19:33:45 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FakeVolumetricSmoke</title>
+      <link>https://dinwy.github.io/everyday/2019/fakeVolumetricSmoke/</link>
+      <pubDate>Mon, 18 Feb 2019 19:33:45 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/fakeVolumetricSmoke/</guid>
+      <description>  Description Fake Volumetric smoke
+References  Fake Volumetric Smoke Particle System - [UE4]: https://youtu.be/JOMEse32a3I How to spawn Particles on an Actor-Surface (Unreal Engine 4.10): https://youtu.be/-pyTw-45Mfw Technical Artist Bootcamp: The VFX of Diablo; https://www.youtube.com/watch?v=YPy2hytwDLM  </description>
+    </item>
     
     <item>
       <title>OpenGL Functions</title>
