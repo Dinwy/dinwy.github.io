@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/study/2019/depthFirstSearch/</loc>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/study/2019/rayMarching#1/</loc>
+    <lastmod>2019-02-19T12:12:50+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2019/fakeVolumetricSmoke/</loc>
     <lastmod>2019-02-18T19:33:45+09:00</lastmod>
   </url>
@@ -239,6 +249,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/algorithm/</loc>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/b3d/</loc>
     <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
@@ -252,7 +268,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/c#/</loc>
-    <lastmod>2019-02-04T15:15:22+09:00</lastmod>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,7 +297,7 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-02-18T19:33:45+09:00</lastmod>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -312,6 +328,12 @@
   <url>
     <loc>https://dinwy.github.io/categories/gamejam/</loc>
     <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/graph/</loc>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -376,6 +398,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/raymarching/</loc>
+    <lastmod>2019-02-19T12:12:50+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/render/</loc>
     <lastmod>2019-01-30T12:51:51+09:00</lastmod>
     <priority>0</priority>
@@ -400,14 +428,20 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/shader/</loc>
+    <lastmod>2019-02-19T12:12:50+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/study/</loc>
-    <lastmod>2019-02-15T19:42:18+09:00</lastmod>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/study/</loc>
-    <lastmod>2019-02-15T19:42:18+09:00</lastmod>
+    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   

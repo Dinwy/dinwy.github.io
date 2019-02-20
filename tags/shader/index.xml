@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shader on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/shader/</link>
+    <description>Recent content in Shader on Dinwy&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Feb 2019 12:12:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://dinwy.github.io/tags/shader/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RayMarching#1</title>
+      <link>https://dinwy.github.io/study/2019/rayMarching#1/</link>
+      <pubDate>Tue, 19 Feb 2019 12:12:50 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/rayMarching#1/</guid>
+      <description>Preface Using OpenGL, practicing ray marching.
+Source From  http://iquilezles.org/www/articles/distfunctions/distfunctions.htm http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/ How to Normalize a vector: https://www.youtube.com/watch?v=7fn03DIW3Ak  Summary  ShaderToy controls only a fragment shader  Nomenclature ShaderToy  fragCoord: Current fragment(pixel) position iResolution: The size of the frame. Equal to windows/viewport Signed Distance Functions(SDF): When passed the coordinates of a point in space, return the shortest distance between that point and some surface. Radians: Convert a quantity in degrees to radians.</description>
+    </item>
+    
+  </channel>
+</rss>

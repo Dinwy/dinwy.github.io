@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>RayMarching#1</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -83,93 +83,57 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">RayMarching#1</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="preface">Preface</h2>
 
+<p>Using OpenGL, practicing ray marching.</p>
 
+<h2 id="source-from">Source From</h2>
 
-</div>
+<ul>
+<li><a href="http://iquilezles.org/www/articles/distfunctions/distfunctions.htm">http://iquilezles.org/www/articles/distfunctions/distfunctions.htm</a></li>
+<li><a href="http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/">http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/</a></li>
+<li>How to Normalize a vector: <a href="https://www.youtube.com/watch?v=7fn03DIW3Ak">https://www.youtube.com/watch?v=7fn03DIW3Ak</a></li>
+</ul>
 
-<h1>Everyday</h1>
-18 Feb 2019
+<h2 id="summary">Summary</h2>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
+<ul>
+<li>ShaderToy controls only a fragment shader</li>
+</ul>
 
+<h2 id="nomenclature">Nomenclature</h2>
 
+<h3 id="shadertoy">ShaderToy</h3>
 
-
-
-</div>
-
-<h1>Gamejam</h1>
-24 Apr 2018
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/legacy/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
+<ul>
+<li>fragCoord: Current fragment(pixel) position</li>
+<li>iResolution: The size of the frame. Equal to windows/viewport</li>
+<li>Signed Distance Functions(SDF): When passed the coordinates of a point in space, return the shortest distance between that point and some surface.</li>
+<li>Radians: Convert a quantity in degrees to radians. 2π rad = 360∘  1rad ≒ 57.3∘</li>
+<li>Normalize: Calculates the unit vector in the same direction as the original vector. Divice vector by its maginitude. Therefore, new length will be 1.</li>
+</ul>
 
 </div>
-
-<h1>Legacy</h1>
-27 Jun 2017
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-20 Feb 2019
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

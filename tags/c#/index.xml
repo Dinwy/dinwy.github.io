@@ -6,10 +6,20 @@
     <description>Recent content in C# on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 15:15:22 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 11:36:30 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DepthFirstSearch</title>
+      <link>https://dinwy.github.io/study/2019/depthFirstSearch/</link>
+      <pubDate>Wed, 20 Feb 2019 11:36:30 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/depthFirstSearch/</guid>
+      <description>Preface Yesterday, I have solved algorithm quiz on LeetCode: https://leetcode.com/problems/number-of-islands/ After solving the problem, I&amp;rsquo;ve realized that this quiz is related with DFS(depth-first-search). So it is good to know what is DFS.
+Source From  Depth-first search: https://en.wikipedia.org/wiki/Depth-first_search Recursion: https://www.dotnetperls.com/recursion  Summary  C# doesn&amp;rsquo;t support tail-recursion-optimization &amp;gt; Yes, the CLR supports .tail. The Roslyn compiler currently has no facility for inserting .tail at all, regardless of what the CLR currently does, however.</description>
+    </item>
     
     <item>
       <title>Singleton</title>

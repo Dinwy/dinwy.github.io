@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DepthFirstSearch</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">DepthFirstSearch</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="preface">Preface</h2>
+
+<p>Yesterday, I have solved algorithm quiz on LeetCode: <a href="https://leetcode.com/problems/number-of-islands/">https://leetcode.com/problems/number-of-islands/</a>
+After solving the problem, I&rsquo;ve realized that this quiz is related with DFS(depth-first-search).
+So it is good to know what is DFS.</p>
+
+<h2 id="source-from">Source From</h2>
+
+<ul>
+<li>Depth-first search: <a href="https://en.wikipedia.org/wiki/Depth-first_search">https://en.wikipedia.org/wiki/Depth-first_search</a></li>
+<li>Recursion: <a href="https://www.dotnetperls.com/recursion">https://www.dotnetperls.com/recursion</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>C# doesn&rsquo;t support tail-recursion-optimization</li>
+<li>&gt; Yes, the CLR supports .tail. The Roslyn compiler currently has no facility for inserting .tail at all, regardless of what the CLR currently does, however. This is unlike, for example, F#, where tail recursion is leveraged. <a href="https://github.com/dotnet/roslyn/issues/1235">https://github.com/dotnet/roslyn/issues/1235</a></li>
+<li>Methods calls depth: Method calls can be nested but that impacts performance. The more nesting, the more depth the stack. <a href="https://www.dotnetperls.com/method-call-depth">https://www.dotnetperls.com/method-call-depth</a></li>
+</ul>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<ul>
+<li>Depth-first search: Is an algorithm for traversing or searching tree or graph data structures.</li>
+<li>Call stack: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program.</li>
+<li>Class vs Struct:
+&gt; Do not define a structure unless the type has all of the following characteristics:
+&gt;   It logically represents a single value, similar to primitive types (integer, double, and so on).
+&gt;   It has an instance size smaller than 16 bytes.
+&gt;   It is immutable.
+&gt;   It will not have to be boxed frequently.
+&gt;  <a href="https://stackoverflow.com/questions/521298/when-to-use-struct">https://stackoverflow.com/questions/521298/when-to-use-struct</a></li>
+<li>Boxing : The process of converting a value type to the type object or to any interface type implemented by this value type. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing</a>
+<code>cs
+int i = 123;
+// The following line boxes i.
+object o = i;  
+</code></li>
+<li>Unboxing: Extracts the value type from the object.
+<code>cs
+int i = 123;      // a value type
+object o = i;     // boxing
+int j = (int)o;   // unboxing
+</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

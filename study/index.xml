@@ -6,10 +6,30 @@
     <description>Recent content in Studies on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Feb 2019 19:42:18 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 11:36:30 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DepthFirstSearch</title>
+      <link>https://dinwy.github.io/study/2019/depthFirstSearch/</link>
+      <pubDate>Wed, 20 Feb 2019 11:36:30 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/depthFirstSearch/</guid>
+      <description>Preface Yesterday, I have solved algorithm quiz on LeetCode: https://leetcode.com/problems/number-of-islands/ After solving the problem, I&amp;rsquo;ve realized that this quiz is related with DFS(depth-first-search). So it is good to know what is DFS.
+Source From  Depth-first search: https://en.wikipedia.org/wiki/Depth-first_search Recursion: https://www.dotnetperls.com/recursion  Summary  C# doesn&amp;rsquo;t support tail-recursion-optimization &amp;gt; Yes, the CLR supports .tail. The Roslyn compiler currently has no facility for inserting .tail at all, regardless of what the CLR currently does, however.</description>
+    </item>
+    
+    <item>
+      <title>RayMarching#1</title>
+      <link>https://dinwy.github.io/study/2019/rayMarching#1/</link>
+      <pubDate>Tue, 19 Feb 2019 12:12:50 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/rayMarching#1/</guid>
+      <description>Preface Using OpenGL, practicing ray marching.
+Source From  http://iquilezles.org/www/articles/distfunctions/distfunctions.htm http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/ How to Normalize a vector: https://www.youtube.com/watch?v=7fn03DIW3Ak  Summary  ShaderToy controls only a fragment shader  Nomenclature ShaderToy  fragCoord: Current fragment(pixel) position iResolution: The size of the frame. Equal to windows/viewport Signed Distance Functions(SDF): When passed the coordinates of a point in space, return the shortest distance between that point and some surface. Radians: Convert a quantity in degrees to radians.</description>
+    </item>
     
     <item>
       <title>OpenGL Functions</title>
