@@ -6,10 +6,20 @@
     <description>Recent content in Everydays on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Feb 2019 19:00:31 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 22 Feb 2019 17:59:58 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LocalVolumetricFog</title>
+      <link>https://dinwy.github.io/everyday/2019/localVolumetricFog/</link>
+      <pubDate>Fri, 22 Feb 2019 17:59:58 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/localVolumetricFog/</guid>
+      <description>  Description Local volume metric fog from tutorials.
+References  Volumetric Fog and Lighting in Unreal Engine 4 | GDC 2018 | Unreal Engine: https://youtu.be/Xd7-rTzfmCo UE4 Tutorial - Local Volumetric Fog 1&amp;frasl;3 - Basics - Unreal Engine 4: https://www.youtube.com/watch?v=McBiRCSWM9Q  </description>
+    </item>
     
     <item>
       <title>SmokeOnSkeletonMesh</title>
