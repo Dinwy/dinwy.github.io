@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/study/2019/BasicMath/</loc>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2019/localVolumetricFog/</loc>
     <lastmod>2019-02-22T17:59:58+09:00</lastmod>
   </url>
@@ -307,7 +312,7 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-02-22T17:59:58+09:00</lastmod>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -378,6 +383,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/math/</loc>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/opengl/</loc>
     <lastmod>2019-01-25T15:30:24+09:00</lastmod>
     <priority>0</priority>
@@ -439,19 +450,19 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/shader/</loc>
-    <lastmod>2019-02-19T12:12:50+09:00</lastmod>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/study/</loc>
-    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/study/</loc>
-    <lastmod>2019-02-20T11:36:30+09:00</lastmod>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -482,6 +493,12 @@
   <url>
     <loc>https://dinwy.github.io/tags/unity3d/</loc>
     <lastmod>2018-10-04T18:38:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/vector/</loc>
+    <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   

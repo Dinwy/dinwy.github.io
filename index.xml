@@ -6,10 +6,20 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Feb 2019 17:59:58 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 Feb 2019 15:54:09 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BasicMath</title>
+      <link>https://dinwy.github.io/study/2019/BasicMath/</link>
+      <pubDate>Tue, 26 Feb 2019 15:54:09 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/BasicMath/</guid>
+      <description>Preface Time to understand basic math which often used in OpenGL.
+Source From  Vector dot product and vector length: https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/vector-dot-product-and-vector-length dot - OpenGL 4 Reference Page: https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml How to Normalized Vector: https://www.youtube.com/watch?v=7fn03DIW3Ak Vector: https://khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-vectors/a/intro-to-vectors  Summary Nomenclature  Vector: Consist of direction and magnitude. Dot Product: Generate scalar value. Unit Vector: Create unit vector. Vector / Magnitude. u^=∣∣u∣∣ / u-&amp;gt; Scalar Quantity: A quantity which does not depend on direction.</description>
+    </item>
     
     <item>
       <title>LocalVolumetricFog</title>
