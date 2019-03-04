@@ -15,6 +15,9 @@ thumbnail = "/img/ue4/dissolvingOutline.gif"
 
 Outline effect with post processing
 
+<img src="/img/ue4/outlineBP.png">
+**Right click > View Image to see clear image**
+
 ## Reference
 
 - Creating an Outline with Post Process: https://youtu.be/IEHxjw6VEMQ
