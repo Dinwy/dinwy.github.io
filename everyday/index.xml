@@ -6,10 +6,20 @@
     <description>Recent content in Everydays on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Feb 2019 17:59:58 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2019 15:49:26 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TriplanarMapping</title>
+      <link>https://dinwy.github.io/everyday/2019/triplanarMapping/</link>
+      <pubDate>Wed, 06 Mar 2019 15:49:26 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/triplanarMapping/</guid>
+      <description>  Description Learning Tri-Planar mapping in UE4.
+References  Unlocking the Unreal Engine Material Editor: https://www.udemy.com/unlocking-the-unreal-engine-material-editor/  </description>
+    </item>
     
     <item>
       <title>LocalVolumetricFog</title>
