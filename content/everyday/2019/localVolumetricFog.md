@@ -3,7 +3,7 @@ title = "LocalVolumetricFog"
 date = 2019-02-22T17:59:58+09:00
 tags = []
 categories = "everyday"
-thumbnail = "/img/ue4/localVolumetricFog.jpg"
+thumbnail = "/video/localVolumetricFog.mp4"
 +++
 
 <div class="image">

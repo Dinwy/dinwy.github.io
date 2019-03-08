@@ -11,10 +11,17 @@
     <div class="post-inner">
     <div class="image-wrapper">
     
-    {{ if .Params.thumbnail }}
-    <div class="image">
-    <img class="constraint-image-size" src="{{ .Params.thumbnail }}" width="100%">
-    </div>
+	{{ if .Params.thumbnail }}
+		{{ $ext := substr .Params.thumbnail (sub (len .Params.thumbnail) 3) 3 }}
+		{{ if or (eq $ext "png") (eq "gif" $ext) (eq "jpg" $ext) }}
+		<div class="image">
+		<img class="constraint-image-size" src="{{ .Params.thumbnail }}" width="100%">
+		</div>
+		{{ else if eq "mp4" $ext }}
+		<div class="image">
+			<video autoplay loop id="vid" src="{{ .Params.thumbnail }}" type="video/mp4" style="max-width: 384px;">
+		</div>
+		{{ end }}
     {{ end }}
     
     {{ $image := .Resources.ByType "image" }}

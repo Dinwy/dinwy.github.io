@@ -3,7 +3,7 @@ title = "TriplanarMapping"
 date = 2019-03-06T15:49:26+09:00
 tags = []
 categories = "everyday"
-thumbnail = "/img/ue4/triplanarMapping.jpg"
+thumbnail = "/video/triplanarMapping.mp4"
 +++
 
 <div class="image">
