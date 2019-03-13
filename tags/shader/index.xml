@@ -6,10 +6,50 @@
     <description>Recent content in Shader on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Feb 2019 15:54:09 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 18:28:32 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/shader/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DistanceDissolve</title>
+      <link>https://dinwy.github.io/everyday/2019/distanceDissolve/</link>
+      <pubDate>Wed, 13 Mar 2019 18:28:32 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/distanceDissolve/</guid>
+      <description>  Description Follow tutorial from DeppSpaceBanana.
+References  UE4 Apparition Material: https://deepspacebanana.github.io/deepspacebanana.github.io/blog/shader/art/unreal%20engine/UE4-Apparition-Material  </description>
+    </item>
+    
+    <item>
+      <title>NeonBoard</title>
+      <link>https://dinwy.github.io/everyday/2019/neonBoard/</link>
+      <pubDate>Tue, 12 Mar 2019 18:56:51 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/neonBoard/</guid>
+      <description>  Description Create neon board. Rendered in UE4
+References  Shader Study - Pixel Display (Slime Rancher): https://www.austinobrien.me/blog/shader-study/slime-rancher-pixel-display LCD Display Shader Effect: https://www.alanzucconi.com/2016/05/04/lcd-shader/  </description>
+    </item>
+    
+    <item>
+      <title>NeonSign</title>
+      <link>https://dinwy.github.io/everyday/2019/neonSign/</link>
+      <pubDate>Fri, 08 Mar 2019 18:53:59 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/neonSign/</guid>
+      <description>  Description Study neon sign. Rendered in UE4
+References  Creating Neon Signs - in Blender: https://youtu.be/7SGf01uSg2E  </description>
+    </item>
+    
+    <item>
+      <title>TriplanarMapping</title>
+      <link>https://dinwy.github.io/everyday/2019/triplanarMapping/</link>
+      <pubDate>Wed, 06 Mar 2019 15:49:26 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/triplanarMapping/</guid>
+      <description>  Description Learning Tri-Planar mapping in UE4.
+References  Unlocking the Unreal Engine Material Editor: https://www.udemy.com/unlocking-the-unreal-engine-material-editor/  </description>
+    </item>
     
     <item>
       <title>BasicMath</title>
@@ -22,6 +62,25 @@ Source From  Vector dot product and vector length: https://www.khanacademy.org/m
     </item>
     
     <item>
+      <title>LocalVolumetricFog</title>
+      <link>https://dinwy.github.io/everyday/2019/localVolumetricFog/</link>
+      <pubDate>Fri, 22 Feb 2019 17:59:58 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/localVolumetricFog/</guid>
+      <description>  Description Local volume metric fog from tutorials.
+References  Volumetric Fog and Lighting in Unreal Engine 4 | GDC 2018 | Unreal Engine: https://youtu.be/Xd7-rTzfmCo UE4 Tutorial - Local Volumetric Fog 1&amp;frasl;3 - Basics - Unreal Engine 4: https://www.youtube.com/watch?v=McBiRCSWM9Q  </description>
+    </item>
+    
+    <item>
+      <title>SmokeOnSkeletonMesh</title>
+      <link>https://dinwy.github.io/everyday/2019/smokeOnSkeletonMesh/</link>
+      <pubDate>Thu, 21 Feb 2019 19:00:31 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/smokeOnSkeletonMesh/</guid>
+      <description>Description Fake smoke effect on skeleton mesh.</description>
+    </item>
+    
+    <item>
       <title>RayMarching#1</title>
       <link>https://dinwy.github.io/study/2019/rayMarching/</link>
       <pubDate>Tue, 19 Feb 2019 12:12:50 +0900</pubDate>
@@ -29,6 +88,55 @@ Source From  Vector dot product and vector length: https://www.khanacademy.org/m
       <guid>https://dinwy.github.io/study/2019/rayMarching/</guid>
       <description>Preface Using OpenGL, practicing ray marching.
 Source From  http://iquilezles.org/www/articles/distfunctions/distfunctions.htm http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/ How to Normalize a vector: https://www.youtube.com/watch?v=7fn03DIW3Ak  Summary  ShaderToy controls only a fragment shader  Nomenclature ShaderToy  fragCoord: Current fragment(pixel) position iResolution: The size of the frame. Equal to windows/viewport Signed Distance Functions(SDF): When passed the coordinates of a point in space, return the shortest distance between that point and some surface. Radians: Convert a quantity in degrees to radians.</description>
+    </item>
+    
+    <item>
+      <title>FakeVolumetricSmoke</title>
+      <link>https://dinwy.github.io/everyday/2019/fakeVolumetricSmoke/</link>
+      <pubDate>Mon, 18 Feb 2019 19:33:45 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/fakeVolumetricSmoke/</guid>
+      <description>  Description Fake Volumetric smoke
+References  Fake Volumetric Smoke Particle System - [UE4]: https://youtu.be/JOMEse32a3I How to spawn Particles on an Actor-Surface (Unreal Engine 4.10): https://youtu.be/-pyTw-45Mfw Technical Artist Bootcamp: The VFX of Diablo; https://www.youtube.com/watch?v=YPy2hytwDLM  </description>
+    </item>
+    
+    <item>
+      <title>DissolvingRingVFX</title>
+      <link>https://dinwy.github.io/everyday/2019/dissolvingRingVFX/</link>
+      <pubDate>Fri, 08 Feb 2019 18:22:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/dissolvingRingVFX/</guid>
+      <description>  Description Dissolving ring effect, rendered in UE4.
+References  Dissolving Ring Particle | Zelda BotW in Unreal: https://www.youtube.com/watch?v=INzG5LrxGyo UE4 Flowing Noise Material tutorial: https://www.youtube.com/watch?v=ut80qnOtNRw  </description>
+    </item>
+    
+    <item>
+      <title>StylizedExplosion</title>
+      <link>https://dinwy.github.io/everyday/2019/stylizedExplosion/</link>
+      <pubDate>Thu, 07 Feb 2019 17:52:43 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/stylizedExplosion/</guid>
+      <description>  Description Stylized explosion made in UE4.
+References  Blender Tutorial - Anime Style FX Workflow: https://www.youtube.com/watch?v=fE-uDqBpXxI Huge Building Explosion at 2500fps - The Slow Mo Guys: https://www.youtube.com/watch?v=bTUu4ZLtDSs  </description>
+    </item>
+    
+    <item>
+      <title>StylizedBombUE4</title>
+      <link>https://dinwy.github.io/everyday/2019/stylizedBombUE4/</link>
+      <pubDate>Mon, 21 Jan 2019 18:59:41 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/stylizedBombUE4/</guid>
+      <description>Description Zelda style stylized bomb effect on UE4. From following tutorial, https://youtu.be/0IrCggoJCno
+Small Talk How UE4 cascade works and Unity3D particle system works are different. Need to write down some document for myself.</description>
+    </item>
+    
+    <item>
+      <title>DepthMaskUnity</title>
+      <link>https://dinwy.github.io/everyday/2019/depthMaskUnity/</link>
+      <pubDate>Fri, 18 Jan 2019 14:38:24 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/depthMaskUnity/</guid>
+      <description>Description Understand depth mask in Unity3D. https://youtu.be/cHhxs12ZfSQ</description>
     </item>
     
   </channel>
