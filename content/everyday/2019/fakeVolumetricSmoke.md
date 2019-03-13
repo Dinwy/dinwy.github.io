@@ -1,7 +1,7 @@
 +++
 title = "FakeVolumetricSmoke"
 date = 2019-02-18T19:33:45+09:00
-tags = ["ue4", "vfx"]
+tags = ["ue4", "shader", "vfx"]
 categories = "everyday"
 thumbnail = "/img/ue4/fakeSmoke.gif"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Firefox"
 date = 2019-01-08T16:49:46+09:00
-tags = []
+tags = ["ue4", "animation"]
 categories = "everyday"
 thumbnail = "/img/firefox.gif"
 +++

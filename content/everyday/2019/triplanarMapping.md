@@ -1,13 +1,13 @@
 +++
 title = "TriplanarMapping"
 date = 2019-03-06T15:49:26+09:00
-tags = []
+tags = ["ue4", "shader"]
 categories = "everyday"
 thumbnail = "/video/triplanarMapping.mp4"
 +++
 
 <div class="image">
-<video autoplay loop id="vid" src="/video/triplanarMapping.mp4" type="video/mp4" style="max-width: 480px;">
+<video autoplay muted loop id="vid" src="/video/triplanarMapping.mp4" type="video/mp4" style="max-width: 480px;">
 </div>
 
 <div class="description">

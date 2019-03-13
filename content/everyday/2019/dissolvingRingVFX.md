@@ -1,7 +1,7 @@
 +++
 title = "DissolvingRingVFX"
 date = 2019-02-08T18:22:54+09:00
-tags = ["ue4"]
+tags = ["ue4", "shader", "vfx"]
 categories = "everyday"
 thumbnail = "/img/ue4/dissolvingRing_vfx.gif"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "DepthMaskUnity"
 date = 2019-01-18T14:38:24+09:00
-tags = []
+tags = ["unity", "shader"]
 categories = "everyday"
 thumbnail = "/img/depthMask.gif"
 +++

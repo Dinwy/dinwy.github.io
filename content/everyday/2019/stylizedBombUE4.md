@@ -1,7 +1,7 @@
 +++
 title = "StylizedBombUE4"
 date = 2019-01-21T18:59:41+09:00
-tags = []
+tags = ["ue4", "shader", "vfx"]
 categories = "everyday"
 thumbnail = "/img/stylizedBomb.gif"
 +++

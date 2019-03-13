@@ -1,7 +1,7 @@
 +++
 title = "SodaCan"
 date = 2019-01-04T17:39:02+09:00
-tags = []
+tags = ["blender", "modeling"]
 categories = "everyday"
 thumbnail = "/img/sodaCan.jpg"
 +++

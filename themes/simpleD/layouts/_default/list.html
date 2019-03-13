@@ -20,7 +20,7 @@
 	</div>
 	{{ else if eq "mp4" $ext }}
 	<div class="image">
-		<video autoplay loop id="vid" src="{{ .Params.thumbnail }}" type="video/mp4" style="max-width: 384px;">
+		<video autoplay muted loop id="vid" src="{{ .Params.thumbnail }}" type="video/mp4" style="max-width: 384px;">
 	</div>
 	{{ end }}
 {{ end }}

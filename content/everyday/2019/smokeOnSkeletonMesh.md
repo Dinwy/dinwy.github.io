@@ -1,7 +1,7 @@
 +++
 title = "SmokeOnSkeletonMesh"
 date = 2019-02-21T19:00:31+09:00
-tags = []
+tags = ["ue4", "shader", "vfx"]
 categories = "everyday"
 thumbnail = "/img/ue4/smokeOnSkeletonMesh.gif"
 +++
