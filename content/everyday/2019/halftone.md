@@ -12,10 +12,10 @@ thumbnail = "/img/ue4/halftone.jpg"
 
 <div class="description">
 # Description
-Recreate Keijiro/TV shader in UE4.
+Create halftone shader.
 
 ## Blueprint
 <img src="/img/ue4/BP_halftone.jpg">
 
-# References
-- ShaderGraphExmaple: https://github.com/keijiro/ShaderGraphExamples
+## References
+- 스파이더맨 뉴 유니버스 스타일 셰이더 만들기: https://blog.naver.com/mnpshino/221481588595
