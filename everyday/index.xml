@@ -6,19 +6,29 @@
     <description>Recent content in Everydays on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2019 18:28:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 11:03:51 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/everyday/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>DistanceDissolve</title>
+      <title>Hologram</title>
+      <link>https://dinwy.github.io/everyday/2019/hologram/</link>
+      <pubDate>Mon, 18 Mar 2019 11:03:51 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/hologram/</guid>
+      <description>  Description Simple hologram shader.
+Blueprint References  UE4 - Tutorial - Hologram Material! (Request!): https://www.youtube.com/watch?v=wIz6iyIOkys  </description>
+    </item>
+    
+    <item>
+      <title>Apparition Material</title>
       <link>https://dinwy.github.io/everyday/2019/distanceDissolve/</link>
       <pubDate>Wed, 13 Mar 2019 18:28:32 +0900</pubDate>
       
       <guid>https://dinwy.github.io/everyday/2019/distanceDissolve/</guid>
-      <description>  Description Follow tutorial from DeppSpaceBanana.
-References  UE4 Apparition Material: https://deepspacebanana.github.io/deepspacebanana.github.io/blog/shader/art/unreal%20engine/UE4-Apparition-Material  </description>
+      <description>  Description Follow apparition material tutorial from DeppSpaceBanana.
+Blueprint References  UE4 Apparition Material: https://deepspacebanana.github.io/deepspacebanana.github.io/blog/shader/art/unreal%20engine/UE4-Apparition-Material  </description>
     </item>
     
     <item>
@@ -117,7 +127,7 @@ References  Blender Tutorial - Anime Style FX Workflow: https://www.youtube.com/
       <pubDate>Thu, 31 Jan 2019 19:50:34 +0900</pubDate>
       
       <guid>https://dinwy.github.io/everyday/2019/shotgun/</guid>
-      <description>  Description Finished Udemy tutorial.
+      <description> j  Description Finished Udemy tutorial.
  https://www.udemy.com/blender-and-substance-painter-model-fortnites-pump-shotgun/learn/v4/overview  </description>
     </item>
     
