@@ -6,10 +6,40 @@
     <description>Recent content in Everyday on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Mar 2019 11:03:51 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 16:18:59 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Halftone</title>
+      <link>https://dinwy.github.io/everyday/2019/halftone/</link>
+      <pubDate>Mon, 18 Mar 2019 16:18:59 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/halftone/</guid>
+      <description>  Description Create halftone shader.
+Blueprint References  스파이더맨 뉴 유니버스 스타일 셰이더 만들기: https://blog.naver.com/mnpshino/221481588595  </description>
+    </item>
+    
+    <item>
+      <title>RimLight</title>
+      <link>https://dinwy.github.io/everyday/2019/rimLight/</link>
+      <pubDate>Mon, 18 Mar 2019 16:02:30 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/rimLight/</guid>
+      <description>  Description Rim light using NDotL.
+Blueprint References  유니티와 언리얼에서 NdotL 구현하기: https://blog.naver.com/mnpshino/221441167376 Shader Development from Scratch for Unity with Cg: https://www.udemy.com/unity-shaders/  </description>
+    </item>
+    
+    <item>
+      <title>TV</title>
+      <link>https://dinwy.github.io/everyday/2019/tv/</link>
+      <pubDate>Mon, 18 Mar 2019 15:53:42 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/tv/</guid>
+      <description>  Description Recreate Keijiro/TV shader in UE4.
+Blueprint References  ShaderGraphExmaple: https://github.com/keijiro/ShaderGraphExamples  </description>
+    </item>
     
     <item>
       <title>Hologram</title>
