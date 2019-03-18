@@ -1,5 +1,5 @@
 +++
-title = "DistanceDissolve"
+title = "Apparition Material"
 date = 2019-03-13T18:28:32+09:00
 tags = ["ue4", "shader", "vfx"]
 categories = "everyday"
@@ -12,7 +12,11 @@ thumbnail = "/video/distanceDissolve.mp4"
 
 <div class="description">
 # Description
-Follow tutorial from DeppSpaceBanana.
+Follow apparition material tutorial from DeppSpaceBanana.
+
+## Blueprint
+<img src="/img/ue4/BP_apparition.jpg">
+
 
 ## References
 - UE4 Apparition Material: https://deepspacebanana.github.io/deepspacebanana.github.io/blog/shader/art/unreal%20engine/UE4-Apparition-Material

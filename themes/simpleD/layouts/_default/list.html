@@ -13,12 +13,13 @@
 <div class="image-wrapper">
 
 {{ if .Params.thumbnail }}
-	{{ $ext := substr .Params.thumbnail (sub (len .Params.thumbnail) 3) 3 }}
+	{{ $ext_arr := split .Params.thumbnail "." }}
+	{{ $ext := index $ext_arr 1 }}
 	{{ if or (eq $ext "png") (eq "gif" $ext) (eq "jpg" $ext) }}
 	<div class="image">
 	<img class="constraint-image-size" src="{{ .Params.thumbnail }}" width="100%">
 	</div>
-	{{ else if eq "mp4" $ext }}
+	{{ else if or (eq "mp4" $ext) ( eq "webm" $ext) }}
 	<div class="image">
 		<video playsinline autoplay muted loop id="vid" src="{{ .Params.thumbnail }}" type="video/mp4" style="max-width: 384px;">
 	</div>
