@@ -26,14 +26,9 @@ body {
   line-height: 1.4;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  color: #666666;
-  text-decoration: none;
-  display: block;
+.card > a, a:link, a:visited {
+	color: #666666;
+	text-decoration: none;
 }
 
 a:hover, a:active { }
@@ -288,4 +283,9 @@ color: #007bff;
 .text-center {
     height: 100%;
     text-align: center;
+}
+
+.description > li {
+	display: flex;
+	white-space: pre-wrap;
 }
