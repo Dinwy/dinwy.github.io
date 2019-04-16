@@ -3,7 +3,7 @@ title = "ProceduralHologram"
 date = 2019-03-26T09:58:07+09:00
 tags = ["ue4","shader"]
 categories = "everyday"
-thumbnail = "/img/ue4/proceduralHologram.jpg"
+thumbnail = "/video/ue4/proceduralHologram.webm"
 +++
 
 <div class="image">
