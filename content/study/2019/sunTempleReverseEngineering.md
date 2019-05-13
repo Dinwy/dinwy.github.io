@@ -48,9 +48,19 @@ And about normals, two normals has been mixed. However `M_Pillar` and `M_Arch` h
 
 Someone wrote a article about how to blend normal maps properly in UE4.
 
-http://www.jackcaron.com/techart/2014/11/14/ue4-normal-blending
+> http://www.jackcaron.com/techart/2014/11/14/ue4-normal-blending
 
 Based on this article, it seems like normal blending in M_Pillar seems a bit wrong. Also as far as I know, you should not add two normals.
+
+Next, move to statue.
+
+<img src="/img/ue4/study/sunTempleReverseEngineering/statue.jpg"  style="max-width: 1080px;">
+
+I thought it has been textured in Substance Painter but this project is a bit old so they have crated procedural texture. I was bit surprised `base_color` only contains cracks.
+
+Based on AO map which is using Red channel, Green and Blue channel has been used just for masking. Also those GB channels has been hand painted. 
+
+In my opinion, In 2019, it would be much easier just paint in Substance Painter than creating procedural material.
 
 ## Nomenclature
 
