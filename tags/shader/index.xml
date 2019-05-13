@@ -6,10 +6,22 @@
     <description>Recent content in Shader on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2019 18:56:23 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 15:31:58 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/shader/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SunTempleReverseEngineering</title>
+      <link>https://dinwy.github.io/study/2019/sunTempleReverseEngineering/</link>
+      <pubDate>Mon, 13 May 2019 15:31:58 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/sunTempleReverseEngineering/</guid>
+      <description>Preface I have seen a good article about reverse engineering UE4 tutorial assets. So I got inspired by that and try to do the same thing.
+Source From [Unreal 언리얼]태양의 사원 리버스 엔지니어링: http://blog.naver.com/PostView.nhn?blogId=cccani&amp;amp;logNo=221315412825&amp;amp;from=search&amp;amp;redirect=Log&amp;amp;widgetTypeCall=true&amp;amp;directAccess=false
+Summary So I download the SunTemple example project and opened in Unreal. Then I opened SM_Pillar model.
+About modeling the top part of pillar, the leaf decoration seems like used same brush. And AO &amp;amp; Normal has been added to low poly model.</description>
+    </item>
     
     <item>
       <title>SphereMask</title>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SunTempleReverseEngineering</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">SunTempleReverseEngineering</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="preface">Preface</h2>
+
+<p>I have seen a good article about reverse engineering UE4 tutorial assets. So I got inspired by that and try to do the same thing.</p>
+
+<h2 id="source-from">Source From</h2>
+
+<p>[Unreal 언리얼]태양의 사원 리버스 엔지니어링: <a href="http://blog.naver.com/PostView.nhn?blogId=cccani&amp;logNo=221315412825&amp;from=search&amp;redirect=Log&amp;widgetTypeCall=true&amp;directAccess=false">http://blog.naver.com/PostView.nhn?blogId=cccani&amp;logNo=221315412825&amp;from=search&amp;redirect=Log&amp;widgetTypeCall=true&amp;directAccess=false</a></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>So I download the SunTemple example project and opened in Unreal. Then I opened SM_Pillar model.</p>
+
+<p><img src="/img/ue4/study/sunTempleReverseEngineering/pillarModel.jpg"  style="max-width: 600px;"></p>
+
+<p>About modeling the top part of pillar, the leaf decoration seems like used same brush. And AO &amp; Normal has been added to low poly model.</p>
+
+<p>Let&rsquo;s move to M_pillar material.</p>
+
+<p><img src="/img/ue4/study/sunTempleReverseEngineering/M_pillar_node.jpg"  style="max-width: 600px;"></p>
+
+<p>First thing I have noticed is that they are using customizedUV, and I don&rsquo;t know how that works. So I went to UE4 documentation.</p>
+
+<p>The document says that customized UV is only manipulating Vertex shader, which has benefit when tiling textures.</p>
+
+<blockquote>
+<p>While a UV Coordinate node can be either part of the vertex or pixel shader, the CustomizedUVs feature is only run in the vertex shader, and offers a performance increase over running the same calculations in the pixel shader. This offers an excellent way to speed up even just tiling a texture.
+<a href="https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/CustomizedUVs">https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/CustomizedUVs</a></p>
+</blockquote>
+
+<p>Mobile specifically, using customized UV has full-precision benefit.</p>
+
+<blockquote>
+<p>Additionally, everything in the pixel shader on mobile is evaluated with half precision floats. This causes blocky looking textures and some other artifacts, when pixel shader math is done on texture coordinates. The Customized UV inputs however are done with full precision so they get around this problem.
+<a href="https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/CustomizedUVs">https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/CustomizedUVs</a></p>
+</blockquote>
+
+<p><img src="/img/ue4/study/sunTempleReverseEngineering/customizedUV.jpg"  style="max-width: 600px;"><br/>
+<code>CustomizedUV example</code></p>
+
+<p>And about normals, two normals has been mixed. However <code>M_Pillar</code> and <code>M_Arch</code> has different way to mix normals.</p>
+
+<p><img src="/img/ue4/study/sunTempleReverseEngineering/mixingNormalsInMat.jpg"  style="max-width: 1080px;"></p>
+
+<p>Someone wrote a article about how to blend normal maps properly in UE4.</p>
+
+<p><a href="http://www.jackcaron.com/techart/2014/11/14/ue4-normal-blending">http://www.jackcaron.com/techart/2014/11/14/ue4-normal-blending</a></p>
+
+<p>Based on this article, it seems like normal blending in M_Pillar seems a bit wrong. Also as far as I know, you should not add two normals.</p>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<h2 id="references">References</h2>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>
