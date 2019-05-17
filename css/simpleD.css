@@ -212,7 +212,7 @@ text-decoration: none;
 
 .card {
   background-color: white;
-  flex: 0 0 22%;
+  flex: 0 0 20%;
   margin: 1rem .25em;
   border-radius: 1em;
   padding: 1em;

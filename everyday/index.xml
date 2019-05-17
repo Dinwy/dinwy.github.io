@@ -6,10 +6,29 @@
     <description>Recent content in Everydays on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Apr 2019 19:35:40 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 17:59:17 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Silhouette Material</title>
+      <link>https://dinwy.github.io/everyday/2019/silhouetteMaterial/</link>
+      <pubDate>Fri, 17 May 2019 17:59:17 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/silhouetteMaterial/</guid>
+      <description>  Description Create silhouette material. Which works on android Vulkan API and shader model 5.
+Blueprint References  reddit: https://www.reddit.com/r/unrealengine/comments/4gzcdd/custom_depth_pass_how/ UE4 - Tutorial - Render through Walls!: https://youtu.be/timuvlu2ukc  </description>
+    </item>
+    
+    <item>
+      <title>Stair</title>
+      <link>https://dinwy.github.io/everyday/2019/stair/</link>
+      <pubDate>Thu, 16 May 2019 01:17:47 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/stair/</guid>
+      <description>Description Haven&amp;rsquo;t touched Substance painter for a while and learn about how to do basic texturing again.</description>
+    </item>
     
     <item>
       <title>TeleporterShader</title>
