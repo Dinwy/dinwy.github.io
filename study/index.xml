@@ -6,10 +6,22 @@
     <description>Recent content in Studies on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2019 15:31:58 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 18:53:02 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Task In Unity</title>
+      <link>https://dinwy.github.io/study/2019/UsingTaskInUnity/</link>
+      <pubDate>Fri, 17 May 2019 18:53:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/UsingTaskInUnity/</guid>
+      <description>Preface I was trying make a simple vfx and wondering how to update model without using Monobehaviour Update() function.
+If you watch the video carefully model&amp;rsquo;s scale has been changed repeatedly.
+Basically by passing cancellationToken we can run a async task and able to stop it.
+public void SpawnAndPlay(Transform pos) { GameObject.Instantiate(ParticleEffect, pos); cts = new CancellationTokenSource(); CancellationToken ct = cts.Token; ModelAnimation(pos, ct); } public async void ModelAnimation(Transform pos, CancellationToken ct) { await Task.</description>
+    </item>
     
     <item>
       <title>SunTempleReverseEngineering</title>

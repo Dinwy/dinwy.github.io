@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Unity</title>
+<title>Using Task In Unity</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -83,70 +83,88 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Unity</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/study/2019/UsingTaskInUnity/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">Using Task In Unity</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="preface">Preface</h2>
 
+<p>I was trying make a simple vfx and wondering how to update model without using <code>Monobehaviour</code> <code>Update()</code> function.</p>
 
+<p><video playsinline autoplay muted loop id="vid" src="/video/unity/vfx_jumpingWolf.webm" type="video/webm"></p>
+
+<p>If you watch the video carefully model&rsquo;s <code>scale</code> has been changed repeatedly.</p>
+
+<p>Basically by passing <code>cancellationToken</code> we can run a async task and able to stop it.</p>
+
+<pre><code class="language-cs">	public void SpawnAndPlay(Transform pos)
+	{
+		GameObject.Instantiate(ParticleEffect, pos);
+		cts = new CancellationTokenSource();
+		CancellationToken ct = cts.Token;
+
+		ModelAnimation(pos, ct);
+	}
+
+	public async void ModelAnimation(Transform pos, CancellationToken ct)
+	{
+		await Task.Delay(TimeSpan.FromSeconds(6));
+		var go = GameObject.Instantiate(Model, pos);
+		cat = go;
+
+		while (!ct.IsCancellationRequested)
+		{
+			await Task.Delay(TimeSpan.FromSeconds(.2f), ct);
+
+			if (!ct.IsCancellationRequested) ScaleUP(go, ct);
+		}
+
+		await Task.Delay(TimeSpan.FromSeconds(2));
+	}
+
+	private void ScaleUP(GameObject go, CancellationToken ct)
+	{
+		go.transform.localScale += (new Vector3(1, 1, 1) / 2f);
+
+		if (go.transform.localScale.x &gt;= 5)
+		{
+			cts.Cancel();
+		}
+	}
+
+</code></pre>
+
+<p>In the code above, we will scale up the model every <code>.2f</code> and when the <code>localScale.x</code> reaches 5, cancellation token will be called.</p>
+
+<p>By doing this we don&rsquo;t need to use <code>Update()</code></p>
+
+<h2 id="source-from">Source From</h2>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/4890915/is-there-a-task-based-replacement-for-system-threading-timer/23814733#23814733">https://stackoverflow.com/questions/4890915/is-there-a-task-based-replacement-for-system-threading-timer/23814733#23814733</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<h2 id="nomenclature">Nomenclature</h2>
 
 </div>
-
-<h1>Using Task In Unity</h1>
-17 May 2019
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/everyday/2019/depthMaskUnity/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-	
-	
-	
-	<div class="image">
-	<img class="constraint-image-size" src="/img/depthMask.gif" width="100%">
-	</div>
-	
-
-
-
-
-</div>
-
-<h1>DepthMaskUnity</h1>
-18 Jan 2019
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>
