@@ -1,5 +1,5 @@
 +++
-title = "TeleporterShader"
+title = "Teleporter Shader"
 date = 2019-04-16T19:35:40+09:00
 tags = []
 categories = "everyday"

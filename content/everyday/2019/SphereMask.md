@@ -1,5 +1,5 @@
 +++
-title = "SphereMask"
+title = "Sphere Mask"
 date = 2019-04-04T18:56:23+09:00
 tags = ["ue4","shader"]
 categories = "everyday"
