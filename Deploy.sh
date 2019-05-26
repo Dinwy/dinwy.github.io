@@ -22,4 +22,4 @@ echo "Updating master branch"
 cd public
 git add .
 git commit -m "Publishing to master (publish.sh)"
-git push upstream master
+git push upstream master -f
