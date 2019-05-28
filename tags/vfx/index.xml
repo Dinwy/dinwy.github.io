@@ -6,10 +6,20 @@
     <description>Recent content in Vfx on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2019 19:28:27 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 13:54:56 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/vfx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shooting Star</title>
+      <link>https://dinwy.github.io/everyday/2019/shootingStar/</link>
+      <pubDate>Tue, 28 May 2019 13:54:56 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/shootingStar/</guid>
+      <description>  Description Having fun with Unity3D Particle system. Improve result from the last one.
+Tools  Unity3D  References  Etienne POV - 1st place winner RIOT CONTEST 2017 VFX (Stylized): https://www.artstation.com/artwork/by9Nr Animation 101 - Intro to Animation in Unity: https://youtu.be/ts24UWC0mY4  </description>
+    </item>
     
     <item>
       <title>StunEffect</title>

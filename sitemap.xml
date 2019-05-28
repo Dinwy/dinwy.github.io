@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/everyday/2019/shootingStar/</loc>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2019/woodenShield/</loc>
+    <lastmod>2019-05-27T00:21:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/everyday/2019/woodenSword/</loc>
+    <lastmod>2019-05-25T00:18:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2019/stunEffect/</loc>
     <lastmod>2019-05-23T19:28:27+09:00</lastmod>
   </url>
@@ -373,7 +388,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/blender/</loc>
-    <lastmod>2019-01-31T19:50:34+09:00</lastmod>
+    <lastmod>2019-05-27T00:21:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -408,19 +423,19 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/everyday/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/everyday/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -486,7 +501,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/modeling/</loc>
-    <lastmod>2019-01-04T17:39:02+09:00</lastmod>
+    <lastmod>2019-05-27T00:21:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -600,13 +615,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/unity/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/tags/unity3d/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -618,7 +633,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/vfx/</loc>
-    <lastmod>2019-05-23T19:28:27+09:00</lastmod>
+    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
