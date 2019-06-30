@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>everyday on Dinwy&#39;s blog</title>
+    <title>Everyday on Dinwy&#39;s blog</title>
     <link>https://dinwy.github.io/categories/everyday/</link>
-    <description>Recent content in everyday on Dinwy&#39;s blog</description>
+    <description>Recent content in Everyday on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jun 2019 18:02:07 +0900</lastBuildDate>
@@ -77,6 +77,16 @@ Blueprint References  reddit: https://www.reddit.com/r/unrealengine/comments/4gz
       
       <guid>https://dinwy.github.io/everyday/2019/stair/</guid>
       <description>Description Haven&amp;rsquo;t touched Substance painter for a while and learn about how to do basic texturing again.</description>
+    </item>
+    
+    <item>
+      <title>SculptingPractice</title>
+      <link>https://dinwy.github.io/everyday/2019/sculptingPractice/</link>
+      <pubDate>Fri, 10 May 2019 00:10:52 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/sculptingPractice/</guid>
+      <description>  Description Sculpting practice.
+References  Mastering Sculpting in Blender: https://www.udemy.com/mastering-sculpting-in-blender/  </description>
     </item>
     
     <item>
