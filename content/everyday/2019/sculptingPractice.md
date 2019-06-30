@@ -7,7 +7,7 @@ thumbnail = "/img/blender/creatureSculpting.png"
 +++
 
 <div class="image">
-<img src="/img/blender/creatureSculpting.png" style="max-width: 480px;">
+<img src="/img/blender/creatureSculpting.png" style="max-width: 800px;">
 </div>
 
 <div class="description">
