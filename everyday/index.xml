@@ -6,10 +6,19 @@
     <description>Recent content in Everydays on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 13:54:56 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 18:02:07 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/everyday/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DoorFrame</title>
+      <link>https://dinwy.github.io/everyday/2019/doorFrame/</link>
+      <pubDate>Sun, 23 Jun 2019 18:02:07 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/doorFrame/</guid>
+      <description>Description Door frame rendered in Blender and UE4. Learning how to use Substance painter.</description>
+    </item>
     
     <item>
       <title>Shooting Star</title>

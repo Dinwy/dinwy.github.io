@@ -6,21 +6,31 @@
     <description>Recent content in Categories on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jun 2019 18:02:07 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Everyday</title>
+      <title>everyday</title>
       <link>https://dinwy.github.io/categories/everyday/</link>
-      <pubDate>Tue, 28 May 2019 13:54:56 +0900</pubDate>
+      <pubDate>Sun, 23 Jun 2019 18:02:07 +0900</pubDate>
       
       <guid>https://dinwy.github.io/categories/everyday/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gamejam</title>
+      <title>study</title>
+      <link>https://dinwy.github.io/categories/study/</link>
+      <pubDate>Fri, 17 May 2019 18:53:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/categories/study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gamejam</title>
       <link>https://dinwy.github.io/categories/gamejam/</link>
       <pubDate>Tue, 24 Apr 2018 04:23:22 +0900</pubDate>
       
@@ -29,20 +39,11 @@
     </item>
     
     <item>
-      <title>Legacy</title>
+      <title>legacy</title>
       <link>https://dinwy.github.io/categories/legacy/</link>
       <pubDate>Tue, 27 Jun 2017 11:00:10 +0900</pubDate>
       
       <guid>https://dinwy.github.io/categories/legacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Study</title>
-      <link>https://dinwy.github.io/categories/study/</link>
-      <pubDate>Fri, 17 May 2019 18:53:02 +0900</pubDate>
-      
-      <guid>https://dinwy.github.io/categories/study/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Webgl on Dinwy&#39;s blog</title>
+    <title>webgl on Dinwy&#39;s blog</title>
     <link>https://dinwy.github.io/tags/webgl/</link>
-    <description>Recent content in Webgl on Dinwy&#39;s blog</description>
+    <description>Recent content in webgl on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>

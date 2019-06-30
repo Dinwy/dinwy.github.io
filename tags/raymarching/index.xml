@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Raymarching on Dinwy&#39;s blog</title>
-    <link>https://dinwy.github.io/tags/raymarching/</link>
-    <description>Recent content in Raymarching on Dinwy&#39;s blog</description>
+    <title>rayMarching on Dinwy&#39;s blog</title>
+    <link>https://dinwy.github.io/tags/rayMarching/</link>
+    <description>Recent content in rayMarching on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Feb 2019 12:12:50 +0900</lastBuildDate>
     
-	<atom:link href="https://dinwy.github.io/tags/raymarching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dinwy.github.io/tags/rayMarching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

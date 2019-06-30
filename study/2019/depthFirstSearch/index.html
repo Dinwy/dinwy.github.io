@@ -126,18 +126,22 @@ So it is good to know what is DFS.</p>
 &gt;   It is immutable.
 &gt;   It will not have to be boxed frequently.
 &gt;  <a href="https://stackoverflow.com/questions/521298/when-to-use-struct">https://stackoverflow.com/questions/521298/when-to-use-struct</a></li>
-<li>Boxing : The process of converting a value type to the type object or to any interface type implemented by this value type. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing</a>
-<code>cs
-int i = 123;
+
+<li><p>Boxing : The process of converting a value type to the type object or to any interface type implemented by this value type. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing</a></p>
+
+<pre><code class="language-cs">int i = 123;
 // The following line boxes i.
 object o = i;  
-</code></li>
+</code></pre>
+
+<ul>
 <li>Unboxing: Extracts the value type from the object.
 <code>cs
 int i = 123;      // a value type
 object o = i;     // boxing
 int j = (int)o;   // unboxing
 </code></li>
+</ul></li>
 </ul>
 
 </div>

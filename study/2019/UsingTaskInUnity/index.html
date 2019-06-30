@@ -103,40 +103,40 @@
 
 <p>Basically by passing <code>cancellationToken</code> we can run a async task and able to stop it.</p>
 
-<pre><code class="language-cs">	public void SpawnAndPlay(Transform pos)
-	{
-		GameObject.Instantiate(ParticleEffect, pos);
-		cts = new CancellationTokenSource();
-		CancellationToken ct = cts.Token;
+<pre><code class="language-cs">    public void SpawnAndPlay(Transform pos)
+    {
+        GameObject.Instantiate(ParticleEffect, pos);
+        cts = new CancellationTokenSource();
+        CancellationToken ct = cts.Token;
 
-		ModelAnimation(pos, ct);
-	}
+        ModelAnimation(pos, ct);
+    }
 
-	public async void ModelAnimation(Transform pos, CancellationToken ct)
-	{
-		await Task.Delay(TimeSpan.FromSeconds(6));
-		var go = GameObject.Instantiate(Model, pos);
-		cat = go;
+    public async void ModelAnimation(Transform pos, CancellationToken ct)
+    {
+        await Task.Delay(TimeSpan.FromSeconds(6));
+        var go = GameObject.Instantiate(Model, pos);
+        cat = go;
 
-		while (!ct.IsCancellationRequested)
-		{
-			await Task.Delay(TimeSpan.FromSeconds(.2f), ct);
+        while (!ct.IsCancellationRequested)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(.2f), ct);
 
-			if (!ct.IsCancellationRequested) ScaleUP(go, ct);
-		}
+            if (!ct.IsCancellationRequested) ScaleUP(go, ct);
+        }
 
-		await Task.Delay(TimeSpan.FromSeconds(2));
-	}
+        await Task.Delay(TimeSpan.FromSeconds(2));
+    }
 
-	private void ScaleUP(GameObject go, CancellationToken ct)
-	{
-		go.transform.localScale += (new Vector3(1, 1, 1) / 2f);
+    private void ScaleUP(GameObject go, CancellationToken ct)
+    {
+        go.transform.localScale += (new Vector3(1, 1, 1) / 2f);
 
-		if (go.transform.localScale.x &gt;= 5)
-		{
-			cts.Cancel();
-		}
-	}
+        if (go.transform.localScale.x &gt;= 5)
+        {
+            cts.Cancel();
+        }
+    }
 
 </code></pre>
 
