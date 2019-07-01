@@ -7,7 +7,7 @@ thumbnail = "/img/depthMask.gif"
 +++
 
 <div class="image">
-<img src="/img/dpethMask.gif" style="max-width: 480px;">
+<img src="/img/depthMask.gif" style="max-width: 480px;">
 </div>
 
 <div class="description">
