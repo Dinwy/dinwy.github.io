@@ -1,7 +1,7 @@
 +++
 title = "StylizedTile"
 date = 2019-01-30T12:51:51+09:00
-tags = ["b3d","sd","render","pbr"]
+tags = ["blender","sd","render","pbr"]
 categories = "everyday"
 thumbnail = "/img/stylizedTile.jpg"
 +++
