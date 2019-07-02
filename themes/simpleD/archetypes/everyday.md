@@ -10,5 +10,4 @@ thumbnail = "/img/"
 <img src="/img/" style="max-width: 480px;">
 </div>
 
-<div class="description">
 # Description
