@@ -78,4 +78,4 @@ It is really easy to get an answer just iterating everything but need to think h
 
 ## Count The Islands
 
-It took too long to solve the previous problem, I'll sovle this tomorrow.
+It took too long to solve the previous problem, I'll solve this Kata tomorrow.
