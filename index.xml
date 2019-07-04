@@ -6,10 +6,50 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jul 2019 19:52:44 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jul 2019 02:06:14 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sculpt July 2019: Day4 Rabbit</title>
+      <link>https://dinwy.github.io/everyday/2019/july/sculpting/day4_rabbit/</link>
+      <pubDate>Fri, 05 Jul 2019 02:06:14 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/sculpting/day4_rabbit/</guid>
+      <description>Description Day4 rabbit. Not it feels I&amp;rsquo;m getting better about proportion and compositing. But it took too long time to do this. I should improve this.
+Stats Time Taken: about 03:00:00</description>
+    </item>
+    
+    <item>
+      <title>Sculpt July 2019: Day3 Rat</title>
+      <link>https://dinwy.github.io/everyday/2019/july/sculpting/day3_rat/</link>
+      <pubDate>Fri, 05 Jul 2019 02:04:34 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/sculpting/day3_rat/</guid>
+      <description>Description Day3 Rat. I&amp;rsquo;ve tried fox but made a rat&amp;hellip;. 3D sculpting is not easy.
+Stats Time Taken: about 02:00:00</description>
+    </item>
+    
+    <item>
+      <title>Sculpt July 2019: Day2 Sheep</title>
+      <link>https://dinwy.github.io/everyday/2019/july/sculpting/day2_sheep/</link>
+      <pubDate>Fri, 05 Jul 2019 02:01:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/sculpting/day2_sheep/</guid>
+      <description>Description Day2 Sheep. I&amp;rsquo;ve tried make a sheep however I&amp;rsquo;ve mixed human face and sheep at the same time&amp;hellip;.
+Stats Time Taken: about 01:30:00</description>
+    </item>
+    
+    <item>
+      <title>Sculpt July 2019: Day1 Flamingo</title>
+      <link>https://dinwy.github.io/everyday/2019/july/sculpting/day1_flamingo/</link>
+      <pubDate>Fri, 05 Jul 2019 01:51:13 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/sculpting/day1_flamingo/</guid>
+      <description>Description I was thinking do I have to upload my poor sculpting. Who cares. Setting up time spend more than I&amp;rdquo;ve expected.
+Stats Time Taken: about 01:30:00</description>
+    </item>
     
     <item>
       <title>Custom Ray Marching Shader</title>
