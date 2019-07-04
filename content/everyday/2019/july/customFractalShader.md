@@ -1,5 +1,5 @@
 +++
-title = "CustomFractalShader"
+title = "Custom Ray Marching Shader"
 date = 2019-07-04T19:52:44+09:00
 tags = ["ue4", "shader"]
 categories = "everyday"
