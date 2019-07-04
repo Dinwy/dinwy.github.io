@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DoubleCola And PrimesInNumbers</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">DoubleCola And PrimesInNumbers</h1>
+<div class="content" id="content">
+ 
+
+<h1 id="description">Description</h1>
+
+<p>Today I&rsquo;ll review <code>Double Cola</code>(<a href="https://www.codewars.com/kata/double-cola/">https://www.codewars.com/kata/double-cola/</a>) <br/>
+And I&rsquo;ll solve a new kata <code>Primes in numbers</code>(<a href="https://www.codewars.com/kata/54d512e62a5e54c96200019e">https://www.codewars.com/kata/54d512e62a5e54c96200019e</a>) <br/>
+Difficulty level of both are <code>5kyu</code>.</p>
+
+<h2 id="double-cola">Double Cola</h2>
+
+<p>Time time I solved before: a year ago
+Which language I&rsquo;ve used to solve: C#</p>
+
+<h3 id="details">Details</h3>
+
+<blockquote>
+<p>Sheldon, Leonard, Penny, Rajesh and Howard are in the queue for a &ldquo;Double Cola&rdquo; drink vending machine; there are no other people in the queue. The first one in the queue (Sheldon) buys a can, drinks it and doubles! The resulting two Sheldons go to the end of the queue. Then the next in the queue (Leonard) buys a can, drinks it and gets to the end of the queue as two Leonards, and so on.</p>
+</blockquote>
+
+<p>For example, Penny drinks the third can of cola and the queue will look like this:</p>
+
+<p>Rajesh, Howard, Sheldon, Sheldon, Leonard, Leonard, Penny, Penny</p>
+
+<p>Write a program that will return the name of the person who will drink the n-th cola.
+Input</p>
+
+<p>The input data consist of an array which contains at least 1 name, and single integer n which may go as high as the biggest number your language of choice supports (if there&rsquo;s such limit, of course).
+Output / Examples</p>
+
+<p>Return the single line — the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1.</p>
+
+<p>whoIsNext([&ldquo;Sheldon&rdquo;, &ldquo;Leonard&rdquo;, &ldquo;Penny&rdquo;, &ldquo;Rajesh&rdquo;, &ldquo;Howard&rdquo;], 1) == &ldquo;Sheldon&rdquo;
+whoIsNext([&ldquo;Sheldon&rdquo;, &ldquo;Leonard&rdquo;, &ldquo;Penny&rdquo;, &ldquo;Rajesh&rdquo;, &ldquo;Howard&rdquo;], 52) == &ldquo;Penny&rdquo;
+whoIsNext([&ldquo;Sheldon&rdquo;, &ldquo;Leonard&rdquo;, &ldquo;Penny&rdquo;, &ldquo;Rajesh&rdquo;, &ldquo;Howard&rdquo;], 7230702951) == &ldquo;Leonard&rdquo;</p>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-js">function whoIsNext(names, r) {
+    var arrLeng = names.length;
+    var j = 1;
+
+    while (r &gt; arrLeng) {
+        r -= arrLeng;
+        arrLeng *= 2;
+    }
+
+    while (r &gt; arrLeng / names.length * j) {
+        j++
+    }
+
+    return names[j - 1]
+}
+</code></pre>
+
+<h3 id="stats">Stats</h3>
+
+<p>Preparation time: 00:06:00
+Time taken: 01:03:00</p>
+
+<h3 id="thoughts">Thoughts</h3>
+
+<p>I&rsquo;ve spend way more time than I&rsquo;ve expected. Need to train some parts of brain which should work when I&rsquo;m tired or cannot concentrate.</p>
+
+<ul>
+<li>Lesson learned: Find a rule, break into pieces.</li>
+</ul>
+
+<h2 id="primes-in-numbers">Primes in numbers</h2>
+
+<h3 id="details-1">Details</h3>
+
+<div>
+Given a positive number n > 1 find the prime factor decomposition of n. The result will be a string with the following form :
+
+"(p1**n1)(p2**n2)...(pk**nk)"
+
+with the p(i) in increasing order and n(i) empty if n(i) is 1.
+
+Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
+
+</div>
+
+<h3 id="my-solution-1">My Solution</h3>
+
+<pre><code class="language-js">function primeFactors(n) {
+  var ans = &quot;&quot;
+  var k = 2;
+  var c = 0;
+  var i = 0;
+
+  while (k &lt;= n) {
+    while (n % k == 0) {
+      n /= k;
+      c++;
+    }
+    if (c == 0) {
+      k++;
+      i++;
+      continue;
+    }
+
+    if (c == 1) { ans += `(${k})` }
+    else ans += `(${k}**${c})`
+    c = 0;
+    k++;
+    i++;
+}
+
+  return ans;
+}
+</code></pre>
+
+<h3 id="stats-1">Stats</h3>
+
+<p>Preparation time: 02:00:00
+Time Taken: 27:10:00</p>
+
+<h3 id="thoughts-1">Thoughts</h3>
+
+<p>Feel much better than reviewing the DoubleCola kata.</p>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

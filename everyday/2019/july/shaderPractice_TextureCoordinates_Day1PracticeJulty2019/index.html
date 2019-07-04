@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shader Practice TextureCoordinates Day1PracticeJuly2019</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">Shader Practice TextureCoordinates Day1PracticeJuly2019</h1>
+<div class="content" id="content">
+ 
+
+<h1 id="description">Description</h1>
+
+<p>Glad I have some time to practice shader at work. Today I&rsquo;ll review very basic part of pixel shader and will create.</p>
+
+<h2 id="texturecoordinates-basic">TextureCoordinates basic</h2>
+
+<p>It is a good place to learn about pixel shader in Shadertoy(<a href="https://www.shadetoy.com">https://www.shadetoy.com</a>). It simply displays mainImage on the screen.
+The code below is simply how to draw circle.</p>
+
+<pre><code class="language-js">float sdCircle( vec2 p, float r )
+{
+  return length(p) - r;
+}
+
+void mainImage(out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    // The order is important
+    vec2 uv = fragCoord.xy/iResolution.xy;
+
+    uv -= .5;
+    uv.x *= iResolution.x/ iResolution.y;
+
+    float c = sdCircle(uv, .5);
+  
+    if ( c &lt; .0) c = 1.0; else c = 0.;
+
+     // Output to screen
+    fragColor = vec4(vec3(c), 1.0);
+}
+</code></pre>
+
+<p>Let&rsquo;s break down this into the small pieces. This main image will run every pixels on the window it displays it.</p>
+
+<ol>
+<li>So <code>vec2 uv</code> means that normalized value between 0-1 on the screen.</li>
+<li>UV value -.5 which now uv&rsquo;s range will be -0.5 to 0.5</li>
+<li>UV.x will be multiply by ratio of <code>iResolution.x</code> and <code>iResolution.y</code>. For example, on 1080p screen, it will be 1920 / 1080 = 1.7778. Which will correct the UV.x stretching.</li>
+<li>Calculate circle. This is <strong>signed distance functions</strong>*(<a href="https://en.wikipedia.org/wiki/Signed_distance_function">https://en.wikipedia.org/wiki/Signed_distance_function</a>). Simply, on arbitrary position <code>p</code>, we can figure out we are inside of that circle or surface or outside. The data we need to calculate is <strong>circle&rsquo;s center position</strong> and <strong>radius of circle</strong> and <strong>p</strong>. In this function we put circle in the center <code>(0, 0, 0)</code> so we don&rsquo;t need to check the center of the circle however in 3D space we need to change this function like as this below.</li>
+</ol>
+
+<pre><code class="language-js">// params:
+// p: arbitrary point in 3D space
+// c: the center of our sphere
+// r: the radius of our sphere
+float distance_from_sphere(in vec3 p, in vec3 c, float r)
+{
+    return length(p - c) - r;
+}
+</code></pre>
+
+<ol>
+<li>By processing 4, we will get blurry dark circle in the center which radius is <code>.5</code></li>
+<li>We will make black and white rather than using blurry image. The point <code>p</code> Inside of the circle will be shown as white and outside will be shown as black.</li>
+<li>Output to screen.</li>
+</ol>
+
+<blockquote>
+<p>Source from: <a href="http://www.michaelwalczyk.com/blog/2017/5/25/ray-marching">http://www.michaelwalczyk.com/blog/2017/5/25/ray-marching</a></p>
+</blockquote>
+
+<h3 id="usage">Usage</h3>
+
+<p>This is a very basic of how fragment shader works and knowing this will give you to make a idea how UV works. We can use this like as <strong>Keijiro/TV</strong> effect. I&rsquo;ve recreated that effect on UE4( <a href="https://dinwy.github.io/everyday/2019/tv/">https://dinwy.github.io/everyday/2019/tv/</a>). On that link, see how <code>UV.x</code> is distorted. By adding some values to the <code>UV.x</code> the image looks like it is distorted. That is exactly done in this article like <code>uv.x *= iResolution.x/ iResolution.y;</code></p>
+
+<h3 id="nomenclature">nomenclature</h3>
+
+<ul>
+<li>fragcoord: contains the window-relative coordinates of the current fragment. <a href="https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/gl_FragCoord.xhtml">https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/gl_FragCoord.xhtml</a></li>
+</ul>
+
+<h3 id="stats">Stats</h3>
+
+<ul>
+<li>Time taken: 00:42:05</li>
+</ul>
+
+<h2 id="pokemon-battle-transition">Pokemon Battle Transition</h2>
+
+<p>Since today is the first day of doing <strong>Practice July 2019</strong>, it would be nice to recreate shader which I&rsquo;ve created before. I have recreated this on Unity3D few months ago and will recreate this on UE4.</p>
+
+<ul>
+<li>On Unity with ASE</li>
+</ul>
+
+<div class="image">
+<img src="/img/unity/battleTransitionEffect.jpg" style="max-width: 1024px;">
+</div>
+
+<ul>
+<li>On Unreal Engine 4</li>
+</ul>
+
+<div class="image">
+<video playsinline autoplay muted loop id="vid" src="/video/ue4/battleTransitionEffect.webm" type="video/mp4">
+</div>
+
+<div class="image">
+<img src="/img/ue4/BP_battleTransitionEffect.jpg" style="max-width: 1024px;">
+</div>
+
+<h3 id="references">References</h3>
+
+<ul>
+<li>Shaders Case Study - Pokemon Battle Transitions: <a href="https://youtu.be/LnAoD7hgDxw">https://youtu.be/LnAoD7hgDxw</a></li>
+</ul>
+
+<h3 id="stats-1">Stats</h3>
+
+<ul>
+<li>TIme Taken: 1:55:00</li>
+</ul>
+
+<h2 id="thoughts">Thoughts</h2>
+
+<p>I was spending way more time than I&rsquo;ve expected. Reasons were that I was tired this afternoon also tried to improve some parts in UE4 which was worth trying. However it took too much time. Need to be handled in a better way tomorrow and the next time.</p>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

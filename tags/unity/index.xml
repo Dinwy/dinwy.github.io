@@ -6,10 +6,21 @@
     <description>Recent content in Unity on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 13:54:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 15:28:20 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shader Practice TextureCoordinates Day1PracticeJuly2019</title>
+      <link>https://dinwy.github.io/everyday/2019/july/shaderPractice_TextureCoordinates_Day1PracticeJulty2019/</link>
+      <pubDate>Mon, 01 Jul 2019 15:28:20 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/shaderPractice_TextureCoordinates_Day1PracticeJulty2019/</guid>
+      <description>Description Glad I have some time to practice shader at work. Today I&amp;rsquo;ll review very basic part of pixel shader and will create.
+TextureCoordinates basic It is a good place to learn about pixel shader in Shadertoy(https://www.shadetoy.com). It simply displays mainImage on the screen. The code below is simply how to draw circle.
+float sdCircle( vec2 p, float r ) { return length(p) - r; } void mainImage(out vec4 fragColor, in vec2 fragCoord ) { // Normalized pixel coordinates (from 0 to 1) // The order is important vec2 uv = fragCoord.</description>
+    </item>
     
     <item>
       <title>Shooting Star</title>

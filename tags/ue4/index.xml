@@ -6,10 +6,52 @@
     <description>Recent content in Ue4 on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 17:59:17 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 19:52:44 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/ue4/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom Ray Marching Shader</title>
+      <link>https://dinwy.github.io/everyday/2019/july/customFractalShader/</link>
+      <pubDate>Thu, 04 Jul 2019 19:52:44 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/customFractalShader/</guid>
+      <description>Description Today was quite busy to do anything else than work, but able to create a custom ray marching shader.</description>
+    </item>
+    
+    <item>
+      <title>Custom Gaussian Blur Shader</title>
+      <link>https://dinwy.github.io/everyday/2019/july/customGaussianBlurShader/</link>
+      <pubDate>Wed, 03 Jul 2019 16:49:31 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/customGaussianBlurShader/</guid>
+      <description>  Description Create custom shader from tutorial. It would be nice to change current gaussian blur(slow) to fast one later.  I&amp;rsquo;ll not post BP this time current is exactly same as the tutorial.
+References  Unreal Engine 4 Custom Shaders Tutorial: https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial Fastest Gaussian Blur: http://blog.ivank.net/fastest-gaussian-blur.html  </description>
+    </item>
+    
+    <item>
+      <title>Using CustomShader In UE4.22</title>
+      <link>https://dinwy.github.io/study/2019/july/customShaderInUE4/</link>
+      <pubDate>Wed, 03 Jul 2019 10:57:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/july/customShaderInUE4/</guid>
+      <description>Preface I&amp;rsquo;ve found a good article about how to write a custom shader in UE4 yesterday.
+ Unreal Engine 4 Custom Shaders Tutorial: https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial
+ The article has been made based on UE4.19 and was not working on UE4.22. Because default shader folder has been changed. Therefore it is good to write it down how to do that on UE 4.22.
+Workflow  Follow tutorial from Unreal Engine 4 Custom Shaders Tutorial You will fail when loading .</description>
+    </item>
+    
+    <item>
+      <title>Shader Practice TextureCoordinates Day1PracticeJuly2019</title>
+      <link>https://dinwy.github.io/everyday/2019/july/shaderPractice_TextureCoordinates_Day1PracticeJulty2019/</link>
+      <pubDate>Mon, 01 Jul 2019 15:28:20 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/shaderPractice_TextureCoordinates_Day1PracticeJulty2019/</guid>
+      <description>Description Glad I have some time to practice shader at work. Today I&amp;rsquo;ll review very basic part of pixel shader and will create.
+TextureCoordinates basic It is a good place to learn about pixel shader in Shadertoy(https://www.shadetoy.com). It simply displays mainImage on the screen. The code below is simply how to draw circle.
+float sdCircle( vec2 p, float r ) { return length(p) - r; } void mainImage(out vec4 fragColor, in vec2 fragCoord ) { // Normalized pixel coordinates (from 0 to 1) // The order is important vec2 uv = fragCoord.</description>
+    </item>
     
     <item>
       <title>Silhouette Material</title>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using CustomShader In UE4.22</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">Using CustomShader In UE4.22</h1>
+<div class="content" id="content">
+ 
+
+<h1 id="preface">Preface</h1>
+
+<p>I&rsquo;ve found a good article about how to write a custom shader in UE4 yesterday.</p>
+
+<blockquote>
+<p>Unreal Engine 4 Custom Shaders Tutorial: <a href="https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial">https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial</a></p>
+</blockquote>
+
+<p>The article has been made based on UE4.19 and was not working on UE4.22. Because default shader folder has been changed. Therefore it is good to write it down how to do that on UE 4.22.</p>
+
+<h2 id="workflow">Workflow</h2>
+
+<ol>
+<li>Follow tutorial from <code>Unreal Engine 4 Custom Shaders Tutorial</code></li>
+<li>You will fail when loading <code>.usf</code> file from the folder.</li>
+
+<li><p>Now we need to create C++ GameMode. Right click on content view. <code>New C++ Class</code> -&gt; <code>None</code> and create class.(We will delete later)</p>
+
+<div class="image">
+<img src="/img/ue4/study/customShader/step1.jpg" style="max-width: 480px;">
+<img src="/img/ue4/study/customShader/step2.jpg" style="max-width: 480px;">
+</div>
+<div class="image">
+</div></li>
+
+<li><p>Open Visual Studio 2017.</p></li>
+
+<li><p>Delete <code>MyClass.cpp</code> and <code>MyClass.h</code></p></li>
+
+<li><p>We will modify <code>${YourProjectName}.cpp</code> and <code>${YourProjectName}.h</code>. In this document, it is <code>TestGround.cpp</code> and <code>TestGround.h</code></p></li>
+
+<li><p>Change <code>TestGround.h</code></p>
+
+<pre><code class="language-cpp">// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include &quot;CoreMinimal.h&quot;
+#include &quot;ModuleManager.h&quot;
+
+class FTestGroundModule: public IModuleInterface
+{
+public:
+    virtual void StartupModule() override;
+    virtual void ShutdownModule() override;
+};
+</code></pre></li>
+
+<li><p>Change <code>TestGround.cpp</code></p>
+
+<pre><code class="language-cpp">// Fill out your copyright notice in the Description page of Project Settings.
+
+#include &quot;TestGround.h&quot;
+#include &quot;Modules/ModuleManager.h&quot;
+
+void FTestGroundModule::StartupModule()
+{
+#if (ENGINE_MINOR_VERSION &gt;= 21)    
+    FString ShaderDirectory = FPaths::Combine(FPaths::ProjectDir(), TEXT(&quot;Shaders&quot;));
+    AddShaderSourceDirectoryMapping(&quot;/Project&quot;, ShaderDirectory);
+#endif
+
+}
+
+void FTestGroundModule::ShutdownModule()
+{
+}
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FTestGroundModule, TestGround, &quot;TestGround&quot; );
+</code></pre></li>
+
+<li><p>Delete <code>MyClass</code></p>
+
+<div class="image">
+<img src="/img/ue4/study/customShader/step3.jpg" style="max-width: 480px;">
+</div>
+<div class="image">
+</div></li>
+
+<li><p>End. Now you are able to load your <code>.usf</code> file from <code>/YourProject/Shaders</code> folder.</p></li>
+</ol>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>Unreal Engine 4 Custom Shaders Tutorial: <a href="https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial">https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial</a></li>
+<li><a href="https://forums.unrealengine.com/development-discussion/rendering/1562454-virtual-shader-source-path-link-custom-shaders-4-21-4-22">https://forums.unrealengine.com/development-discussion/rendering/1562454-virtual-shader-source-path-link-custom-shaders-4-21-4-22</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

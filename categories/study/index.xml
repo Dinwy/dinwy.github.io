@@ -6,10 +6,22 @@
     <description>Recent content in Study on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 18:53:02 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 10:57:22 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using CustomShader In UE4.22</title>
+      <link>https://dinwy.github.io/study/2019/july/customShaderInUE4/</link>
+      <pubDate>Wed, 03 Jul 2019 10:57:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2019/july/customShaderInUE4/</guid>
+      <description>Preface I&amp;rsquo;ve found a good article about how to write a custom shader in UE4 yesterday.
+ Unreal Engine 4 Custom Shaders Tutorial: https://www.raywenderlich.com/57-unreal-engine-4-custom-shaders-tutorial
+ The article has been made based on UE4.19 and was not working on UE4.22. Because default shader folder has been changed. Therefore it is good to write it down how to do that on UE 4.22.
+Workflow  Follow tutorial from Unreal Engine 4 Custom Shaders Tutorial You will fail when loading .</description>
+    </item>
     
     <item>
       <title>Using Task In Unity</title>
