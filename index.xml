@@ -6,10 +6,22 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2019 02:06:14 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 13:48:46 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CountTheIslands</title>
+      <link>https://dinwy.github.io/everyday/2019/july/countTheIslands/</link>
+      <pubDate>Sat, 06 Jul 2019 13:48:46 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/everyday/2019/july/countTheIslands/</guid>
+      <description>Description I supposed to solve this problem 3 days ago Count The Islands(https://www.codewars.com/kata/count-the-islands) but didn&amp;rsquo;t have time to make it happen. Therefore I&amp;rsquo;ve solved this problem today.
+ Difficulty Level: 6kyu  Count The Islands Details Summary
+Implement an algorithm which analyzes an two-color image and determines how many isolated areas of a single color the image contains. Islands
+An &amp;ldquo;island&amp;rdquo; is an set of adjacent pixels of one color which is completely surrounded by pixels of another color.</description>
+    </item>
     
     <item>
       <title>Sculpt July 2019: Day4 Rabbit</title>
@@ -72,10 +84,10 @@ References  Unreal Engine 4 Custom Shaders Tutorial: https://www.raywenderlich.c
     
     <item>
       <title>BestTravel And CountTheIsland</title>
-      <link>https://dinwy.github.io/everyday/2019/july/bestTravelAndCountTheIsland/</link>
+      <link>https://dinwy.github.io/everyday/2019/july/bestTravel/</link>
       <pubDate>Wed, 03 Jul 2019 12:31:05 +0900</pubDate>
       
-      <guid>https://dinwy.github.io/everyday/2019/july/bestTravelAndCountTheIsland/</guid>
+      <guid>https://dinwy.github.io/everyday/2019/july/bestTravel/</guid>
       <description>Description  I&amp;rsquo;ll review Best Travel(https://www.codewars.com/kata/best-travel) I&amp;rsquo;ll solve a new Problem Count The Islands(https://www.codewars.com/kata/count-the-islands)   Difficulty Level: 5kyu, 6kyu in order.  Best Travel Details &amp;gt; John and Mary want to travel between a few towns A, B, C ... Mary has on a sheet of paper a list of distances between these towns. ls = [50, 55, 57, 58, 60]. John is tired of driving and he says to Mary that he doesn&#39;t want to drive more than t = 174 miles and he will visit only 3 towns.</description>
     </item>
     

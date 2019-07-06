@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CountTheIslands</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/legacy">
+
+
+<i class="fa fa-archive fa-3x"></i>
+
+
+
+<span>Legacy</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-question-circle-o fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">CountTheIslands</h1>
+<div class="content" id="content">
+ 
+
+<h1 id="description">Description</h1>
+
+<p>I supposed to solve this problem 3 days ago <strong>Count The Islands</strong>(<a href="https://www.codewars.com/kata/count-the-islands">https://www.codewars.com/kata/count-the-islands</a>) but didn&rsquo;t have time to make it happen. Therefore I&rsquo;ve solved this problem today.</p>
+
+<ul>
+<li>Difficulty Level: 6kyu</li>
+</ul>
+
+<h2 id="count-the-islands">Count The Islands</h2>
+
+<h3 id="details">Details</h3>
+
+<p>Summary</p>
+
+<p>Implement an algorithm which analyzes an two-color image and determines how many isolated areas of a single color the image contains.
+Islands</p>
+
+<p>An &ldquo;island&rdquo; is an set of adjacent pixels of one color which is completely surrounded by pixels of another color. Pixels are &lsquo;adjacent&rsquo; if their coordinants differ by no more than 1 on the X and/or Y axis. The image below contains two islands of the color █.</p>
+
+<pre><code>≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈
+≈   ≈   █   █   ≈   ≈   ≈   ≈   ≈   ≈
+≈   ≈   █   █   ≈   ≈   ≈   ≈   ≈   ≈
+≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   █   ≈
+≈   ≈   ≈   ≈   ≈   █   █   █   ≈   ≈
+≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈
+</code></pre>
+
+<p>Specification</p>
+
+<p>Your task is to implement the method countIslands(image), where image is a two dimensional array containing the numbers 0 and 1. 0 will be considered the &ldquo;background&rdquo; color, while 1 will be the color of the islands.</p>
+
+<p>The method shall return the number of islands as an integer.
+Helpers</p>
+
+<p>There is a dump(image) method provided which will log an image array to the console to help with debugging.</p>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-js">let count = 0;
+function countIslands(image) {
+    let visited = new Array(image.length);
+    for (let z = 0; z &lt; visited.length; z++) {
+        visited[z] = new Array(image[0].length).fill(false);
+    }
+
+    let isInLoop = false;
+    count = 0;
+
+    for (let i = 0; i &lt; image.length; i++) {
+        for (let j = 0; j &lt; image[i].length; j++) {
+            isInLoop = false;
+            bfRecursion(image, visited, i, j, isInLoop, count)
+        }
+    }
+
+    return count;
+}
+
+function bfRecursion(grid, visited, x, y, isInLoop) {
+    if (x &lt; 0 || y &lt; 0) return;
+    if (x &gt;= grid.length || y &gt;= grid[0].length) return;
+
+    var val = grid[x][y];
+
+    if (val === 1) {
+        if (!visited[x][y]) {
+            visited[x][y] = true;
+
+            if (!isInLoop) {
+                count++;
+            }
+
+            isInLoop = true;
+            bfRecursion(grid, visited, x, y + 1, isInLoop);
+            bfRecursion(grid, visited, x, y - 1, isInLoop);
+            bfRecursion(grid, visited, x + 1, y, isInLoop);
+            bfRecursion(grid, visited, x - 1, y, isInLoop);
+
+            // Diagonal
+            bfRecursion(grid, visited, x - 1, y - 1, isInLoop);
+            bfRecursion(grid, visited, x + 1, y - 1, isInLoop);
+            bfRecursion(grid, visited, x - 1, y + 1, isInLoop);
+            bfRecursion(grid, visited, x + 1, y + 1, isInLoop);
+        }
+    }
+}
+</code></pre>
+
+<h3 id="stats">Stats</h3>
+
+<p>Time Taken: 01:15:00</p>
+
+<h3 id="thoughts">Thoughts</h3>
+
+<p>Clever solution on Codewars is quite interesting.</p>
+
+<pre><code class="language-js">function countIslands(matrix){
+  const getCount = (x, y) =&gt; {
+    matrix[x][y] = 0;
+    const directions = [
+      [x-1, y-1], [x-1, y], [x-1, y+1], 
+      [x, y-1], [x, y+1], [x+1, y-1], 
+      [x+1, y], [x+1, y+1]
+    ].filter(([i, j]) =&gt; matrix[i] !== undefined &amp;&amp; matrix[i][j] !== undefined);
+    for (const [i, j] of directions)
+      if (matrix[i][j] === 1) 
+        getCount(i, j);
+  }
+  
+  let count = 0;
+  for (let i = 0; i &lt; matrix.length; i++)
+    for (let j = 0; j &lt; matrix[i].length; j++)
+      if (matrix[i][j] === 1) {
+        getCount(i, j); count++
+      }
+  return count;
+}
+</code></pre>
+
+<p>There are things I could improve my algorithm solving skill.</p>
+
+<ol>
+<li>I&rsquo;ve used boolean array to check whether visited or not, just changing array value to 0 could work.</li>
+<li>Use dictionary when iterating it.</li>
+<li>Filter the x, y value which only valid in matrix&rsquo;s range.</li>
+<li>Iterate the tree and get the value.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="/js/prism.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>
