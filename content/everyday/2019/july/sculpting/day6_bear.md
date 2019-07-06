@@ -1,5 +1,5 @@
 +++
-title = "Day6 Bear"
+title = "Sculpt July 2019: Day6 Bear"
 date = 2019-07-07T02:08:58+09:00
 tags = ["sculpting","blender"]
 categories = "everyday"
