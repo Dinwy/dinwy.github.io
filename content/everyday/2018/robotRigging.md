@@ -7,7 +7,7 @@ thumbnail = "/img/robotRigging.gif"
 +++
 
 <div class="image">
-<img src="/img/robotRigging.gif" style="max-width: 480px;">
+<img src="/img/robotRigging.gif" style="max-width: 640px;">
 </div>
 
 <div class="description">

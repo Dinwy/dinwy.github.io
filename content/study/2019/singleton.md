@@ -40,6 +40,6 @@ public sealed class SingletonNested
 - Assembly: An assembly is a "unit of deployment" for .NET, almost always a .exe or .dll.
 - Access modifiers:
 
-<img src="/img/accessModifiers.png" style="max-width: 480px;">
+<img src="/img/accessModifiers.png" style="max-width: 640px;">
 
 

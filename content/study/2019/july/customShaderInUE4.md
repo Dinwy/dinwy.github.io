@@ -20,8 +20,8 @@ The article has been made based on UE4.19 and was not working on UE4.22. Because
 3. Now we need to create C++ GameMode. Right click on content view. `New C++ Class` -> `None` and create class.(We will delete later)
 
 	<div class="image">
-	<img src="/img/ue4/study/customShader/step1.jpg" style="max-width: 480px;">
-	<img src="/img/ue4/study/customShader/step2.jpg" style="max-width: 480px;">
+	<img src="/img/ue4/study/customShader/step1.jpg" style="max-width: 640px;">
+	<img src="/img/ue4/study/customShader/step2.jpg" style="max-width: 640px;">
 	</div>
 	<div class="image">
 	</div>
@@ -74,7 +74,7 @@ The article has been made based on UE4.19 and was not working on UE4.22. Because
 9. Delete `MyClass`
 
 	<div class="image">
-	<img src="/img/ue4/study/customShader/step3.jpg" style="max-width: 480px;">
+	<img src="/img/ue4/study/customShader/step3.jpg" style="max-width: 640px;">
 	</div>
 	<div class="image">
 	</div>

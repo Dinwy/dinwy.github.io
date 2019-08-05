@@ -7,8 +7,8 @@ thumbnail = "/img/blender/july2019/sculpting/day8_wolf.jpg"
 +++
 
 <div class="image">
-<img src="/img/blender/july2019/sculpting/day8_wolf.jpg" style="max-width: 480px;">
-<img src="/img/blender/july2019/drawing/day8_wolf_conceptArt.jpg" style="max-width: 480px;">
+<img src="/img/blender/july2019/sculpting/day8_wolf.jpg" style="max-width: 640px;">
+<img src="/img/blender/july2019/drawing/day8_wolf_conceptArt.jpg" style="max-width: 640px;">
 </div>
 
 # Description

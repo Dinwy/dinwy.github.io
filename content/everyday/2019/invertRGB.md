@@ -7,7 +7,7 @@ thumbnail = "/img/ue4/invertRGB.jpg"
 +++
 
 <div class="image">
-<img src="/img/ue4/invertRGB.jpg" style="max-width: 480px;">
+<img src="/img/ue4/invertRGB.jpg" style="max-width: 640px;">
 </div>
 
 <div class="description">

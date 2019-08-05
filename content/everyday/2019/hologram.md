@@ -7,7 +7,7 @@ thumbnail = "/video/hologram.webm"
 +++
 
 <div class="image">
-<video playsinline autoplay muted loop id="vid" src="/video/hologram.webm" type="video/mp4" style="max-width: 480px;">
+<video playsinline autoplay muted loop id="vid" src="/video/hologram.webm" type="video/mp4" style="max-width: 640px;">
 </div>
 
 <div class="description">

@@ -7,9 +7,9 @@ thumbnail = "/img/blender/20190623_doorFrame_rendered.jpg"
 +++
 
 <div class="image">
-<img src="/img/blender/20190623_doorFrame_rendered.jpg" style="max-width: 480px;">
+<img src="/img/blender/20190623_doorFrame_rendered.jpg" style="max-width: 640px;">
 <img src="/img/ue4/doorFrame_UE4
-.png" style="max-width: 480px;">
+.png" style="max-width: 640px;">
 </div>
 
 <div class="description">

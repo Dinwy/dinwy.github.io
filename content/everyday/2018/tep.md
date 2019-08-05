@@ -7,7 +7,7 @@ thumbnail = "/img/halftone.gif"
 +++
 
 <div class="image">
-<img src="/img/halftone.gif" style="max-width: 480px;">
+<img src="/img/halftone.gif" style="max-width: 640px;">
 </div>
 
 <div class="description">
