@@ -1,0 +1,16 @@
+{
+"companyName": "Dinwy",
+"productName": "LDJam45",
+"productVersion": "0.1",
+"dataUrl": "LDJam45.data.unityweb",
+"wasmCodeUrl": "LDJam45.wasm.code.unityweb",
+"wasmFrameworkUrl": "LDJam45.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.2.6f1"
+}
