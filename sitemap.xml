@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/posts/StartWithNothing/</loc>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/everyday/2019/july/sculpting/day31_skull/</loc>
     <lastmod>2019-08-01T01:07:30+09:00</lastmod>
   </url>
@@ -583,7 +588,7 @@
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-08-01T01:07:30+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -607,13 +612,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/gamejam/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/gamejam/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -644,6 +649,18 @@
   <url>
     <loc>https://dinwy.github.io/tags/javascript/</loc>
     <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/ldjam/</loc>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/tags/ldjam45/</loc>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -685,7 +702,7 @@
   
   <url>
     <loc>https://dinwy.github.io/posts/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -787,7 +804,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/unity3d/</loc>
-    <lastmod>2019-05-28T13:54:56+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -805,7 +822,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/webgl/</loc>
-    <lastmod>2018-04-24T04:23:22+09:00</lastmod>
+    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   

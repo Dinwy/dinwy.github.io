@@ -6,10 +6,19 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2019 01:07:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2019 00:43:22 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Start with Nothing</title>
+      <link>https://dinwy.github.io/posts/StartWithNothing/</link>
+      <pubDate>Sun, 06 Oct 2019 00:43:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/StartWithNothing/</guid>
+      <description>Description First day build. Temp.</description>
+    </item>
     
     <item>
       <title>Sculpt July 2019: Day31 Skull</title>

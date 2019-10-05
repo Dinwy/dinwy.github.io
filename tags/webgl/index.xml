@@ -6,10 +6,19 @@
     <description>Recent content in Webgl on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 04:23:22 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2019 00:43:22 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/webgl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Start with Nothing</title>
+      <link>https://dinwy.github.io/posts/StartWithNothing/</link>
+      <pubDate>Sun, 06 Oct 2019 00:43:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/posts/StartWithNothing/</guid>
+      <description>Description First day build. Temp.</description>
+    </item>
     
     <item>
       <title>Battle and card</title>
