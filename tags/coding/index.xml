@@ -6,10 +6,21 @@
     <description>Recent content in Coding on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Aug 2018 19:57:57 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 23:15:22 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/387 First Unique Character in a String</title>
+      <link>https://dinwy.github.io/algorithm/2020/NonRepeatingCharacter/</link>
+      <pubDate>Wed, 12 Feb 2020 23:15:22 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/NonRepeatingCharacter/</guid>
+      <description> https://leetcode.com/problems/first-unique-character-in-a-string
+Basically this question is asking you about how to you Dictionary. Understanding how to handle key and value and index, can solve this problem easily.
+My Solution class Solution(object): def firstUniqChar(self, s): strDict = {} for item in s: if (item in strDict): strDict[item] += 1 else: strDict[item] = 1 for idx, key in enumerate(s): if strDict[key] == 1: return idx return -1  </description>
+    </item>
     
     <item>
       <title>Update blog version to 1.1</title>

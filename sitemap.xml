@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/algorithm/2020/NonRepeatingCharacter/</loc>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/posts/StartWithNothing/</loc>
     <lastmod>2019-10-06T00:43:22+09:00</lastmod>
   </url>
@@ -534,8 +539,20 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/categories/algorithm/</loc>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/algorithm/</loc>
-    <lastmod>2019-07-06T13:48:46+09:00</lastmod>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/</loc>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -559,6 +576,7 @@
   
   <url>
     <loc>https://dinwy.github.io/categories/</loc>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -582,13 +600,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/coding/</loc>
-    <lastmod>2018-08-21T19:57:57+09:00</lastmod>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2019-10-06T00:43:22+09:00</lastmod>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -611,13 +629,13 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/tags/gamejam/</loc>
+    <loc>https://dinwy.github.io/categories/gamejam/</loc>
     <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/gamejam/</loc>
+    <loc>https://dinwy.github.io/tags/gamejam/</loc>
     <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -665,12 +683,6 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/legacy/</loc>
-    <lastmod>2017-06-27T11:00:10+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://dinwy.github.io/tags/math/</loc>
     <lastmod>2019-02-26T15:54:09+09:00</lastmod>
     <priority>0</priority>
@@ -713,6 +725,12 @@
   </url>
   
   <url>
+    <loc>https://dinwy.github.io/tags/python/</loc>
+    <lastmod>2020-02-12T23:15:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/tags/raymarching/</loc>
     <lastmod>2019-02-19T12:12:50+09:00</lastmod>
     <priority>0</priority>
@@ -745,6 +763,11 @@
   <url>
     <loc>https://dinwy.github.io/tags/sd/</loc>
     <lastmod>2019-01-30T12:51:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/series/</loc>
     <priority>0</priority>
   </url>
   
