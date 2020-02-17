@@ -6,10 +6,20 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2020 23:15:22 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 22:47:51 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Udemy/11Essential: Rotating 2D array 90 degree</title>
+      <link>https://dinwy.github.io/algorithm/2020/Rotating2DArray/</link>
+      <pubDate>Mon, 17 Feb 2020 22:47:51 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/Rotating2DArray/</guid>
+      <description>Preface It is a interesting question that how to solve this problem. It was really easy to solve this with temp array and copy the value with recursive function. However I was quite confused how to solve in-array When I was solving this problem I was quite confused how to move the element to the array.
+My Solution # Recursive solution def rotate(given_array, n): rotated = copy.deepcopy(given_array) for pRow in range(n): for pCol in range(n): rotated[pCol][(n - 1) - pRow] = given_array[pRow][pCol] return given_array  # In-place solution def rotate(given_array, n): for y in range((int)(n / 2)): for x in range(math.</description>
+    </item>
     
     <item>
       <title>LeetCode/387 First Unique Character in a String</title>

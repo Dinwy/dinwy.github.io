@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithm</title>
+<title>Udemy/11Essential: Rotating 2D array 90 degree</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,62 +87,57 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Algorithm</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/algorithm/2020/Rotating2DArray/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">Udemy/11Essential: Rotating 2D array 90 degree</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="preface">Preface</h2>
 
+<p>It is a interesting question that how to solve this problem. It was really easy to solve this with <code>temp array</code> and copy the value with recursive function. However I was quite confused how to solve <code>in-array</code>
+ When I was solving this problem I was quite confused how to move the element to the array.</p>
 
+<h2 id="my-solution">My Solution</h2>
+
+<pre><code class="language-py"># Recursive solution
+def rotate(given_array, n):
+    rotated = copy.deepcopy(given_array)
+    for pRow in range(n):
+        for pCol in range(n):
+            rotated[pCol][(n - 1) - pRow] = given_array[pRow][pCol]
+
+    return given_array
+</code></pre>
+
+<pre><code class="language-py"># In-place solution
+def rotate(given_array, n):
+    for y in range((int)(n / 2)):
+        for x in range(math.ceil(n / 2)):
+            temp = given_array[y][n-1-x]
+            given_array[y][n-1-x] = given_array[x][y]
+            given_array[x][y] = given_array[n-1-y][x]
+            given_array[n-1-y][x] = given_array[n-1-x][n-1-y]
+            given_array[n-1-x][n-1-y] = temp
+            
+    return given_array
+</code></pre>
 
 </div>
-
-<h1>Udemy/11Essential: Rotating 2D array 90 degree</h1>
-17 Feb 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/NonRepeatingCharacter/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/387 First Unique Character in a String</h1>
-12 Feb 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>
