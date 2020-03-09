@@ -6,10 +6,19 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Feb 2020 22:47:51 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 17:53:02 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HLSL Shader in Unity #1</title>
+      <link>https://dinwy.github.io/study/2020/shaderInUnity#1/</link>
+      <pubDate>Thu, 05 Mar 2020 17:53:02 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/study/2020/shaderInUnity#1/</guid>
+      <description>Preface Source From  Shaders: What is clip space?: https://answers.unity.com/questions/1443941/shaders-what-is-clip-space.html Compute eye space from window space: https://www.khronos.org/opengl/wiki/Compute_eye_space_from_window_space Coordinate Systems: https://learnopengl.com/Getting-started/Coordinate-Systems NDC Space: Normalized device coordinate or NDC space is a screen independent display coordinate system; it encompasses a cube where the x, y, and z components range from −1 to 1. Although clipping to the view volume is specified to happen in clip space, NDC space can be thought of as the space that defines the view volume.</description>
+    </item>
     
     <item>
       <title>Udemy/11Essential: Rotating 2D array 90 degree</title>
