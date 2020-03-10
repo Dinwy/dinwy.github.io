@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/3 Add Two Numbers</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,71 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-10 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/3 Add Two Numbers</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="preface">Preface</h2>
+
+<p>I&rsquo;ve solved this problem a year ago with a weird way. Today I&rsquo;ve reviewed this problem.</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/add-two-numbers">https://leetcode.com/problems/add-two-numbers</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Reviewing this problem took more than an hour, which made me disappointed and surprise me. <br/>
+I was very confused assigning <code>outputTail</code>. Same as</p>
+
+<pre><code class="language-cs">{
+    l1 = l1.next;
+    l2 = l2.next;
+    outputTail = outputTail.next;
+}
+</code></pre>
+
+<p>By assigning <code>nextNode</code> to the <code>currentNode</code> which will make loop end at some point. Also we assign <code>node</code> value before going to the next. <code>outputTail.next = node</code>. <br/>
+Simply I have to remember that to iterate linkedList, <code>assign</code> <code>nextNode</code> to the <code>currentNode</code> in each loop. Then next turn, <code>nextNode</code> will be a <code>currentNode</code> and so on. <br/></p>
+
+<h2 id="best-solution">Best Solution</h2>
+
+<pre><code class="language-cs">        // Best solution
+        public ListNode BestSolution(ListNode l1, ListNode l2)
+        {
+            ListNode output = new ListNode(0);
+            ListNode outputTail = output;
+            int carry = 0;
+
+            while (l1 != null || l2 != null || carry &gt; 0)
+            {
+                int val1 = l1 != null ? l1.val : 0;
+                int val2 = l2 != null ? l2.val : 0;
+                int total = (val1 + val2 + carry) % 10;
+                carry = (val1 + val2 + carry) / 10;
+
+                outputTail.next = new ListNode(total);
+                outputTail = outputTail.next;
+
+                l1 = l1 != null &amp;&amp; l1.next != null ? l1.next : null;
+                l2 = l2 != null &amp;&amp; l2.next != null ? l2.next : null;
+            }
+
+            return output.next;
+        }
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
