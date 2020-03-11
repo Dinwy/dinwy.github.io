@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/algorithm/2020/ValidParentheses/</loc>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/2020/ReverseIntegerAndPalindromeNumber/</loc>
+    <lastmod>2020-03-11T19:24:54+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/algorithm/2020/AddTwoNumbers/</loc>
     <lastmod>2020-03-10T21:30:57+09:00</lastmod>
   </url>
@@ -555,19 +565,19 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/algorithm/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/categories/algorithm/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/algorithm/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -591,7 +601,7 @@
   
   <url>
     <loc>https://dinwy.github.io/categories/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -615,13 +625,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/coding/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -699,7 +709,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/leetcode/</loc>
-    <lastmod>2020-03-10T21:30:57+09:00</lastmod>
+    <lastmod>2020-03-12T00:15:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   

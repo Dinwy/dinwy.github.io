@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>LeetCode/3. Add Two Numbers</title>
+<title>LeetCode/7. ReverseInteger &amp; LeetCode/9. PalindromeNumber</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -91,7 +91,7 @@
 <article>
 <div class="post-wrapper">
 <div class="post-inner">
-<h1 class="title">LeetCode/3. Add Two Numbers</h1>
+<h1 class="title">LeetCode/7. ReverseInteger &amp; LeetCode/9. PalindromeNumber</h1>
 <div class="content" id="content">
  
 
@@ -99,54 +99,102 @@
 
 <h2 id="preface">Preface</h2>
 
-<p>I&rsquo;ve solved this problem a year ago with a weird way. Today I&rsquo;ve reviewed this problem.</p>
+<p>I&rsquo;m trying to take a <code>Easy</code> difficulty ones to warm up my coding practice.</p>
 
 <h2 id="link">Link</h2>
 
-<ul>
-<li><a href="https://leetcode.com/problems/add-two-numbers">https://leetcode.com/problems/add-two-numbers</a></li>
-</ul>
+<p><a href="https://leetcode.com/problems/reverse-integer/">https://leetcode.com/problems/reverse-integer/</a>
+<a href="https://leetcode.com/problems/palindrome-number/">https://leetcode.com/problems/palindrome-number/</a></p>
 
 <h2 id="summary">Summary</h2>
 
-<p>Reviewing this problem took more than an hour, which made me disappointed and surprise me. <br/>
-I was very confused assigning <code>outputTail</code>. Same as</p>
+<p>Solving these two problem wasn&rsquo;t hard. Both are asking the same thing. Can you <code>pop</code> number from integer rather than using <code>string</code> <br/>
+However re-learning that <code>pop = x % 10</code> &amp; <code>x /= 10</code></p>
 
-<pre><code class="language-cs">{
-    l1 = l1.next;
-    l2 = l2.next;
-    outputTail = outputTail.next;
+<h2 id="solution">Solution</h2>
+
+<h3 id="7-reverseinteger">7.ReverseInteger</h3>
+
+<pre><code class="language-cs">public class ReverseInteger
+{
+    public int Solution(int x)
+    {
+        var str = x.ToString();
+        var leng = x &lt; 0 ? str.Length - 1 : str.Length;
+        var numDiv = (int)Math.Pow(10, leng - 1);
+        var mul = 1;
+        int res = 0;
+
+        try
+        {
+            for (int i = 0; i &lt; leng; i++)
+            {
+                res = checked(res + (x / numDiv) * mul);
+                x = x % numDiv;
+                numDiv /= 10;
+            }
+        }
+        catch
+        {
+            return 0;
+        }
+
+        return res;
+    }
+
+    public int BestSolution(int x)
+    {
+        int rev = 0;
+
+        while (x != 0)
+        {
+            int pop = x % 10;
+            x /= 10;
+            if (rev &gt; Int32.MaxValue / 10 || (rev == Int32.MaxValue / 10 &amp;&amp; pop &gt; 7)) return 0;
+            if (rev &lt; Int32.MinValue / 10 || (rev == Int32.MinValue / 10 &amp;&amp; pop &lt; -8)) return 0;
+            rev = rev * 10 + pop;
+        }
+
+        return rev;
+    }
 }
 </code></pre>
 
-<p>By assigning <code>nextNode</code> to the <code>currentNode</code> which will make loop end at some point. Also we assign <code>node</code> value before going to the next. <code>outputTail.next = node</code>. <br/>
-Simply I have to remember that to iterate linkedList, <code>assign</code> <code>nextNode</code> to the <code>currentNode</code> in each loop. Then next turn, <code>nextNode</code> will be a <code>currentNode</code> and so on. <br/></p>
+<h3 id="9-palindromenumber">9.PalindromeNumber</h3>
 
-<h2 id="best-solution">Best Solution</h2>
-
-<pre><code class="language-cs">        // Best solution
-        public ListNode BestSolution(ListNode l1, ListNode l2)
+<pre><code class="language-cs">    public class PalindromeNumber
+    {
+        public bool IsPalindrome(int x)
         {
-            ListNode output = new ListNode(0);
-            ListNode outputTail = output;
-            int carry = 0;
-
-            while (l1 != null || l2 != null || carry &gt; 0)
+            if (x &lt; 0 || (x % 10 == 0 &amp;&amp; x != 0))
             {
-                int val1 = l1 != null ? l1.val : 0;
-                int val2 = l2 != null ? l2.val : 0;
-                int total = (val1 + val2 + carry) % 10;
-                carry = (val1 + val2 + carry) / 10;
-
-                outputTail.next = new ListNode(total);
-                outputTail = outputTail.next;
-
-                l1 = l1 != null &amp;&amp; l1.next != null ? l1.next : null;
-                l2 = l2 != null &amp;&amp; l2.next != null ? l2.next : null;
+                return false;
             }
 
-            return output.next;
+            int revertedNumber = 0;
+            while (x &gt; revertedNumber)
+            {
+                revertedNumber = revertedNumber * 10 + x % 10;
+                x /= 10;
+            }
+
+            return x == revertedNumber || x == revertedNumber / 10;
         }
+
+        public bool IsPalindromeByConvertingString(int x)
+        {
+            if (x &lt; 0) return false;
+
+            var str = x.ToString();
+
+            for (int i = 0; i &lt; str.Length / 2; i++)
+            {
+                if (str[i] != str[str.Length - 1 - i]) return false;
+            }
+
+            return true;
+        }
+    }
 </code></pre>
 
 </div>

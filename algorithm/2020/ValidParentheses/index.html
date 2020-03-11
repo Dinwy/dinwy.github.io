@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>LeetCode/387. First Unique Character in a String</title>
+<title>LeetCode/20. Valid Parentheses</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -91,31 +91,84 @@
 <article>
 <div class="post-wrapper">
 <div class="post-inner">
-<h1 class="title">LeetCode/387. First Unique Character in a String</h1>
+<h1 class="title">LeetCode/20. Valid Parentheses</h1>
 <div class="content" id="content">
  
 
-<p><a href="https://leetcode.com/problems/first-unique-character-in-a-string">https://leetcode.com/problems/first-unique-character-in-a-string</a></p>
+<p><div class="description"></p>
 
-<p>Basically this question is asking you about how to you <code>Dictionary</code>. Understanding how to handle <code>key</code> and <code>value</code> and <code>index</code>, can solve this problem easily.</p>
+<h2 id="preface">Preface</h2>
 
-<h3 id="my-solution">My Solution</h3>
+<p>I think I&rsquo;ve already solved this problem on CodeWars. But it is a good exercise solve this problem again.</p>
 
-<pre><code class="language-py">class Solution(object):
-    def firstUniqChar(self, s):
-        strDict = {}
+<h2 id="link">Link</h2>
 
-        for item in s:
-            if (item in strDict):
-                strDict[item] += 1
-            else:
-                strDict[item] = 1
+<p><a href="https://leetcode.com/problems/valid-parentheses">https://leetcode.com/problems/valid-parentheses</a></p>
 
-        for idx, key in enumerate(s):
-            if strDict[key] == 1:
-                return idx
+<h2 id="summary">Summary</h2>
 
-        return -1
+<p>This is asking two things, can you use <code>Stack</code> and <code>Dictionary</code>. When I was solving this first time, I was more thinking about using three <code>HashSet</code>. However after thinking and checking the best solution, I only need a single <code>Dictionary</code> &amp; temporary <code>Stack</code> to validate.</p>
+
+<h2 id="solution">Solution</h2>
+
+<h3 id="my-first-solution">My First Solution</h3>
+
+<pre><code class="language-cs">public bool IsValidFirstSolution(string s)
+{
+    var stack = new Stack&lt;string&gt;(s.Select(x =&gt; x.ToString()).ToArray());
+    var tempStack = new Stack&lt;string&gt;();
+
+    var correctSet = new HashSet&lt;string&gt;() { &quot;{}&quot;, &quot;[]&quot;, &quot;()&quot; };
+    var leftBraces = new HashSet&lt;string&gt;() { &quot;{&quot;, &quot;[&quot;, &quot;(&quot; };
+    var rightBraces = new HashSet&lt;string&gt;() { &quot;}&quot;, &quot;]&quot;, &quot;)&quot; };
+
+    while (stack.Count &gt; 0)
+    {
+        var current = stack.Pop();
+        while (rightBraces.Contains(current))
+        {
+            tempStack.Push(current);
+
+            if (stack.Count == 0) return false;
+            current = stack.Pop();
+        }
+
+        if (tempStack.Count == 0) return false;
+
+        var combination = current + tempStack.Pop();
+        if (!correctSet.Contains(combination)) return false;
+    }
+
+    return tempStack.Count == 0;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<pre><code class="language-cs">public bool IsValid(string s)
+{
+    var correctSet = new Dictionary&lt;char, char&gt;() {
+        {'{', '}'},
+        {'[', ']'},
+        {'(', ')'}
+    };
+    var tempStack = new Stack&lt;char&gt;();
+
+    for (int i = 0; i &lt; s.Length; i++)
+    {
+        if (correctSet.ContainsKey(s[i]))
+        {
+            tempStack.Push(correctSet[s[i]]);
+        }
+        else
+        {
+            if (tempStack.Count == 0) return false;
+            var pair = tempStack.Pop();
+            if (s[i] != pair) return false;
+        }
+    }
+
+    
 </code></pre>
 
 </div>

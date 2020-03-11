@@ -6,13 +6,37 @@
     <description>Recent content in Coding on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2020 21:30:57 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2020 00:15:11 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>LeetCode/3 Add Two Numbers</title>
+      <title>LeetCode/20. Valid Parentheses</title>
+      <link>https://dinwy.github.io/algorithm/2020/ValidParentheses/</link>
+      <pubDate>Thu, 12 Mar 2020 00:15:11 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ValidParentheses/</guid>
+      <description>Preface I think I&amp;rsquo;ve already solved this problem on CodeWars. But it is a good exercise solve this problem again.
+Link https://leetcode.com/problems/valid-parentheses
+Summary This is asking two things, can you use Stack and Dictionary. When I was solving this first time, I was more thinking about using three HashSet. However after thinking and checking the best solution, I only need a single Dictionary &amp;amp; temporary Stack to validate.
+Solution My First Solution public bool IsValidFirstSolution(string s) { var stack = new Stack&amp;lt;string&amp;gt;(s.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/7. ReverseInteger &amp; LeetCode/9. PalindromeNumber</title>
+      <link>https://dinwy.github.io/algorithm/2020/ReverseIntegerAndPalindromeNumber/</link>
+      <pubDate>Wed, 11 Mar 2020 19:24:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ReverseIntegerAndPalindromeNumber/</guid>
+      <description>Preface I&amp;rsquo;m trying to take a Easy difficulty ones to warm up my coding practice.
+Link https://leetcode.com/problems/reverse-integer/ https://leetcode.com/problems/palindrome-number/
+Summary Solving these two problem wasn&amp;rsquo;t hard. Both are asking the same thing. Can you pop number from integer rather than using string  However re-learning that pop = x % 10 &amp;amp; x /= 10
+Solution 7.ReverseInteger public class ReverseInteger { public int Solution(int x) { var str = x.ToString(); var leng = x &amp;lt; 0 ?</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/3. Add Two Numbers</title>
       <link>https://dinwy.github.io/algorithm/2020/AddTwoNumbers/</link>
       <pubDate>Tue, 10 Mar 2020 21:30:57 +0900</pubDate>
       
@@ -33,7 +57,7 @@ My Solution # Recursive solution def rotate(given_array, n): rotated = copy.deep
     </item>
     
     <item>
-      <title>LeetCode/387 First Unique Character in a String</title>
+      <title>LeetCode/387. First Unique Character in a String</title>
       <link>https://dinwy.github.io/algorithm/2020/NonRepeatingCharacter/</link>
       <pubDate>Wed, 12 Feb 2020 23:15:22 +0900</pubDate>
       
