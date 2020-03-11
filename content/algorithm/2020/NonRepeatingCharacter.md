@@ -1,5 +1,5 @@
 +++
-title = "LeetCode/387 First Unique Character in a String"
+title = "LeetCode/387. First Unique Character in a String"
 date = 2020-02-12T23:15:22+09:00
 tags = ["coding", "python", "algorithm"]
 categories = "algorithm"

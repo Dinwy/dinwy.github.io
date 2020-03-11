@@ -1,5 +1,5 @@
 +++
-title = "LeetCode/3 Add Two Numbers"
+title = "LeetCode/3. Add Two Numbers"
 date = 2020-03-10T21:30:57+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
