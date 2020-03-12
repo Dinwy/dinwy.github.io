@@ -7,11 +7,13 @@ categories = "algorithm"
 
 <div class="description">
 
-## Preface
-
 ## Link
 
 ## Summary
 
-## Solution
+## Solutions
+
+### My Solution
+
+### Best Solution
 
