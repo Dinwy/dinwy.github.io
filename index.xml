@@ -6,10 +6,21 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2020 20:58:48 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2020 22:07:35 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/53. MaximumSubarray</title>
+      <link>https://dinwy.github.io/algorithm/2020/MaximumSubarray/</link>
+      <pubDate>Thu, 12 Mar 2020 22:07:35 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MaximumSubarray/</guid>
+      <description>Link  https://leetcode.com/problems/maximum-subarray  Summary Getting maximum sub array. Writing in hand make this much easier to solve. took 13 mins to solve with O(n) complexity. However the problem asked me solve this in a better time complexity.
+Solutions My Solution After checking the solution, my solution was actual very close to the best solution. I could think about DP solution by using previous values.
+public int SolutionOn(int[] nums) { var subsetSum = 0; var max = nums[0]; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
     
     <item>
       <title>LeetCode/35. SearchInsertPosition</title>
