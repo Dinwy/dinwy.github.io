@@ -13,13 +13,14 @@ https://leetcode.com/problems/merge-two-sorted-lists/
 
 ## Summary
 
-This was asking same question as `AddTwoNumbers`. Can properly reference `next` in `LinkedArray`.
+This was asking same question as `AddTwoNumbers`. Can properly reference `next` in `LinkedArray`. <br/>
+Still quite slow, but solving much faster than before.
 
 ## Solutions
 
 ### My Solution
 
-I was a bit confused which order comes first `outputTail.next` or `outputTail`. But it is obivious.<br/>
+I was a bit confused which order comes first `outputTail.next` or `outputTail`. But it is obvious.<br/>
 The proper steps will be,
 
 1. Assign a new value to the `outputTail.next` via `new ListNode(x)`.
