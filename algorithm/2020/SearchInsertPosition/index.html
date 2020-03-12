@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithm</title>
+<title>LeetCode/35. SearchInsertPosition</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,162 +87,85 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Algorithm</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/algorithm/2020/SearchInsertPosition/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/35. SearchInsertPosition</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<p><a href="https://leetcode.com/problems/search-insert-position/">https://leetcode.com/problems/search-insert-position/</a></p>
 
+<h2 id="summary">Summary</h2>
 
-</div>
+<p>The problem was easy. However it was asking how to solve the problem with <code>O(logn)</code> complexity rather than <code>O(n)</code></p>
 
-<h1>LeetCode/35. SearchInsertPosition</h1>
-12 Mar 2020
+<h2 id="solutions">Solutions</h2>
 
-<hr>
-<b>Read More…</b>
+<h3 id="my-solution">My Solution</h3>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/MergeTwoSortedLists/">
-<div class="post-inner">
-<div class="image-wrapper">
+<p>I&rsquo;ve solved the problem when I saw the problem however not thinking about the <code>O(logn)</code> solution.</p>
 
+<pre><code class="language-cs">public int SearchInsertOn(int[] nums, int target)
+{
+    int idx = 0;
 
+    for (int i = 0; i &lt; nums.Length; i++)
+    {
+        if (nums[i] &lt; target)
+        {
+            idx++;
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
 
+    return idx;
+}
+</code></pre>
 
+<h3 id="best-solution">Best Solution</h3>
 
-</div>
+<p>The best solution is using <code>binary search method</code> Keep checking <code>low</code> and <code>high</code> and split into <code>2</code> section.</p>
 
-<h1>LeetCode/21. MergeTwoSortedLists</h1>
-12 Mar 2020
+<pre><code class="language-cs">// O(logN)
+public int SearchInsert(int[] nums, int target)
+{
+    int low = 0;
+    int high = nums.Length - 1;
 
-<hr>
-<b>Read More…</b>
+    while (low &lt;= high)
+    {
+        var mid = (low + high) / 2;
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/ValidParentheses/">
-<div class="post-inner">
-<div class="image-wrapper">
+        if (nums[mid] == target) return mid;
+        else if (nums[mid] &lt; target) low = mid + 1;
+        else high = mid - 1;
+    }
 
-
-
-
-
-</div>
-
-<h1>LeetCode/20. Valid Parentheses</h1>
-12 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/ReverseIntegerAndPalindromeNumber/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
+    return low;
+}
+</code></pre>
 
 </div>
-
-<h1>LeetCode/7. ReverseInteger &amp; LeetCode/9. PalindromeNumber</h1>
-11 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/AddTwoNumbers/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/3. Add Two Numbers</h1>
-10 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/Rotating2DArray/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Udemy/11Essential: Rotating 2D array 90 degree</h1>
-17 Feb 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/NonRepeatingCharacter/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/387. First Unique Character in a String</h1>
-12 Feb 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>
