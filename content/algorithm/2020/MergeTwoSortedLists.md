@@ -13,7 +13,7 @@ https://leetcode.com/problems/merge-two-sorted-lists/
 
 ## Summary
 
-This was asking same question as `AddTwoNumbers`. Can you distinguish `Ref` and `Val` in `LinkedArray`.
+This was asking same question as `AddTwoNumbers`. Can properly reference `next` in `LinkedArray`.
 
 ## Solutions
 
