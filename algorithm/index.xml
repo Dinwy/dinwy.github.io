@@ -18,7 +18,7 @@
       
       <guid>https://dinwy.github.io/algorithm/2020/MergeTwoSortedLists/</guid>
       <description>Link https://leetcode.com/problems/merge-two-sorted-lists/
-Summary This was asking same question as AddTwoNumbers. Can you distinguish Ref and Val in LinkedArray.
+Summary This was asking same question as AddTwoNumbers. Can properly reference next in LinkedArray.
 Solutions My Solution I was a bit confused which order comes first outputTail.next or outputTail. But it is obivious. The proper steps will be,
  Assign a new value to the outputTail.next via new ListNode(x). Change the pointer(ref) of outputTail to outputTail.next which is a new value has been assigned.  public ListNode MergeTwoLists(ListNode l1, ListNode l2) { var output = new ListNode(0); var outputTail = output; while (l1 !</description>
     </item>
