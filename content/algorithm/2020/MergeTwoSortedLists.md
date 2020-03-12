@@ -1,5 +1,5 @@
 +++
-title = "MergeTwoSortedLists"
+title = "LeetCode/21. MergeTwoSortedLists"
 date = 2020-03-12T20:03:48+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
