@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MergeTwoSortedLists</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/algorithm">
+
+
+
+
+
+<i class="fa fa-function fa-3x"></i>
+
+<span>Algorithm</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-id-card fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">MergeTwoSortedLists</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/">https://leetcode.com/problems/merge-two-sorted-lists/</a></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>This was asking same question as <code>AddTwoNumbers</code>. Can you distinguish <code>Ref</code> and <code>Val</code> in <code>LinkedArray</code>.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I was a bit confused which order comes first <code>outputTail.next</code> or <code>outputTail</code>. But it is obivious.<br/>
+The proper steps will be,</p>
+
+<ol>
+<li>Assign a new value to the <code>outputTail.next</code> via <code>new ListNode(x)</code>.</li>
+<li>Change the pointer(ref) of <code>outputTail</code> to <code>outputTail.next</code> which is a new value has been assigned.</li>
+</ol>
+
+<pre><code class="language-cs">public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+{
+    var output = new ListNode(0);
+    var outputTail = output;
+
+    while (l1 != null || l2 != null)
+    {
+        if (l1 == null)
+        {
+            outputTail.next = l2;
+            break;
+        }
+
+        if (l2 == null)
+        {
+            outputTail.next = l1;
+            break;
+        }
+
+        if (l1.val &lt;= l2.val)
+        {
+            outputTail.next = new ListNode(l1.val);
+            outputTail = outputTail.next;
+            l1 = l1.next;
+        }
+        else
+        {
+            outputTail.next = new ListNode(l2.val);
+            outputTail = outputTail.next;
+            l2 = l2.next;
+        }
+    }
+
+    return output.next;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>I should make it simpler like the code below. Also I don&rsquo;t need to assign a <code>New ListNode</code> just change the <code>ref</code> of the pointer.</p>
+
+<pre><code class="language-cs">public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+{
+    var output = new ListNode(0);
+    var outputTail = output;
+
+    while (l1 != null &amp;&amp; l2 != null)
+    {
+        if (l1.val &lt;= l2.val)
+        {
+            outputTail.next = l1;
+            l1 = l1.next;
+        }
+        else
+        {
+            outputTail.next = l2;
+            l2 = l2.next;
+        }
+        outputTail = outputTail.next;
+    }
+
+    outputTail.next = l1 != null ? l1 : l2;
+
+    return output.next;
+}
+</code></pre>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js" integrity="sha256-D05OTvzyl8h0SDpcQF6UNo3gl2rKDMmRuqX8ZZ06pNE=" crossorigin="anonymous"></script>
+<script src="/js/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-python.min.js" integrity="sha256-z1w1HLignub5kA0f24TCzv765MT4114LEgW/oIYuLag=" crossorigin="anonymous"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

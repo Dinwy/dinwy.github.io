@@ -6,10 +6,22 @@
     <description>Recent content in Coding on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2020 00:15:11 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2020 20:03:48 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MergeTwoSortedLists</title>
+      <link>https://dinwy.github.io/algorithm/2020/MergeTwoSortedLists/</link>
+      <pubDate>Thu, 12 Mar 2020 20:03:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MergeTwoSortedLists/</guid>
+      <description>Link https://leetcode.com/problems/merge-two-sorted-lists/
+Summary This was asking same question as AddTwoNumbers. Can you distinguish Ref and Val in LinkedArray.
+Solutions My Solution I was a bit confused which order comes first outputTail.next or outputTail. But it is obivious. The proper steps will be,
+ Assign a new value to the outputTail.next via new ListNode(x). Change the pointer(ref) of outputTail to outputTail.next which is a new value has been assigned.  public ListNode MergeTwoLists(ListNode l1, ListNode l2) { var output = new ListNode(0); var outputTail = output; while (l1 !</description>
+    </item>
     
     <item>
       <title>LeetCode/20. Valid Parentheses</title>
