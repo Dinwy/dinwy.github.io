@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/58. LengthOfLastWord &amp; LeetCode/66. PlusOne</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,94 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-13 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/58. LengthOfLastWord &amp; LeetCode/66. PlusOne</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/length-of-last-word">https://leetcode.com/problems/length-of-last-word</a></li>
+<li><a href="https://leetcode.com/problems/plus-one">https://leetcode.com/problems/plus-one</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<ol>
+<li>Length Of Last Word is not even a algorithm question. <br/></li>
+<li>PlusOne was really easy but I was making a simple mistake which should be handled. <br/></li>
+</ol>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I&rsquo;ll skip explaining #58.</p>
+
+<pre><code class="language-cs">public int Solution(string s)
+{
+    var res = 0;
+    for (int i = s.Length - 1; i &gt;= 0; i--)
+    {
+        if (Char.IsWhiteSpace(s[i]))
+        {
+            if (res != 0) return res;
+            res = 0;
+            continue;
+        }
+        res++;
+    }
+    return res;
+}
+</code></pre>
+
+<ol>
+<li><p>PlusOne was interesting because I was missing two thing. <br/></p></li>
+
+<li><p>I was not using pen &amp; paper and write those down.</p></li>
+
+<li><p>I was missing the case like <code>[9, 9]</code> which will make a new array like as <code>[1, 0, 0]</code>.</p></li>
+</ol>
+
+<p>I should think about these cases.</p>
+
+<pre><code class="language-cs">public int[] Solution(int[] digits)
+{
+    var reminder = 1;
+    for (int i = digits.Length - 1; i &gt;= 0; i--)
+    {
+        digits[i] += reminder;
+
+        if (digits[i] &gt;= 10)
+        {
+            digits[i] = 0;
+            reminder = 1;
+            continue;
+        }
+        reminder = 0;
+
+        break;
+    }
+
+    if (reminder != 0) {
+        var arr = new int[digits.Length + 1];
+        arr[0] = reminder;
+        Array.Copy(digits, 0, arr, 1, digits.Length);
+        return arr;
+    }
+    return digits;
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

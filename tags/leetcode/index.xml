@@ -6,10 +6,20 @@
     <description>Recent content in Leetcode on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2020 22:07:35 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2020 20:16:45 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/58. LengthOfLastWord &amp; LeetCode/66. PlusOne</title>
+      <link>https://dinwy.github.io/algorithm/2020/LengthOfLastWordAndPlusOne/</link>
+      <pubDate>Fri, 13 Mar 2020 20:16:45 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/LengthOfLastWordAndPlusOne/</guid>
+      <description>Link  https://leetcode.com/problems/length-of-last-word https://leetcode.com/problems/plus-one  Summary  Length Of Last Word is not even a algorithm question.  PlusOne was really easy but I was making a simple mistake which should be handled.   Solutions My Solution I&amp;rsquo;ll skip explaining #58.
+public int Solution(string s) { var res = 0; for (int i = s.Length - 1; i &amp;gt;= 0; i--) { if (Char.IsWhiteSpace(s[i])) { if (res != 0) return res; res = 0; continue; } res++; } return res; }   PlusOne was interesting because I was missing two thing.</description>
+    </item>
     
     <item>
       <title>LeetCode/53. MaximumSubarray</title>
