@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Leetcode</title>
+<title>LeetCode/83.RemoveDuplicatesFromSortedList</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,205 +87,91 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Leetcode</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/algorithm/2020/RemoveDuplicatesFromSortedList/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/83.RemoveDuplicatesFromSortedList</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list">https://leetcode.com/problems/remove-duplicates-from-sorted-list</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
 
-</div>
+<h2 id="solutions">Solutions</h2>
 
-<h1>LeetCode/83.RemoveDuplicatesFromSortedList</h1>
-16 Mar 2020
+<h3 id="my-solution">My Solution</h3>
 
-<hr>
-<b>Read More…</b>
+<p>When I was solving this problem I made mistakes at start.</p>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/AddBinary/">
-<div class="post-inner">
-<div class="image-wrapper">
+<ol>
+<li>I didn&rsquo;t think about it is <code>SortedLists</code>. Which make me use <code>HashSet</code>.</li>
+</ol>
 
+<p>Also I was confused using <code>pointer</code> properly. Was thinking too much ended up using 3 pointers.</p>
 
+<pre><code class="language-cs">public ListNode Solution(ListNode head)
+{
+    var output = new ListNode(0);
+    var resultNode = output;
+    var outputTail = head;
+    var dict = new HashSet&lt;int&gt;();
 
+    while (outputTail != null)
+    {
+        if (dict.Add(outputTail.val))
+        {
+            var node = new ListNode(outputTail.val);
+            output.next = node;
+            output = output.next;
+        }
+        outputTail = outputTail.next;
+    }
 
+    return resultNode.next;
+}
+</code></pre>
 
-</div>
+<h3 id="best-solution">Best Solution</h3>
 
-<h1>LeetCode/67. AddBinary</h1>
-16 Mar 2020
+<p>The best solution was simpler than I thought. It only use one pointer. Also looping <code>list.next</code> rather than <code>list</code> node itself. <br/>
+By keep assigning ref, <code>list</code> = <code>list.next</code> &amp; <code>list.next</code> = <code>list.next.next</code>, I will change <code>head</code> node itself. <br/>
+Really need to think about <code>pointer</code>.</p>
 
-<hr>
-<b>Read More…</b>
+<pre><code class="language-cs">public ListNode BestSolution(ListNode head)
+{
+    if (head == null || head.next == null) return head;
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/LengthOfLastWordAndPlusOne/">
-<div class="post-inner">
-<div class="image-wrapper">
+    ListNode list = head;
 
+    while (list.next != null)
+    {
+        if (list.val == list.next.val) list.next = list.next.next;
+        else list = list.next;
+    }
 
-
-
-
-</div>
-
-<h1>LeetCode/58. LengthOfLastWord &amp; LeetCode/66. PlusOne</h1>
-13 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/MaximumSubarray/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/53. MaximumSubarray</h1>
-12 Mar 2020
-
-<hr>
-<b>Read More…</b>
+    return head;
+}
+</code></pre>
 
 </div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/SearchInsertPosition/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/35. SearchInsertPosition</h1>
-12 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/MergeTwoSortedLists/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/21. MergeTwoSortedLists</h1>
-12 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/ValidParentheses/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/20. Valid Parentheses</h1>
-12 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/ReverseIntegerAndPalindromeNumber/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/7. ReverseInteger &amp; LeetCode/9. PalindromeNumber</h1>
-11 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/algorithm/2020/AddTwoNumbers/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>LeetCode/3. Add Two Numbers</h1>
-10 Mar 2020
-
-<hr>
-<b>Read More…</b>
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

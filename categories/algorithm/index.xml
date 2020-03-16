@@ -6,10 +6,33 @@
     <description>Recent content in Algorithm on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2020 20:16:45 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 23:29:15 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/83.RemoveDuplicatesFromSortedList</title>
+      <link>https://dinwy.github.io/algorithm/2020/RemoveDuplicatesFromSortedList/</link>
+      <pubDate>Mon, 16 Mar 2020 23:29:15 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/RemoveDuplicatesFromSortedList/</guid>
+      <description>Link  https://leetcode.com/problems/remove-duplicates-from-sorted-list  Summary Solutions My Solution When I was solving this problem I made mistakes at start.
+ I didn&amp;rsquo;t think about it is SortedLists. Which make me use HashSet.  Also I was confused using pointer properly. Was thinking too much ended up using 3 pointers.
+public ListNode Solution(ListNode head) { var output = new ListNode(0); var resultNode = output; var outputTail = head; var dict = new HashSet&amp;lt;int&amp;gt;(); while (outputTail !</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/67. AddBinary</title>
+      <link>https://dinwy.github.io/algorithm/2020/AddBinary/</link>
+      <pubDate>Mon, 16 Mar 2020 19:12:48 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/AddBinary/</guid>
+      <description>Link https://leetcode.com/problems/add-binary/
+Summary Given two binary strings and return their sum. 
+Solutions My Solution In my solution, the idea using two pointer was correct. However checking for the short and long string was a bit too much.
+public string Solution(string a, string b) { var shorterString = &amp;quot;&amp;quot;; var longerString = &amp;quot;&amp;quot;; int pointerS, pointerL = 0; var output = &amp;quot;&amp;quot;; if (a.Length &amp;gt; b.Length) { shorterString = b; pointerS = b.</description>
+    </item>
     
     <item>
       <title>LeetCode/58. LengthOfLastWord &amp; LeetCode/66. PlusOne</title>
