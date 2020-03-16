@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LeetCode/70. ClimbingStairs</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/algorithm">
+
+
+
+
+
+<i class="fa fa-function fa-3x"></i>
+
+<span>Algorithm</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-id-card fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">LeetCode/70. ClimbingStairs</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/climbing-stairs/">https://leetcode.com/problems/climbing-stairs/</a></li>
+</ul>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I used <code>Dynamic Programming</code> to solve this problem. Quite easy to solve to me.</p>
+
+<pre><code class="language-cs">public int Solution(int n)
+{
+    var arr = new int[n + 1];
+
+    return Recursion(n, arr);
+}
+
+private int Recursion(int n, int[] arr)
+{
+    if (n &lt; 0) return 0;
+    if (n == 0) return 1;
+    if (arr[n] != 0) return arr[n];
+    arr[n] = Recursion(n - 1, arr) + Recursion(n - 2, arr);
+
+    return arr[n];
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>However the best answer says that this is a <code>Fibonacci</code> problem. I didn&rsquo;t think about this can be converted like that but indeed it is. <br/>
+But this what I have to understand about <code>bottom-up</code> method in DP. This is not an easy but I&rsquo;ll think about it later.</p>
+
+<pre><code class="language-cs">public int climbStairs(int n) {
+    // base cases
+    if(n &lt;= 0) return 0;
+    if(n == 1) return 1;
+    if(n == 2) return 2;
+    
+    int one_step_before = 2;
+    int two_steps_before = 1;
+    int all_ways = 0;
+    
+    for(int i=2; i&lt;n; i++){
+        all_ways = one_step_before + two_steps_before;
+        two_steps_before = one_step_before;
+        one_step_before = all_ways;
+    }
+    return all_ways;
+}
+</code></pre>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js" integrity="sha256-D05OTvzyl8h0SDpcQF6UNo3gl2rKDMmRuqX8ZZ06pNE=" crossorigin="anonymous"></script>
+<script src="/js/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-python.min.js" integrity="sha256-z1w1HLignub5kA0f24TCzv765MT4114LEgW/oIYuLag=" crossorigin="anonymous"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>
