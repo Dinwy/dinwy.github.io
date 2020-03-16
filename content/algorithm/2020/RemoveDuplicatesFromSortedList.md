@@ -1,5 +1,5 @@
 +++
-title = "LeetCode/83.RemoveDuplicatesFromSortedList"
+title = "LeetCode/83. RemoveDuplicatesFromSortedList"
 date = 2020-03-16T23:29:15+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
