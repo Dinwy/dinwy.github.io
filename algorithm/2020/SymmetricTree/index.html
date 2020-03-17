@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/101. SymmetricTree</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,75 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-17 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/101. SymmetricTree</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/symmetric-tree">https://leetcode.com/problems/symmetric-tree</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Figure out given <code>TreeNode</code> is symmetric or not. I was thinking for a while and able to get an answer.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I feel like now I have some mindset that I can solve programming problem with using my brain. Using <code>BFS</code> to find an answer.</p>
+
+<pre><code class="language-cs">public class SymmetricTree
+{
+    public bool IsSymmetric(TreeNode root)
+    {
+        if (root == null) return true;
+
+        var result = true;
+        var queue = new Queue&lt;TreeNode&gt;();
+        queue.Enqueue(root.left);
+        queue.Enqueue(root.right);
+
+        TreeNode left;
+        TreeNode right;
+
+        while (queue.Count != 0)
+        {
+            left = queue.Dequeue();
+            right = queue.Dequeue();
+
+            // Break the while loop
+            if (left == null &amp;&amp; right == null) continue;
+            if (left != null &amp;&amp; right == null) return false;
+            if (left == null &amp;&amp; right != null) return false;
+            if (left.val != right.val) return false;
+
+            queue.Enqueue(left.left);
+            queue.Enqueue(right.right);
+            queue.Enqueue(left.right);
+            queue.Enqueue(right.left);
+        }
+
+        return result;
+    }
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>My solution is very close to the best solution, except checking if part, I&rsquo;ll skip.</p>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

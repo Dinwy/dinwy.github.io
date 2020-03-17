@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/104. MaximumDepthOfBinaryTree</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,89 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-17 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/104. MaximumDepthOfBinaryTree</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">https://leetcode.com/problems/maximum-depth-of-binary-tree</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Find a maximum depth of Binary Tree.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I was thinking about solving this problem with <code>BFS</code> but realized <code>DFS</code> is much easy to solve this problem after making some mistakes.</p>
+
+<pre><code class="language-cs">public class MaximumDepthOfBinaryTree
+{
+    public int MaxDepth(TreeNode root)
+    {
+        var sum = 0;
+        return Recursion(root, sum);
+    }
+
+    public int Recursion(TreeNode root, int sum)
+    {
+        if (root == null) return sum;
+        sum++;
+        return Math.Max(Recursion(root.left, sum), Recursion(root.right, sum));
+    }
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>Even though I don&rsquo;t like the <code>Head Recursion</code> it gives quite clean solution to the problem.</p>
+
+<pre><code class="language-cpp">int maxDepth(TreeNode *root)
+{
+    return root == NULL ? 0 : max(maxDepth(root -&gt; left), maxDepth(root -&gt; right)) + 1;
+}
+</code></pre>
+
+<p>BFS solution is not difficult, but be careful using <code>var size = q.Count</code> first. If referencing <code>q.Count</code> directly, it will not gonna work because the loop is dequeueing the <code>q</code> So the <code>q.Count</code> will change.</p>
+
+<pre><code class="language-cs">public int BFSSolution(TreeNode root)
+{
+    if (root == null) return 0;
+
+    int res = 0;
+    var q = new Queue&lt;TreeNode&gt;();
+    q.Enqueue(root);
+
+    while (q.Count &gt; 0)
+    {
+        res++;
+        var size = q.Count;
+        for (int i = 0; i &lt; size; i++)
+        {
+            var p = q.Dequeue();
+
+            if (p.left != null) q.Enqueue(p.left);
+            if (p.right != null) q.Enqueue(p.right);
+        }
+    }
+
+    return res;
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

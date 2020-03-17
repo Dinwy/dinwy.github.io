@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/100. SameTree</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,47 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-17 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/100. SameTree</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/same-tree">https://leetcode.com/problems/same-tree</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Find the tree is the same.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>Solved directly when I saw this problem. Also my solution is one of the best answers. This question not asking about optimization. <br/>
+Basically this is the same question as <code>70.ClimbingStairs</code>.</p>
+
+<pre><code class="language-cs">public bool IsSameTree(TreeNode p, TreeNode q)
+{
+    if (p == null &amp;&amp; q != null) return false;
+    if (p != null &amp;&amp; q == null) return false;
+    if (p == null &amp;&amp; q == null) return true;
+    if (p.val != q.val) return false;
+
+    return IsSameTree(p.left, q.left) &amp;&amp; IsSameTree(p.right, q.right);
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

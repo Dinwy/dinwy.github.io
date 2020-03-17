@@ -6,10 +6,43 @@
     <description>Recent content in Algorithm on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2020 23:29:15 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 21:24:12 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/104. MaximumDepthOfBinaryTree</title>
+      <link>https://dinwy.github.io/algorithm/2020/MaximumDepthOfBinary/</link>
+      <pubDate>Tue, 17 Mar 2020 21:24:12 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MaximumDepthOfBinary/</guid>
+      <description>Link  https://leetcode.com/problems/maximum-depth-of-binary-tree  Summary Find a maximum depth of Binary Tree.
+Solutions My Solution I was thinking about solving this problem with BFS but realized DFS is much easy to solve this problem after making some mistakes.
+public class MaximumDepthOfBinaryTree { public int MaxDepth(TreeNode root) { var sum = 0; return Recursion(root, sum); } public int Recursion(TreeNode root, int sum) { if (root == null) return sum; sum++; return Math.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/101. SymmetricTree</title>
+      <link>https://dinwy.github.io/algorithm/2020/SymmetricTree/</link>
+      <pubDate>Tue, 17 Mar 2020 20:31:19 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/SymmetricTree/</guid>
+      <description>Link  https://leetcode.com/problems/symmetric-tree  Summary Figure out given TreeNode is symmetric or not. I was thinking for a while and able to get an answer.
+Solutions My Solution I feel like now I have some mindset that I can solve programming problem with using my brain. Using BFS to find an answer.
+public class SymmetricTree { public bool IsSymmetric(TreeNode root) { if (root == null) return true; var result = true; var queue = new Queue&amp;lt;TreeNode&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/100. SameTree</title>
+      <link>https://dinwy.github.io/algorithm/2020/SameTree/</link>
+      <pubDate>Tue, 17 Mar 2020 18:52:36 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/SameTree/</guid>
+      <description>Link  https://leetcode.com/problems/same-tree  Summary Find the tree is the same.
+Solutions My Solution Solved directly when I saw this problem. Also my solution is one of the best answers. This question not asking about optimization.  Basically this is the same question as 70.ClimbingStairs.
+public bool IsSameTree(TreeNode p, TreeNode q) { if (p == null &amp;amp;&amp;amp; q != null) return false; if (p != null &amp;amp;&amp;amp; q == null) return false; if (p == null &amp;amp;&amp;amp; q == null) return true; if (p.</description>
+    </item>
     
     <item>
       <title>LeetCode/83. RemoveDuplicatesFromSortedList</title>
