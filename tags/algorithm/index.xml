@@ -6,10 +6,21 @@
     <description>Recent content in Algorithm on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2020 21:24:12 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 19:50:49 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/108. ConvertSortedArrayToBST</title>
+      <link>https://dinwy.github.io/algorithm/2020/ConvertSortedArrayToBST/</link>
+      <pubDate>Sun, 22 Mar 2020 19:50:49 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ConvertSortedArrayToBST/</guid>
+      <description>Link  https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/  Summary I was taking break way more than it should be. Also I totally misunderstood this problem.  I really should read document carefully.
+Solutions My Solution The below is my first solution without caring many things.
+public class ConvertSortedArrayToBST { public TreeNode SortedArrayToBST(int[] nums) { if (nums.Length == 0) return null; var output = new TreeNode(0); Recursion(ref output.left, nums); return output.left; } private void Recursion(ref TreeNode output, int[] nums) { if (nums.</description>
+    </item>
     
     <item>
       <title>LeetCode/104. MaximumDepthOfBinaryTree</title>

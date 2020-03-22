@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/108. ConvertSortedArrayToBST</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,89 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-22 Mar 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/108. ConvertSortedArrayToBST</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/">https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>I was taking break way more than it should be. Also I totally misunderstood this problem. <br/>
+I really should read document carefully.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>The below is my first solution without caring many things.</p>
+
+<pre><code class="language-cs">public class ConvertSortedArrayToBST
+{
+    public TreeNode SortedArrayToBST(int[] nums)
+    {
+        if (nums.Length == 0) return null;
+
+        var output = new TreeNode(0);
+
+        Recursion(ref output.left, nums);
+
+        return output.left;
+    }
+
+    private void Recursion(ref TreeNode output, int[] nums)
+    {
+        if (nums.Length == 0) return;
+
+        int mIdx = nums.Length / 2;
+        output = new TreeNode(nums[mIdx]);
+
+        Recursion(ref output.left, nums.Take(mIdx).ToArray());
+        Recursion(ref output.right, nums.Skip(mIdx + 1).ToArray());
+    }
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>This is a better solution that rather modifying array and passing it, sending <code>low</code> and <code>high</code> indexes. <br/>
+Explicitly selecting the value by index, this will be the ideal solution and which I need to learn.</p>
+
+<pre><code class="language-cs">public class ConvertSortedArrayToBST
+{
+    public TreeNode SortedArrayToBST(int[] nums)
+    {
+        if (nums.Length == 0) return null;
+
+        return BestSolution(nums, 0, nums.Length - 1);
+    }
+
+    private TreeNode BestSolution(int[] nums, int low, int high)
+    {
+        if (low &gt; high) return null;
+
+        int mid = (low + high) / 2;
+        var node = new TreeNode(nums[mid]);
+        node.left = BestSolution(nums, low, mid - 1);
+        node.right = BestSolution(nums, mid + 1, high);
+        return node;
+    }
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
