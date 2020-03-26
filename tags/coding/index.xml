@@ -6,10 +6,21 @@
     <description>Recent content in Coding on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 19:50:49 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 00:11:58 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/110. BalancedBinaryTree</title>
+      <link>https://dinwy.github.io/algorithm/2020/BalancedBinaryTree/</link>
+      <pubDate>Fri, 27 Mar 2020 00:11:58 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/BalancedBinaryTree/</guid>
+      <description>Link  https://leetcode.com/problems/balanced-binary-tree/  Summary I was super confused about this problem and took a day to solve it.  Really need to think about how to go to all nodes with DFS.
+Solutions My Solution I finally reached the solution with DFS. However I used try catch witch doesn&amp;rsquo;t really needed.
+public bool IsBalanced(TreeNode root) { try { Height(root); return true; } catch { return false; } } public int Height(TreeNode node) { if (node == null) { return 0; } else { var left = Height(node.</description>
+    </item>
     
     <item>
       <title>LeetCode/108. ConvertSortedArrayToBST</title>

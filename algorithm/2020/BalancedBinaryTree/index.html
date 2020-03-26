@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/110. BalancedBinaryTree</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,97 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/110. BalancedBinaryTree</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/balanced-binary-tree/">https://leetcode.com/problems/balanced-binary-tree/</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
+
+<p>I was super confused about this problem and took a day to solve it. <br/>
+Really need to think about how to go to all nodes with DFS.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I finally reached the solution with DFS. However I used <code>try</code> <code>catch</code> witch doesn&rsquo;t really needed.</p>
+
+<pre><code class="language-cs">public bool IsBalanced(TreeNode root)
+{
+    try {
+        Height(root);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+public int Height(TreeNode node)
+{
+    if (node == null)
+    {
+        return 0;
+    }
+    else
+    {
+        var left = Height(node.left) + 1;
+        var right = Height(node.right) + 1;
+
+        if (Math.Abs(left - right) &gt; 1) throw new Exception();
+
+        return Math.Max(left, right);
+    }
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>When I was spending a day, I almost reached exact solution as below. However I was adding value. <br/>
+ <code>var left = Height(node.left) + 1;</code> rather than just using <code>var left = Height(node.left)</code>. <br/>
+ Which cause that next <code>-1</code> become <code>0</code>.</p>
+
+<pre><code class="language-cs">public bool IsBalanced(TreeNode root)
+{
+    return Height(root) != -1;
+}
+
+public int Height(TreeNode node)
+{
+    if (node == null) return 0;
+
+    var left = Height(node.left);
+    if (left == -1) return -1;
+    var right = Height(node.right);
+    if (right == -1) return -1;
+
+    if (Math.Abs(left - right) &gt; 1) return -1;
+    return Math.Max(left, right) + 1;
+}
+</code></pre>
 
 </div>
-
-<h1>Algorithm</h1>
-27 Mar 2020
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>
