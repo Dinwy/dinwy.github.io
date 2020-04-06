@@ -6,10 +6,42 @@
     <description>Recent content in Leetcode on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2020 00:11:58 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 20:13:09 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/118. PascalsTriangle</title>
+      <link>https://dinwy.github.io/algorithm/2020/PascalsTriangle/</link>
+      <pubDate>Wed, 01 Apr 2020 20:13:09 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/PascalsTriangle/</guid>
+      <description>Link  https://leetcode.com/problems/pascals-triangle/  Summary I was trying to make a optimal formula of this problem when I was solving. However algorithm questions are often not asking optimal solution but asking the solution itself. Simply translate the description into a code will solve this problem.
+Solutions My Solution public class PascalsTriangle { public IList&amp;lt;IList&amp;lt;int&amp;gt;&amp;gt; Generate(int numRows) { var output = new int[numRows][]; // Set pointer var p0 = 0; for (int level = 0; level &amp;lt; numRows; level++) { var l = new int[level + 1]; output[level] = l; l[0] = 1; l[l.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/112. PathSum</title>
+      <link>https://dinwy.github.io/algorithm/2020/PathSum/</link>
+      <pubDate>Mon, 30 Mar 2020 22:13:43 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/PathSum/</guid>
+      <description>Link  https://leetcode.com/problems/path-sum  Summary When I was solving this problem, I was missing two things. 
+ Not caring about negative numbers. Not carefully reding a description.  The description says that adding up all the values along the path. However I was thinking that Adding up until we find a value. This kind of process of thinking should be prevented, the assumption and misunderstanding.
+Solutions public bool HasPathSum(TreeNode root, int sum) { if (root == null) return false; if (sum - root.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/111. MinimumDepthOfBinaryTree</title>
+      <link>https://dinwy.github.io/algorithm/2020/MinimumDepthOfBinaryTree/</link>
+      <pubDate>Mon, 30 Mar 2020 21:51:13 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MinimumDepthOfBinaryTree/</guid>
+      <description>Link  https://leetcode.com/problems/minimum-depth-of-binary-tree/  Summary Finding minimum depth of binary tree.
+Solutions Best solution gives me a better idea. Don&amp;rsquo;t need to use targetNode pointer, because when one of those are null I just have to add them.(Cuz it will return 0);
+My Solution public int MinDepth(TreeNode root) { if (root == null) return 0; if (root.left != null &amp;amp;&amp;amp; root.right != null) { return Math.Min(MinDepth(root.left), MinDepth(root.right)) + 1; } else { var targetNode = root.</description>
+    </item>
     
     <item>
       <title>LeetCode/110. BalancedBinaryTree</title>

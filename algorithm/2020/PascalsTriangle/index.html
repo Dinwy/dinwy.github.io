@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/118. PascalsTriangle</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,80 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-01 Apr 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/118. PascalsTriangle</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/pascals-triangle/">https://leetcode.com/problems/pascals-triangle/</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>I was trying to make a <code>optimal formula</code> of this problem when I was solving. However algorithm questions are often not asking <code>optimal</code> solution but asking the solution itself. Simply translate the description into a code will solve this problem.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-cs">public class PascalsTriangle
+{
+    public IList&lt;IList&lt;int&gt;&gt; Generate(int numRows)
+    {
+        var output = new int[numRows][];
+
+        // Set pointer
+        var p0 = 0;
+
+        for (int level = 0; level &lt; numRows; level++)
+        {
+            var l = new int[level + 1];
+            output[level] = l;
+            l[0] = 1;
+            l[l.Length - 1] = 1;
+
+            for (int col = 1; col &lt; level; col++)
+            {
+                var arr = output[level - 1];
+                l[col] = arr[p0] + arr[p0 + 1];
+                p0++;
+            }
+            p0 = 0;
+        }
+        return output;
+    }
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<pre><code class="language-cs">public IList&lt;IList&lt;int&gt;&gt; BestSolution(int numRows)
+{
+    var output = new int[numRows][];
+
+    for (int level = 0; level &lt; numRows; level++)
+    {
+        var l = new int[level + 1];
+        output[level] = l;
+        l[0] = 1;
+        l[l.Length - 1] = 1;
+
+        for (int col = 1; col &lt; level; col++) l[col] = output[level - 1][col - 1] + output[level - 1][col];
+    }
+    return output;
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

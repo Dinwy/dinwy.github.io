@@ -13,10 +13,10 @@
     
     <item>
       <title>HLSL Shader in Unity #1</title>
-      <link>https://dinwy.github.io/study/2020/shaderInUnity#1/</link>
+      <link>https://dinwy.github.io/study/2020/shaderInUnity/</link>
       <pubDate>Thu, 05 Mar 2020 17:53:02 +0900</pubDate>
       
-      <guid>https://dinwy.github.io/study/2020/shaderInUnity#1/</guid>
+      <guid>https://dinwy.github.io/study/2020/shaderInUnity/</guid>
       <description>Preface Source From  Shaders: What is clip space?: https://answers.unity.com/questions/1443941/shaders-what-is-clip-space.html Compute eye space from window space: https://www.khronos.org/opengl/wiki/Compute_eye_space_from_window_space Coordinate Systems: https://learnopengl.com/Getting-started/Coordinate-Systems NDC Space: Normalized device coordinate or NDC space is a screen independent display coordinate system; it encompasses a cube where the x, y, and z components range from −1 to 1. Although clipping to the view volume is specified to happen in clip space, NDC space can be thought of as the space that defines the view volume.</description>
     </item>
     

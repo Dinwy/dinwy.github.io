@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/algorithm/2020/PascalsTriangle/</loc>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/2020/PathSum/</loc>
+    <lastmod>2020-03-30T22:13:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/2020/MinimumDepthOfBinaryTree/</loc>
+    <lastmod>2020-03-30T21:51:13+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/algorithm/2020/BalancedBinaryTree/</loc>
     <lastmod>2020-03-27T00:11:58+09:00</lastmod>
   </url>
@@ -78,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/study/2020/shaderInUnity#1/</loc>
+    <loc>https://dinwy.github.io/study/2020/shaderInUnity/</loc>
     <lastmod>2020-03-05T17:53:02+09:00</lastmod>
   </url>
   
@@ -625,19 +640,19 @@
   
   <url>
     <loc>https://dinwy.github.io/categories/algorithm/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/tags/algorithm/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/algorithm/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -661,7 +676,7 @@
   
   <url>
     <loc>https://dinwy.github.io/categories/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -685,13 +700,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/coding/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -769,7 +784,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/leetcode/</loc>
-    <lastmod>2020-03-27T00:11:58+09:00</lastmod>
+    <lastmod>2020-04-01T20:13:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HLSL Shader in Unity #1</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/algorithm">
+
+
+
+
+
+<i class="fa fa-function fa-3x"></i>
+
+<span>Algorithm</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-id-card fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">HLSL Shader in Unity #1</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="preface">Preface</h2>
+
+<h2 id="source-from">Source From</h2>
+
+<ul>
+<li>Shaders: What is clip space?: <a href="https://answers.unity.com/questions/1443941/shaders-what-is-clip-space.html">https://answers.unity.com/questions/1443941/shaders-what-is-clip-space.html</a></li>
+<li>Compute eye space from window space: <a href="https://www.khronos.org/opengl/wiki/Compute_eye_space_from_window_space">https://www.khronos.org/opengl/wiki/Compute_eye_space_from_window_space</a></li>
+<li>Coordinate Systems: <a href="https://learnopengl.com/Getting-started/Coordinate-Systems">https://learnopengl.com/Getting-started/Coordinate-Systems</a></li>
+<li>NDC Space: Normalized device coordinate or NDC space is a screen independent display coordinate system; it encompasses a cube where the x, y, and z components range from −1 to 1. Although clipping to the view volume is specified to happen in clip space, NDC space can be thought of as the space that defines the view volume. The view volume is effectively the result of reversing the divide by wclip operation on the corners of the NDC cube.</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Coordinates:</p>
+
+<blockquote>
+<p>first start in local space as local coordinates and are then further processed to world coordinates, view coordinates, clip coordinates and eventually end up as screen coordinates.</p>
+
+<p>Clip coordinates are processed to the -1.0 and 1.0 range and determine which vertices will end up on the screen.</p>
+</blockquote>
+
+<ol>
+<li>Local Space</li>
+<li>Word Space</li>
+<li>View Space</li>
+<li>Clip Scape</li>
+<li>Screen Space</li>
+</ol>
+
+<h3 id="what-is-ndc-space">What is NDC Space?</h3>
+
+<p>Normalized device coordinate or NDC space is a screen independent display coordinate system; it encompasses a cube where the x, y, and z components range from −1 to 1. Although clipping to the view volume is specified to happen in clip space, NDC space can be thought of as the space that defines the view volume. The view volume is effectively the result of reversing the divide by wclip operation on the corners of the NDC cube.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Using HLSL code gives some structural benefits. However it is a bit complicated to set it up. Unity code are conflicting itself still. You need to directly reference the github page. (<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline">https://github.com/Unity-Technologies/ScriptableRenderPipeline</a>)</p>
+
+<ol>
+<li>The packages were conflicting by themselves in 2019.3 URP 7.40. You have to manually reference or adjust it by writing <code>#include Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl</code></li>
+<li>Remember that Y coordinates of GLSL &amp; HLSL is different. You need to write this down using hlsl in Unity.
+<code>glsl
+#if UNITY_UV_STARTS_AT_TOP
+    o.texcoord = o.texcoord * float2(1.0, -1.0) + float2(0.0, 1.0);
+#endif
+</code></li>
+<li>General functions which used in previous Unity versions, now they named in differently. Can&rsquo;t find a proper document for that and the easiest way to do is go to the github page.</li>
+</ol>
+
+<ul>
+<li><p>CustomOutline.shader</p>
+
+<pre><code class="language-glsl">Shader &quot;Hidden/Custom/Outline&quot;
+{
+    SubShader
+    {
+        Cull Off ZWrite Off ZTest Always
+
+        Pass
+        {
+            HLSLPROGRAM
+            #pragma vertex VertDefault
+            #pragma fragment Frag
+
+            #include &quot;CustomOutline.hlsl&quot;
+
+            ENDHLSL
+        }
+    }
+}
+</code></pre></li>
+</ul>
+
+<p>-CustomOutline.hlsl</p>
+
+<pre><code class="language-glsl">#include &quot;Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl&quot;
+#include &quot;Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl&quot;
+#include &quot;AttributeDefaults.hlsl&quot;
+#include &quot;Utils.hlsl&quot;
+
+Texture2D _MainTex;
+Texture2D _CameraDepthTexture;
+SamplerState sampler_MainTex;
+
+float _Blend;
+
+VaryingsDefault VertDefault(AttributesDefault v)
+{
+    VaryingsDefault o;
+    o.posCS = float4(v.vertex.xy, 0.0, 1.0);
+    o.texcoord = TransformTriangleVertexToUV(v.vertex.xy);
+
+    #if UNITY_UV_STARTS_AT_TOP
+        o.texcoord = o.texcoord * float2(1.0, -1.0) + float2(0.0, 1.0);
+    #endif
+
+    return o;
+}
+
+float4 Frag(VaryingsDefault i) : SV_Target
+{
+    float4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
+    float4 offsetCol = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord - 0.002);
+    if (length(col - offsetCol) &gt; 0.1) col = 0;
+
+    return col;
+}
+</code></pre>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<ul>
+<li>SV_POSITION: Clip Pos</li>
+
+<li><p>_ScreenParams == iResolution</p></li>
+
+<li><p><a href="https://github.com/johnsietsma/ExtendingLWRP/wiki/LWRPShaders">https://github.com/johnsietsma/ExtendingLWRP/wiki/LWRPShaders</a></p>
+
+<ul>
+<li>TransformWorldToHClip == UnityObjectToClipPos</li>
+<li>GetVertexPositionInputs()</li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js" integrity="sha256-D05OTvzyl8h0SDpcQF6UNo3gl2rKDMmRuqX8ZZ06pNE=" crossorigin="anonymous"></script>
+<script src="/js/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-python.min.js" integrity="sha256-z1w1HLignub5kA0f24TCzv765MT4114LEgW/oIYuLag=" crossorigin="anonymous"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>
