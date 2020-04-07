@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>PascalsTriangle2</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,81 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">PascalsTriangle2</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/pascals-triangle-ii">https://leetcode.com/problems/pascals-triangle-ii</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
 
-</div>
+<p>The extension of the pascal&rsquo;s triangle algorithm. Wasn&rsquo;t really hard to solve this problem.</p>
 
-<h1>Algorithm</h1>
-08 Apr 2020
+<h2 id="solutions">Solutions</h2>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
+<h3 id="my-solution">My Solution</h3>
 
+<pre><code class="language-cs">public IList&lt;int&gt; GetRow(int rowIndex)
+{
+    if (rowIndex &lt; 0) return new int[0];
 
+    var res = new int[rowIndex + 1];
 
+    for (int row = 0; row &lt;= rowIndex; row++)
+    {
+        var t = new int[row + 1];
+        t[0] = 1;
+        t[t.Length - 1] = 1;
 
+        for (int i = 1; i &lt; t.Length - 1; i++)
+        {
+            t[i] = res[i - 1] + res[i];
+        }
 
-</div>
+        res = t;
+    }
+    return res;
+}
+</code></pre>
 
-<h1>Everyday</h1>
-01 Aug 2019
+<h3 id="best-solution">Best Solution</h3>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
+<p>Not really different but not using <code>temp</code> array.</p>
 
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
+<pre><code class="language-cpp">class Solution {
+public:
+    vector&lt;int&gt; getRow(int rowIndex) {
+        vector&lt;int&gt; A(rowIndex+1, 0);
+        A[0] = 1;
+        for(int i=1; i&lt;rowIndex+1; i++)
+            for(int j=i; j&gt;=1; j--)
+                A[j] += A[j-1];
+        return A;
+    }
+};
+</code></pre>
 
 </div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

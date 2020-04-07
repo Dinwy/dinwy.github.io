@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BestTimeToBuyAndSellStock</title>
+<link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<link href="/css/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+<ul class="nav navbar">
+<li class="pull-left">
+<figure>
+<a class="text-center" href="https://dinwy.github.io/">
+<img class="logo" src="/img/logo.svg" alt="logo">
+</a>
+</figure>
+</li>
+<div>
+<ul>
+
+<li>
+<a class="text-center" href="/categories/algorithm">
+
+
+
+
+
+<i class="fa fa-function fa-3x"></i>
+
+<span>Algorithm</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/everyday">
+
+
+
+<i class="fa fa-tasks fa-3x"></i>
+
+
+
+<span>Everyday</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/gamejam">
+
+<i class="fa fa-gamepad fa-3x"></i>
+
+
+
+
+
+<span>Gamejam</span>
+</li>
+</a>
+
+<li>
+<a class="text-center" href="/categories/study">
+
+
+
+
+<i class="fa fa-university fa-3x"></i>
+
+
+<span>Study</span>
+</li>
+</a>
+
+<li>
+<a href="/about/">
+<i class="fa fa-id-card fa-3x"></i>
+<span>Me</span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</nav>
+
+</header>
+<section>
+<article>
+<div class="post-wrapper">
+<div class="post-inner">
+<h1 class="title">BestTimeToBuyAndSellStock</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock">https://leetcode.com/problems/best-time-to-buy-and-sell-stock</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>It was interesting to think how to solve this. First I found a very slow O(n²) then found a better solution which is O(n).</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>The slow solution was brutal forcing the problem. Find a max value each time you iterating it.</p>
+
+<pre><code class="language-cs">// Slow solution
+public int MaxProfit_Slow(int[] prices)
+{
+    var res = 0;
+
+    for (int i = 0; i &lt; prices.Length; i++)
+    {
+        var max = prices.Skip(i).Max() - prices[i];
+        res = Math.Max(res, max);
+    }
+    return res;
+}
+</code></pre>
+
+<p>Since the previous answer is keep getting time out I have to optimize it. And I&rsquo;ve realized that every time current value is smaller than previous value, it will a new marker for the min value. And after that I can find a max value.</p>
+
+<pre><code class="language-cs">public int MaxProfit(int[] prices)
+{
+    var previousVal = int.MaxValue;
+    var minVal = int.MaxValue;
+    var maxVal = int.MinValue;
+    var result = 0;
+
+    for (int i = 0; i &lt; prices.Length; i++)
+    {
+        if (prices[i] &lt; previousVal)
+        {
+            minVal = Math.Min(minVal, prices[i]);
+            maxVal = int.MinValue;
+        }
+        else
+        {
+            maxVal = Math.Max(maxVal, prices[i]);
+            result = minVal == int.MaxValue ? 0 : Math.Max(result, maxVal - minVal);
+        }
+
+        previousVal = prices[i];
+    }
+
+    return result;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>I was surprised that the solution of this algorithm is known as Kadane&rsquo;s Algorithm. It is same as &ldquo;max subarray problem&rdquo;. There is a good explanation how this algorithm works so I&rsquo;m attaching it in below.</p>
+
+<pre><code class="language-cs">public int maxProfit(int[] prices) {
+    int maxCur = 0, maxSoFar = 0;
+    for(int i = 1; i &lt; prices.length; i++) {
+        maxCur = Math.max(0, maxCur += prices[i] - prices[i-1]);
+        maxSoFar = Math.max(maxCur, maxSoFar);
+    }
+    return maxSoFar;
+}
+</code></pre>
+
+<pre><code class="language-md">@jaqenhgar said in Kadane's Algorithm - Since no one has mentioned about this so far :) (In case if interviewer twists the input):
+
+    *maxCur = current maximum value
+    *maxSoFar = maximum value found so far
+
+A more clear explanation on why sum of subarray works.:
+
+Suppose we have original array:
+[a0, a1, a2, a3, a4, a5, a6]
+
+what we are given here(or we calculate ourselves) is:
+[b0, b1, b2, b3, b4, b5, b6]
+
+where,
+b[i] = 0, when i == 0
+b[i] = a[i] - a[i - 1], when i != 0
+
+suppose if a2 and a6 are the points that give us the max difference (a2 &lt; a6)
+then in our given array, we need to find the sum of sub array from b3 to b6.
+
+b3 = a3 - a2
+b4 = a4 - a3
+b5 = a5 - a4
+b6 = a6 - a5
+
+adding all these, all the middle terms will cancel out except two
+i.e.
+
+b3 + b4 + b5 + b6 = a6 - a2
+
+a6 - a2 is the required solution.
+
+so we need to find the largest sub array sum to get the most profit
+</code></pre>
+
+</div>
+</div>
+</div>
+</article>
+</section>
+<div class="nav nav-home">
+<a class="text-center" href="https://dinwy.github.io/">
+<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+<span>Home</span>
+</a>
+</div>
+<footer class="footer">
+<p>Powered by <a href="http://gohugo.io">Hugo</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-core.min.js" integrity="sha256-D05OTvzyl8h0SDpcQF6UNo3gl2rKDMmRuqX8ZZ06pNE=" crossorigin="anonymous"></script>
+<script src="/js/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-python.min.js" integrity="sha256-z1w1HLignub5kA0f24TCzv765MT4114LEgW/oIYuLag=" crossorigin="anonymous"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+	ga('create', 'UA-64570277-2', 'auto');
+	ga('send', 'pageview');
+  </script>
+</body>
+</html>

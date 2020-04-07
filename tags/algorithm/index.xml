@@ -6,10 +6,31 @@
     <description>Recent content in Algorithm on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 20:13:09 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 00:26:28 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BestTimeToBuyAndSellStock</title>
+      <link>https://dinwy.github.io/algorithm/2020/BestTimeToBuyAndSellStock/</link>
+      <pubDate>Wed, 08 Apr 2020 00:26:28 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/BestTimeToBuyAndSellStock/</guid>
+      <description>Link  https://leetcode.com/problems/best-time-to-buy-and-sell-stock  Summary It was interesting to think how to solve this. First I found a very slow O(n²) then found a better solution which is O(n).
+Solutions My Solution The slow solution was brutal forcing the problem. Find a max value each time you iterating it.
+// Slow solution public int MaxProfit_Slow(int[] prices) { var res = 0; for (int i = 0; i &amp;lt; prices.Length; i++) { var max = prices.</description>
+    </item>
+    
+    <item>
+      <title>PascalsTriangle2</title>
+      <link>https://dinwy.github.io/algorithm/2020/PascalsTriangle2/</link>
+      <pubDate>Wed, 08 Apr 2020 00:23:04 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/PascalsTriangle2/</guid>
+      <description>Link  https://leetcode.com/problems/pascals-triangle-ii  Summary The extension of the pascal&amp;rsquo;s triangle algorithm. Wasn&amp;rsquo;t really hard to solve this problem.
+Solutions My Solution public IList&amp;lt;int&amp;gt; GetRow(int rowIndex) { if (rowIndex &amp;lt; 0) return new int[0]; var res = new int[rowIndex + 1]; for (int row = 0; row &amp;lt;= rowIndex; row++) { var t = new int[row + 1]; t[0] = 1; t[t.Length - 1] = 1; for (int i = 1; i &amp;lt; t.</description>
+    </item>
     
     <item>
       <title>LeetCode/118. PascalsTriangle</title>
