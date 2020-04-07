@@ -1,5 +1,5 @@
 +++
-title = "PascalsTriangle2"
+title = "LeetCode/119. PascalsTriangle2"
 date = 2020-04-08T00:23:04+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"

@@ -1,5 +1,5 @@
 +++
-title = "BestTimeToBuyAndSellStock"
+title = "LeetCode/121. BestTimeToBuyAndSellStock"
 date = 2020-04-08T00:26:28+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
