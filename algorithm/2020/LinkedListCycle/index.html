@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/141. LinkedListCycle</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,81 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/141. LinkedListCycle</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/linked-list-cycle">https://leetcode.com/problems/linked-list-cycle</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
 
-</div>
+<p>I was very confused about <code>input</code> parameters in description. The question suggested two inputs but I&rsquo;ve got only one. After reading thread about the same question I have, I only have to test whether given Linked list is cycle or not.</p>
 
-<h1>Algorithm</h1>
-10 Apr 2020
+<h2 id="solutions">Solutions</h2>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
+<h3 id="my-solution">My Solution</h3>
 
+<p>My solution uses dictionary which I&rsquo;ve already seen that node or not.</p>
 
+<pre><code class="language-cs">public bool HasCycle(ListNode head)
+{
+    var haveSeen = new Dictionary&lt;ListNode, bool&gt;();
+    var p = head;
 
+    while (p != null)
+    {
+        if (!haveSeen.ContainsKey(p))
+        {
+            haveSeen.Add(p, true);
+            p = p.next;
+        }
+        else return true;
+    }
+    return false;
+}
 
+</code></pre>
 
-</div>
+<h3 id="best-solution">Best Solution</h3>
 
-<h1>Everyday</h1>
-01 Aug 2019
+<p>There is space optimal way to solve this problem. Using two pointers which is going to only next node, the other ones goes one step further each time. If Linked list cycles then it will meet each other at some point.</p>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
+<pre><code class="language-cs">public bool HasCycle(ListNode head)
+{
+    if (head == null) return false;
+    ListNode walker = head;
+    ListNode runner = head;
+    while (runner.next != null &amp;&amp; runner.next.next != null)
+    {
+        walker = walker.next;
+        runner = runner.next.next;
+        if (walker == runner) return true;
+    }
+    return false;
+}
+</code></pre>
 
 </div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

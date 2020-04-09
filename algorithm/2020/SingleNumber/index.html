@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/136. SingleNumber</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,70 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/136. SingleNumber</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/single-number/">https://leetcode.com/problems/single-number/</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
 
-</div>
+<p>Easy question, asking do you know data type dictionary.</p>
 
-<h1>Algorithm</h1>
-10 Apr 2020
+<h2 id="solutions">Solutions</h2>
 
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
+<h3 id="my-solution">My Solution</h3>
 
+<pre><code class="language-cs">public int Solution(int[] nums)
+{
+    var dict = new Dictionary&lt;int, int&gt;();
 
+    for (int i = 0; i &lt; nums.Length; i++)
+    {
+        if (!dict.ContainsKey(nums[i])) dict[nums[i]] = 1;
+        else dict[nums[i]]++;
+    }
+    return dict.Where(x =&gt; x.Value == 1).FirstOrDefault().Key;
+}
+</code></pre>
 
+<h3 id="best-solution">Best Solution</h3>
 
+<p>Even though solving this question with dictionary is a one way, there is another way to solve this problem. It is using XOR. Because every element appears <code>twice</code> except for <code>one</code>. So XOR will remove bits. It is interesting to think in this way.</p>
 
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
+<pre><code class="language-cs">// Best Solution, using XOR
+int singleNumber(int[] nums)
+{
+    int result = 0;
+    for (int i = 0; i &lt; nums.Length; i++)
+    {
+        result ^= nums[i];
+    }
+    return result;
+}
+</code></pre>
 
 </div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

@@ -6,10 +6,42 @@
     <description>Recent content in Leetcode on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2020 00:26:28 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:27:08 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/141. LinkedListCycle</title>
+      <link>https://dinwy.github.io/algorithm/2020/LinkedListCycle/</link>
+      <pubDate>Fri, 10 Apr 2020 00:27:08 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/LinkedListCycle/</guid>
+      <description>Link  https://leetcode.com/problems/linked-list-cycle  Summary I was very confused about input parameters in description. The question suggested two inputs but I&amp;rsquo;ve got only one. After reading thread about the same question I have, I only have to test whether given Linked list is cycle or not.
+Solutions My Solution My solution uses dictionary which I&amp;rsquo;ve already seen that node or not.
+public bool HasCycle(ListNode head) { var haveSeen = new Dictionary&amp;lt;ListNode, bool&amp;gt;(); var p = head; while (p !</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/136. SingleNumber</title>
+      <link>https://dinwy.github.io/algorithm/2020/SingleNumber/</link>
+      <pubDate>Fri, 10 Apr 2020 00:21:46 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/SingleNumber/</guid>
+      <description>Link  https://leetcode.com/problems/single-number/  Summary Easy question, asking do you know data type dictionary.
+Solutions My Solution public int Solution(int[] nums) { var dict = new Dictionary&amp;lt;int, int&amp;gt;(); for (int i = 0; i &amp;lt; nums.Length; i++) { if (!dict.ContainsKey(nums[i])) dict[nums[i]] = 1; else dict[nums[i]]++; } return dict.Where(x =&amp;gt; x.Value == 1).FirstOrDefault().Key; }  Best Solution Even though solving this question with dictionary is a one way, there is another way to solve this problem.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/122. BestTimeToBuyAndSellStock2</title>
+      <link>https://dinwy.github.io/algorithm/2020/BestTimeToBuyAndSellStock2/</link>
+      <pubDate>Fri, 10 Apr 2020 00:18:54 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/BestTimeToBuyAndSellStock2/</guid>
+      <description>Link  https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/  Summary Since I&amp;rsquo;ve already solved the first one, solving second one was easy.
+Solutions My Solution Despite I&amp;rsquo;ve already know the last best solution, I&amp;rsquo;ve tried with my way which is more intuitive to me.
+public int MaxProfit(int[] prices) { var previousVal = int.MaxValue; var minVal = int.MaxValue; var maxVal = int.MinValue; var result = 0; for (int i = 0; i &amp;lt; prices.Length; i++) { if (prices[i] &amp;lt; previousVal) { minVal = Math.</description>
+    </item>
     
     <item>
       <title>LeetCode/121. BestTimeToBuyAndSellStock</title>
