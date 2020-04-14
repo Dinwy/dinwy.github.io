@@ -22,7 +22,7 @@ Solutions My Solution public int TitleToNumber(string s) { var output = 0; var p
     </item>
     
     <item>
-      <title>MajorityElement</title>
+      <title>LeetCode/169. MajorityElement</title>
       <link>https://dinwy.github.io/algorithm/2020/MajorityElement/</link>
       <pubDate>Tue, 14 Apr 2020 23:10:57 +0900</pubDate>
       
