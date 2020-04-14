@@ -6,10 +6,40 @@
     <description>Recent content in Algorithm on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:27:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 20:41:38 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/167. TwoSums2</title>
+      <link>https://dinwy.github.io/algorithm/2020/TwoSums2/</link>
+      <pubDate>Tue, 14 Apr 2020 20:41:38 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/TwoSums2/</guid>
+      <description>Link  https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/  Summary Finding solution with Dictionary was simple. However in the best answer, using two pointer was which I didn&amp;rsquo;t think about before.
+Solutions My Solution public int[] TwoSum(int[] numbers, int target) { // value, index var pair = new Dictionary&amp;lt;int, int&amp;gt;(); var res = new int[2] { 0, 0 }; for (int i = 0; i &amp;lt; numbers.Length; i++) { if (pair.ContainsKey(target - numbers[i])) { res[0] = pair[target - numbers[i]] + 1; res[1] = i + 1; return res; } pair.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/161. IntersectionOfTwoLinkedLists</title>
+      <link>https://dinwy.github.io/algorithm/2020/IntersectionOfTwoLinkedLists/</link>
+      <pubDate>Tue, 14 Apr 2020 20:39:36 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/IntersectionOfTwoLinkedLists/</guid>
+      <description>Link  https://leetcode.com/problems/intersection-of-two-linked-lists/  Summary It wasn&amp;rsquo;t really hard to solve it with Dictionary, however there is a another way to solve this problem.
+Solutions My Solution public ListNode GetIntersectionNode(ListNode headA, ListNode headB) { var dict = new HashSet&amp;lt;ListNode&amp;gt;(); while (headA != null || headB != null) { if (headA != null) { if (dict.Contains(headA)) return headA; else dict.Add(headA); headA = headA.next; } if (headB != null) { if (dict.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/155. MinStack</title>
+      <link>https://dinwy.github.io/algorithm/2020/MinStack/</link>
+      <pubDate>Tue, 14 Apr 2020 20:33:26 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MinStack/</guid>
+      <description>Link  https://leetcode.com/problems/min-stack/  Summary Find a min stack. I almost solved at 8 mins but stuck there more for 20 mins. I was stuck there because of I was not checking Peek() when minStackCount is more than 0.
+Solutions My Solution So, I&amp;rsquo;ve stuck there for 20 mins finding simple if check. The reason was that I was brutal force and fix the error without thinking what is actually wrong.</description>
+    </item>
     
     <item>
       <title>LeetCode/141. LinkedListCycle</title>

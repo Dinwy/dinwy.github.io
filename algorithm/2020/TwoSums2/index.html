@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/167. TwoSums2</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,100 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/167. TwoSums2</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
+
+<p>Finding solution with <code>Dictionary</code> was simple. However in the best answer, using two pointer was which I didn&rsquo;t think about before.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-cs">public int[] TwoSum(int[] numbers, int target)
+{
+    // value, index
+    var pair = new Dictionary&lt;int, int&gt;();
+    var res = new int[2] { 0, 0 };
+
+    for (int i = 0; i &lt; numbers.Length; i++)
+    {
+        if (pair.ContainsKey(target - numbers[i]))
+        {
+            res[0] = pair[target - numbers[i]] + 1;
+            res[1] = i + 1;
+            return res;
+        }
+        pair.TryAdd(numbers[i], i);
+    }
+
+    return res;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<pre><code class="language-python"># two-pointer
+def twoSum1(self, numbers, target):
+    l, r = 0, len(numbers)-1
+    while l &lt; r:
+        s = numbers[l] + numbers[r]
+        if s == target:
+            return [l+1, r+1]
+        elif s &lt; target:
+            l += 1
+        else:
+            r -= 1
+
+# dictionary           
+def twoSum2(self, numbers, target):
+    dic = {}
+    for i, num in enumerate(numbers):
+        if target-num in dic:
+            return [dic[target-num]+1, i+1]
+        dic[num] = i
+
+# binary search        
+# Will not check for duplication
+def twoSum(self, numbers, target):
+    for i in xrange(len(numbers)):
+        l, r = i+1, len(numbers)-1
+        tmp = target - numbers[i]
+        while l &lt;= r:
+            mid = l + (r-l)//2
+            if numbers[mid] == tmp:
+                return [i+1, mid+1]
+            elif numbers[mid] &lt; tmp:
+                l = mid+1
+            else:
+                r = mid-1       
+</code></pre>
 
 </div>
-
-<h1>Algorithm</h1>
-14 Apr 2020
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>
