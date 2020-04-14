@@ -1,5 +1,5 @@
 +++
-title = "ExcelSheetColumnNumber"
+title = "LeetCode/171. ExcelSheetColumnNumber"
 date = 2020-04-15T00:00:49+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
