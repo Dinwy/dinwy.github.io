@@ -1,5 +1,5 @@
 +++
-title = "MajorityElement"
+title = "LeetCode/169. MajorityElement"
 date = 2020-04-14T23:10:57+09:00
 tags = ["coding", "algorithm", "leetCode"]
 categories = "algorithm"
