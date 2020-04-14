@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>MajorityElement</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,69 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-15 Apr 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">MajorityElement</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/majority-element/">https://leetcode.com/problems/majority-element/</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>The solution wasn&rsquo;t hard to find. But the best solution was a known algorithm, <a href="http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html">http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html</a></p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-cs">public int MajorityElement(int[] nums) {
+    var target = nums.Length / 2 + 1;
+    // num, count
+    var dict = new Dictionary&lt;int, int&gt;();
+    for (int i = 0; i &lt; nums.Length; i++)
+    {
+        if (dict.ContainsKey(nums[i]))
+        {
+            dict[nums[i]]++;
+            if (dict[nums[i]] == target) return nums[i];
+        }
+        else dict[nums[i]] = 1;
+    }
+
+    return dict.FirstOrDefault().Key;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<pre><code class="language-cs">public int majorityElement(int[] num) {
+
+    int major=num[0], count = 1;
+    for(int i=1; i&lt;num.length;i++){
+        if(count==0){
+            count++;
+            major=num[i];
+        }else if(major==num[i]){
+            count++;
+        }else count--;
+        
+    }
+    return major;
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

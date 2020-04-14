@@ -6,10 +6,40 @@
     <description>Recent content in Coding on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2020 20:41:38 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 00:00:49 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ExcelSheetColumnNumber</title>
+      <link>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnNumber/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:49 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnNumber/</guid>
+      <description>Link  https://leetcode.com/problems/excel-sheet-column-number/  Summary This is the next series of ExcelSheetColumnTitle. Doesn&amp;rsquo;t took a long time. But I was thinking in a wrong way, doesn&amp;rsquo;t need to use Maht.Pow. Always good to think a simple &amp;amp; concise solution in arithmetic.
+Solutions My Solution public int TitleToNumber(string s) { var output = 0; var pow = 0; while (!String.IsNullOrEmpty(s)) { var lastChar = s[s.Length - 1]; output += ((lastChar + 1) - 65) * (int)Math.</description>
+    </item>
+    
+    <item>
+      <title>MajorityElement</title>
+      <link>https://dinwy.github.io/algorithm/2020/MajorityElement/</link>
+      <pubDate>Tue, 14 Apr 2020 23:10:57 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/MajorityElement/</guid>
+      <description>Link  https://leetcode.com/problems/majority-element/  Summary The solution wasn&amp;rsquo;t hard to find. But the best solution was a known algorithm, http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html
+Solutions My Solution public int MajorityElement(int[] nums) { var target = nums.Length / 2 + 1; // num, count var dict = new Dictionary&amp;lt;int, int&amp;gt;(); for (int i = 0; i &amp;lt; nums.Length; i++) { if (dict.ContainsKey(nums[i])) { dict[nums[i]]++; if (dict[nums[i]] == target) return nums[i]; } else dict[nums[i]] = 1; } return dict.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/168. ExcelSheetColumnTitle</title>
+      <link>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnTitle/</link>
+      <pubDate>Tue, 14 Apr 2020 22:05:39 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnTitle/</guid>
+      <description>Link  https://leetcode.com/problems/excel-sheet-column-title/  Summary It was a simple math but I was a bit struggling when solving this. Need to think properly.
+Solutions My Solution public string ConvertToTitle(int n) { var res = &amp;quot;&amp;quot;; while (n != 0) { var reminder = (n - 1) % 26; res = (char)(reminder + 65) + res; n = (n - 1) / 26; } return res; }  Best Solution // Best solution public string BestConvertToTitle(int n) { return n == 0 ?</description>
+    </item>
     
     <item>
       <title>LeetCode/167. TwoSums2</title>

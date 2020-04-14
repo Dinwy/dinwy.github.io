@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Algorithms</title>
+<title>LeetCode/168. ExcelSheetColumnTitle</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -88,14 +88,57 @@
 
 </header>
 <section>
+<article>
 <div class="post-wrapper">
-<div class="post">
-<h1 class="title title-center">Algorithms</h1>
-<h5 class="date">
-15 Apr 2020</h5>
-<p></p>
+<div class="post-inner">
+<h1 class="title">LeetCode/168. ExcelSheetColumnTitle</h1>
+<div class="content" id="content">
+ 
+
+<p><div class="description"></p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+<li><a href="https://leetcode.com/problems/excel-sheet-column-title/">https://leetcode.com/problems/excel-sheet-column-title/</a></li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>It was a simple math but I was a bit struggling when solving this. Need to think properly.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<pre><code class="language-cs">public string ConvertToTitle(int n)
+{
+    var res = &quot;&quot;;
+
+    while (n != 0)
+    {
+        var reminder = (n - 1) % 26;
+        res = (char)(reminder + 65) + res;
+        n = (n - 1) / 26;
+    }
+
+    return res;
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<pre><code class="language-cs">// Best solution
+public string BestConvertToTitle(int n)
+{
+    return n == 0 ? &quot;&quot; : BestConvertToTitle(--n / 26) + (char)('A' + (n % 26));
+}
+</code></pre>
+
 </div>
 </div>
+</div>
+</article>
 </section>
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">

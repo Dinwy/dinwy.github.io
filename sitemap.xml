@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnNumber/</loc>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/2020/MajorityElement/</loc>
+    <lastmod>2020-04-14T23:10:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dinwy.github.io/algorithm/2020/ExcelSheetColumnTitle/</loc>
+    <lastmod>2020-04-14T22:05:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dinwy.github.io/algorithm/2020/TwoSums2/</loc>
     <lastmod>2020-04-14T20:41:38+09:00</lastmod>
   </url>
@@ -679,20 +694,20 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/algorithm/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <loc>https://dinwy.github.io/tags/algorithm/</loc>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/tags/algorithm/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <loc>https://dinwy.github.io/categories/algorithm/</loc>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/algorithm/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -716,7 +731,7 @@
   
   <url>
     <loc>https://dinwy.github.io/categories/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -740,13 +755,13 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/coding/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dinwy.github.io/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -769,13 +784,13 @@
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/categories/gamejam/</loc>
+    <loc>https://dinwy.github.io/tags/gamejam/</loc>
     <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dinwy.github.io/tags/gamejam/</loc>
+    <loc>https://dinwy.github.io/categories/gamejam/</loc>
     <lastmod>2019-10-06T00:43:22+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -824,7 +839,7 @@
   
   <url>
     <loc>https://dinwy.github.io/tags/leetcode/</loc>
-    <lastmod>2020-04-14T20:41:38+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:49+09:00</lastmod>
     <priority>0</priority>
   </url>
   
