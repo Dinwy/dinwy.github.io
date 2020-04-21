@@ -6,10 +6,21 @@
     <description>Recent content on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 04:00:33 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 04:26:14 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/202. HappyNumber</title>
+      <link>https://dinwy.github.io/algorithm/2020/HappyNumber/</link>
+      <pubDate>Wed, 22 Apr 2020 04:26:14 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/HappyNumber/</guid>
+      <description>Link  https://leetcode.com/problems/happy-number  Summary Simple math quiz.
+Solutions My Solution Didn&amp;rsquo;t really care about how to solve this problem. Directly translate the description to the code.
+public bool IsHappy(int n) { var str = n.ToString(); var dict = new HashSet&amp;lt;int&amp;gt;() { n }; while (str != &amp;quot;1&amp;quot;) { var temp = 0; foreach (char c in str) { temp += (int)Math.Pow((int)char.GetNumericValue(c), 2); } if (dict.Contains(temp)) return false; dict.Add(temp); str = temp.</description>
+    </item>
     
     <item>
       <title>LeetCode/198. HouseRobber</title>
