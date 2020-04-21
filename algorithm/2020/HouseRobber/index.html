@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/198. HouseRobber</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,99 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/198. HouseRobber</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/house-robber">https://leetcode.com/problems/house-robber</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
+
+<p>Dp problem. I&rsquo;ve struggle to fine a proper solution.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>This is similar to maximumSubArray problem, however skipping one made me confused. I was able to find a solution directly with recursion but reached timeout.</p>
+
+<pre><code class="language-cs">// Time out, a slow solution.
+public int Rob(int[] nums) {
+    if (nums.Length == 0) return 0;
+    if (nums.Length == 1) return nums[0];
+
+    return Math.Max(Recursion(nums, 0), Recursion(nums, 1));
+}
+
+private int Recursion(int[] nums, int idx)
+{
+    if (idx &gt;= nums.Length) return 0;
+
+    return nums[idx] + Math.Max(Recursion(nums, idx + 2), + Recursion(nums, idx + 3));
+}
+</code></pre>
+
+<pre><code class="language-cs">public int Rob(int[] nums) {
+    if (nums.Length == 0) return 0;
+    if (nums.Length == 1) return nums[0];
+    if (nums.Length == 2) return Math.Max(nums[0], nums[1]);
+
+    var arr = new int[nums.Length];
+    arr[0] = nums[0];
+    arr[1] = nums[1];
+    arr[2] = nums[2] + nums[0];
+
+    for (int i = 3; i &lt; nums.Length; i++)
+    {
+        arr[i] = nums[i] + Math.Max(arr[i - 2], arr[i - 3]);
+    }
+    return Math.Max(arr[nums.Length - 1], arr[nums.Length - 2]);
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<ul>
+<li><a href="https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems">https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems</a>.</li>
+</ul>
+
+<p>I really like to link this discussion which explains well about how to solve dynamic programming quiz.</p>
+
+<pre><code class="language-cs">// Bottom-up solution
+public int rob(int[] nums) {
+    if (nums.length == 0) return 0;
+    int[] memo = new int[nums.length + 1];
+    memo[0] = 0;
+    memo[1] = nums[0];
+    for (int i = 1; i &lt; nums.length; i++) {
+        int val = nums[i];
+        memo[i+1] = Math.max(memo[i], memo[i-1] + val);
+    }
+    return memo[nums.length];
+}
+</code></pre>
 
 </div>
-
-<h1>Algorithm</h1>
-22 Apr 2020
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

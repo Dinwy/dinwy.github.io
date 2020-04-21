@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/189. RotateArray</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,82 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/189. RotateArray</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/rotate-array/">https://leetcode.com/problems/rotate-array/</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
+
+<p>Another rotate array problem. I&rsquo;ve wasted my time a lot (more than 4 hours) to optimize this.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>I was not able to find a O(1) space solution.</p>
+
+<pre><code class="language-cs">public class Solution {
+    public void Rotate(int[] nums, int k) {
+        var temp = new int[nums.Length];
+        Array.Copy(nums,temp, nums.Length);
+        for (int i = 0; i &lt; nums.Length; i++)
+        {
+            nums[(i + k) % nums.Length] = temp[i];
+        } 
+    }
+}
+</code></pre>
+
+<h3 id="best-solution">Best Solution</h3>
+
+<p>Didn&rsquo;t really know about reverse the array with certain length will solve this problem. <br/>
+Basically cutting the array into two pieces and concatenating it.</p>
+
+<pre><code class="language-cs">// Best Solution
+public void rotate(int[] nums, int k)
+{
+    k %= nums.Length;
+    reverse(nums, 0, nums.Length - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, nums.Length - 1);
+}
+
+public void reverse(int[] nums, int start, int end)
+{
+    while (start &lt; end)
+    {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+        start++;
+        end--;
+    }
+}
+</code></pre>
 
 </div>
-
-<h1>Algorithm</h1>
-22 Apr 2020
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

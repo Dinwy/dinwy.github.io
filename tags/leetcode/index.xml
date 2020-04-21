@@ -6,10 +6,43 @@
     <description>Recent content in Leetcode on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 00:00:49 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 04:00:33 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/198. HouseRobber</title>
+      <link>https://dinwy.github.io/algorithm/2020/HouseRobber/</link>
+      <pubDate>Wed, 22 Apr 2020 04:00:33 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/HouseRobber/</guid>
+      <description>Link  https://leetcode.com/problems/house-robber  Summary Dp problem. I&amp;rsquo;ve struggle to fine a proper solution.
+Solutions My Solution This is similar to maximumSubArray problem, however skipping one made me confused. I was able to find a solution directly with recursion but reached timeout.
+// Time out, a slow solution. public int Rob(int[] nums) { if (nums.Length == 0) return 0; if (nums.Length == 1) return nums[0]; return Math.Max(Recursion(nums, 0), Recursion(nums, 1)); } private int Recursion(int[] nums, int idx) { if (idx &amp;gt;= nums.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/190. ReverseBits</title>
+      <link>https://dinwy.github.io/algorithm/2020/ReverseBits/</link>
+      <pubDate>Thu, 16 Apr 2020 00:58:46 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ReverseBits/</guid>
+      <description>Link  https://leetcode.com/problems/reverse-bits/  Summary Asking that do you know bit operations.
+Solutions My Solution Contrast to what the question was really asking, I&amp;rsquo;m not familiar with bits. So I brought arithmetic solution to solve this problem.
+public uint reverseBits(uint n) { uint result = 0; var k = 32; while (k &amp;gt;= 0) { var reminder = (n % 2); n /= 2; k--; if (reminder == 0) continue; result += (uint)Math.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/189. RotateArray</title>
+      <link>https://dinwy.github.io/algorithm/2020/RotateArray/</link>
+      <pubDate>Thu, 16 Apr 2020 00:48:46 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/RotateArray/</guid>
+      <description>Link  https://leetcode.com/problems/rotate-array/  Summary Another rotate array problem. I&amp;rsquo;ve wasted my time a lot (more than 4 hours) to optimize this.
+Solutions My Solution I was not able to find a O(1) space solution.
+public class Solution { public void Rotate(int[] nums, int k) { var temp = new int[nums.Length]; Array.Copy(nums,temp, nums.Length); for (int i = 0; i &amp;lt; nums.Length; i++) { nums[(i + k) % nums.Length] = temp[i]; } } }  Best Solution Didn&amp;rsquo;t really know about reverse the array with certain length will solve this problem.</description>
+    </item>
     
     <item>
       <title>LeetCode/171. ExcelSheetColumnNumber</title>
