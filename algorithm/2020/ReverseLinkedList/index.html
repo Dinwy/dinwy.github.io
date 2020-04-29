@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Categories</title>
+<title>LeetCode/206. ReverseLinkedList</title>
 <link rel="stylesheet" type="text/css" href="https://dinwy.github.io/css/simpleD.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <link href="/css/prism.css" rel="stylesheet">
@@ -87,93 +87,90 @@
 </nav>
 
 </header>
-
 <section>
 <article>
-<div class="post-wrapper padder-1em">
-<h1 class="title">Categories</h1>
-</div>
-<div class="card-container">
-
-<div class="card">
-<a class="text-center" href="/categories/algorithm/">
+<div class="post-wrapper">
 <div class="post-inner">
-<div class="image-wrapper">
+<h1 class="title">LeetCode/206. ReverseLinkedList</h1>
+<div class="content" id="content">
+ 
 
+<p><div class="description"></p>
 
+<h2 id="link">Link</h2>
 
+<ul>
+<li><a href="https://leetcode.com/problems/reverse-linked-list/">https://leetcode.com/problems/reverse-linked-list/</a></li>
+</ul>
 
+<h2 id="summary">Summary</h2>
+
+<p>I didn&rsquo;t really think about how to reverse linked list, so I was struggled so hard.</p>
+
+<h2 id="solutions">Solutions</h2>
+
+<h3 id="my-solution">My Solution</h3>
+
+<p>Rather than solving in-place, I was thinking that okay let just make a new node.</p>
+
+<pre><code class="language-cs">public ListNode ReverseList(ListNode head)
+{
+    var fakeNode = new ListNode(0);
+    var previousPointer = fakeNode.next;
+    var cur = head;
+    var node = fakeNode.next;
+
+    while (cur != null)
+    {
+        node = new ListNode(cur.val);
+        node.next = previousPointer;
+        previousPointer = node;
+        cur = cur.next;
+    }
+
+    return node;
+}
+``
+### Best Solution
+
+The best solution was impressive. 
+
+1. Create a `newHead` as null typeof ListNode
+2. Loop `head`
+3. Create temporary `next` node.
+4. Set `head.next` to `next`
+5. Set `head.next` to `newHead`
+6. set `newHead` to `head`
+7. set `head` to `headNext`
+
+```cs
+// Best solution
+public ListNode BestReverseList(ListNode head)
+{
+    /* iterative solution */
+    ListNode newHead = null;
+    while (head != null)
+    {
+        ListNode next = head.next;
+        head.next = newHead;
+        newHead = head;
+        head = next;
+    }
+    return newHead;
+}
+</code></pre>
 
 </div>
-
-<h1>Algorithm</h1>
-29 Apr 2020
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/everyday/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Everyday</h1>
-01 Aug 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/gamejam/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Gamejam</h1>
-06 Oct 2019
-
-</div>
-</a>
-</div>
-<div class="card">
-<a class="text-center" href="/categories/study/">
-<div class="post-inner">
-<div class="image-wrapper">
-
-
-
-
-
-</div>
-
-<h1>Study</h1>
-05 Mar 2020
-
-</div>
-</a>
 </div>
 </div>
 </article>
 </section>
-
 <div class="nav nav-home">
 <a class="text-center" href="https://dinwy.github.io/">
 <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 <span>Home</span>
 </a>
 </div>
-
 <footer class="footer">
 <p>Powered by <a href="http://gohugo.io">Hugo</a></p>
 </div>

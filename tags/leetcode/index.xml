@@ -6,10 +6,62 @@
     <description>Recent content in Leetcode on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 04:26:14 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 17:36:10 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/225. ImplementStackUsingQueue LeetCode/232. ImplementQueueUsingStack</title>
+      <link>https://dinwy.github.io/algorithm/2020/ImplementStackUsingQueue_ImplementQueueUsingStack/</link>
+      <pubDate>Wed, 29 Apr 2020 17:36:10 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ImplementStackUsingQueue_ImplementQueueUsingStack/</guid>
+      <description>Link  https://leetcode.com/problems/implement-queue-using-stacks https://leetcode.com/problems/implement-stack-using-queues/  Summary Basically both are asking the same question. Can you logically think about this.  Graphically imagine about this is a good way to solve this. Think about you have [1,2,3,4,5].  Think about both solution that you have Two Queue when implementing stack, and Two Stack when Implementing queue.
+Solutions My Solution  Implement stack using queue.  public class MyBestStack { Queue&amp;lt;int&amp;gt; qStack = new Queue&amp;lt;int&amp;gt;(); /** Push element x onto stack.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/206. ReverseLinkedList</title>
+      <link>https://dinwy.github.io/algorithm/2020/ReverseLinkedList/</link>
+      <pubDate>Wed, 29 Apr 2020 17:22:44 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/ReverseLinkedList/</guid>
+      <description>Link  https://leetcode.com/problems/reverse-linked-list/  Summary I didn&amp;rsquo;t really think about how to reverse linked list, so I was struggled so hard.
+Solutions My Solution Rather than solving in-place, I was thinking that okay let just make a new node.
+public ListNode ReverseList(ListNode head) { var fakeNode = new ListNode(0); var previousPointer = fakeNode.next; var cur = head; var node = fakeNode.next; while (cur != null) { node = new ListNode(cur.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/205. IsomorphicStrings</title>
+      <link>https://dinwy.github.io/algorithm/2020/IsomorphicStrings/</link>
+      <pubDate>Wed, 29 Apr 2020 17:04:26 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/IsomorphicStrings/</guid>
+      <description>Link  https://leetcode.com/problems/isomorphic-strings/  Summary When I was solving this I was confused that I have to compare A -&amp;gt; B also B &amp;lt;- A. For example, when comparing aa and ab, when I make a dictionary like { a: a, b: a} then it should throw error. Which means that Key and Value both should be unique and have a same value.
+Solutions My Solution Below is my first solution.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/204. CountPrimes</title>
+      <link>https://dinwy.github.io/algorithm/2020/CountPrimes/</link>
+      <pubDate>Wed, 29 Apr 2020 17:00:18 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/CountPrimes/</guid>
+      <description>Link  https://leetcode.com/problems/count-primes/  Summary Count primes. Was struggling thinking how to remove primes. Answer was written in wikipedia. https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity
+Need to think how to translate human language to programming &amp;amp; think logically.
+Solution public class Solution { List&amp;lt;int&amp;gt; list = new List&amp;lt;int&amp;gt;(); public int CountPrimes(int n) { bool[] isPrime = new bool[n]; for (int i = 2; i &amp;lt; n; i++) { isPrime[i] = true; } // Loop&#39;s ending condition is i * i &amp;lt; n instead of i &amp;lt; sqrt(n) // to avoid repeatedly calling an expensive function sqrt().</description>
+    </item>
+    
+    <item>
+      <title>LeetCode/203. RemoveLinkListElements</title>
+      <link>https://dinwy.github.io/algorithm/2020/RemoveLinkListElements/</link>
+      <pubDate>Wed, 29 Apr 2020 16:54:16 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/RemoveLinkListElements/</guid>
+      <description>Link  https://leetcode.com/problems/remove-linked-list-elements  Summary It is really confusing when you don&amp;rsquo;t know how Linked List works. I&amp;rsquo;ve been struggling with linked list many times. Need to understand what is pointing what.
+Solutions My Solution public ListNode RemoveElements(ListNode head, int val) { var headPointer = head; var result = new ListNode(0); var previousPointer = result; while (headPointer != null) { if (headPointer.val == val) { headPointer = headPointer.next; previousPointer.next = headPointer; continue; } previousPointer.</description>
+    </item>
     
     <item>
       <title>LeetCode/202. HappyNumber</title>
