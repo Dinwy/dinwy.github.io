@@ -6,10 +6,22 @@
     <description>Recent content in Algorithms on Dinwy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 17:36:10 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 21:56:59 +0900</lastBuildDate>
     
 	<atom:link href="https://dinwy.github.io/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LeetCode/222. CountCompleteTreeNodes</title>
+      <link>https://dinwy.github.io/algorithm/2020/CountCompleteTreeNodes/</link>
+      <pubDate>Tue, 23 Jun 2020 21:56:59 +0900</pubDate>
+      
+      <guid>https://dinwy.github.io/algorithm/2020/CountCompleteTreeNodes/</guid>
+      <description>Link https://leetcode.com/problems/count-complete-tree-nodes
+Summary Counting complete tree nodes. First, I was counting everything which is O(n) time complexity. After reading about article in discussion, indeed able to cut things half everything. It took awhile to fully understand.
+Solutions My Solution Simply counting every nodes.
+public int CountNodesAll(TreeNode root) { if (root == null) return 0; var queue = new Queue&amp;lt;TreeNode&amp;gt;(); queue.Enqueue(root); var count = 0; while (queue.Count &amp;gt; 0) { var cur = queue.</description>
+    </item>
     
     <item>
       <title>LeetCode/225. ImplementStackUsingQueue LeetCode/232. ImplementQueueUsingStack</title>
